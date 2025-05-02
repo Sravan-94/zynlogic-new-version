@@ -1,6 +1,6 @@
 
 import React from "react";
-import { MessageSquareQuestion } from "lucide-react";
+import { MessageSquareQuote } from "lucide-react";
 import { 
   Accordion, 
   AccordionContent, 
@@ -42,7 +42,7 @@ const FAQSection = () => {
         <div className="text-center mb-16 animate-fade-in">
           <div className="flex justify-center mb-6">
             <div className="p-4 rounded-full bg-accent/10">
-              <MessageSquareQuestion size={32} className="text-accent" />
+              <MessageSquareQuote size={32} className="text-accent" />
             </div>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Frequently Asked Questions</h2>
