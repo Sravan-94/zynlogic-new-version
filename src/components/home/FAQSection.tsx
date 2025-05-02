@@ -37,11 +37,21 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section className="py-24 px-6 md:px-10 lg:px-16 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-24 px-6 md:px-10 lg:px-16 relative overflow-hidden">
+      <div 
+        className="absolute inset-0 z-0" 
+        style={{
+          backgroundImage: "url('/lovable-uploads/b6cf457d-c532-46f9-bc0f-25a5d37e6975.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
+      />
+      <div className="absolute inset-0 bg-white/40 backdrop-blur-sm z-0" />
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <div className="flex justify-center mb-6">
-            <div className="p-4 rounded-full bg-accent/10">
+            <div className="p-4 rounded-full bg-accent/20 backdrop-blur-md shadow-lg border border-accent/10">
               <MessageSquareQuote size={32} className="text-accent" />
             </div>
           </div>
@@ -52,18 +62,24 @@ const FAQSection = () => {
         </div>
         
         <div className="max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="w-full">
-            {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200">
-                <AccordionTrigger className="text-lg font-medium text-primary py-6 hover:text-accent hover:no-underline">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-600 pb-6 leading-relaxed">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          <div className="bg-white/80 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white/40">
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((faq, index) => (
+                <AccordionItem 
+                  key={index} 
+                  value={`item-${index}`} 
+                  className="border-b border-gray-200/70 last:border-b-0"
+                >
+                  <AccordionTrigger className="text-lg font-medium text-primary py-6 hover:text-accent hover:no-underline">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-600 pb-6 leading-relaxed">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
         </div>
         
         <div className="mt-16 text-center">
@@ -73,7 +89,7 @@ const FAQSection = () => {
           <div className="mt-6">
             <a 
               href="/contact" 
-              className="inline-flex items-center justify-center rounded-md px-6 py-3 text-base font-medium transition-colors bg-accent text-white hover:bg-accent/90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+              className="inline-flex items-center justify-center rounded-md px-6 py-3 text-base font-medium transition-colors bg-accent text-white hover:bg-accent/90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 shadow-lg hover:shadow-xl"
             >
               Contact Us
             </a>
