@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "@/components/layout/Layout";
 import HeroSection from "@/components/home/HeroSection";
 import TechStackSection from "@/components/home/TechStackSection";
-import FeaturesSection from "@/components/home/FeaturesSection";
+import IntegrationsSection from "@/components/home/IntegrationsSection";
 import ShowcasePreview from "@/components/home/ShowcasePreview";
 import CategoriesPreview from "@/components/home/CategoriesPreview";
 import FAQSection from "@/components/home/FAQSection";
@@ -14,7 +14,7 @@ const Index = () => {
     <Layout>
       <HeroSection />
       <TechStackSection />
-      <FeaturesSection />
+      <IntegrationsSection />
       <CategoriesPreview />
       <ShowcasePreview />
       <FAQSection />
