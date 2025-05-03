@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
+import { ProgressiveImage } from "@/components/ui/progressive-image";
+import { ShowcaseSkeletonGrid } from "@/components/ui/skeleton-loader";
 
 const projects = [
   // E-Commerce / Retail
@@ -215,7 +217,7 @@ const projects = [
     industry: "Food & Beverage",
     year: "2024",
     tags: ["Shopify", "Custom Theme", "Subscription Model"],
-    image: "https://images.unsplash.com/photo-1495616811223-4d98c6e9c869",
+    image: "https://images.unsplash.com/photo-1495616811223-14e5300c3a48",
     description: "Craft beer subscription service with personalized recommendations and tasting notes."
   },
   {
@@ -299,6 +301,16 @@ const industries = [...new Set(projects.map(project => project.industry))];
 
 const Showcase = () => {
   const [activeTab, setActiveTab] = useState("all");
+  const [loading, setLoading] = useState(true);
+  
+  // Simulate loading delay for demonstration
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 800);
+    
+    return () => clearTimeout(timer);
+  }, []);
   
   // Filter projects based on active tab
   const filteredProjects = activeTab === "all" 
@@ -336,7 +348,11 @@ const Showcase = () => {
             </p>
           </div>
 
-          <Tabs defaultValue="all" className="mb-12" onValueChange={setActiveTab}>
+          <Tabs defaultValue="all" className="mb-12" onValueChange={(value) => {
+            setActiveTab(value);
+            setLoading(true);
+            setTimeout(() => setLoading(false), 600);
+          }}>
             <TabsList className="mb-8">
               <TabsTrigger value="all">All Projects</TabsTrigger>
               <TabsTrigger value="web">Websites</TabsTrigger>
@@ -344,48 +360,60 @@ const Showcase = () => {
             </TabsList>
             
             <TabsContent value="all" className="space-y-16">
-              {Object.keys(projectsByIndustry).map(industry => (
-                <div key={industry} className="space-y-6">
-                  <div className="border-b pb-2">
-                    <h2 className="text-2xl font-semibold text-primary">{industry}</h2>
+              {loading ? (
+                <ShowcaseSkeletonGrid />
+              ) : (
+                Object.keys(projectsByIndustry).map(industry => (
+                  <div key={industry} className="space-y-6">
+                    <div className="border-b pb-2">
+                      <h2 className="text-2xl font-semibold text-primary">{industry}</h2>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {projectsByIndustry[industry].map((project) => (
+                        <ProjectCard key={project.id} project={project} />
+                      ))}
+                    </div>
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {projectsByIndustry[industry].map((project) => (
-                      <ProjectCard key={project.id} project={project} />
-                    ))}
-                  </div>
-                </div>
-              ))}
+                ))
+              )}
             </TabsContent>
             
             <TabsContent value="web" className="space-y-16">
-              {Object.keys(projectsByIndustry).map(industry => (
-                <div key={industry} className="space-y-6">
-                  <div className="border-b pb-2">
-                    <h2 className="text-2xl font-semibold text-primary">{industry}</h2>
+              {loading ? (
+                <ShowcaseSkeletonGrid />
+              ) : (
+                Object.keys(projectsByIndustry).map(industry => (
+                  <div key={industry} className="space-y-6">
+                    <div className="border-b pb-2">
+                      <h2 className="text-2xl font-semibold text-primary">{industry}</h2>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {projectsByIndustry[industry].map((project) => (
+                        <ProjectCard key={project.id} project={project} />
+                      ))}
+                    </div>
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {projectsByIndustry[industry].map((project) => (
-                      <ProjectCard key={project.id} project={project} />
-                    ))}
-                  </div>
-                </div>
-              ))}
+                ))
+              )}
             </TabsContent>
             
             <TabsContent value="mobile" className="space-y-16">
-              {Object.keys(projectsByIndustry).map(industry => (
-                <div key={industry} className="space-y-6">
-                  <div className="border-b pb-2">
-                    <h2 className="text-2xl font-semibold text-primary">{industry}</h2>
+              {loading ? (
+                <ShowcaseSkeletonGrid />
+              ) : (
+                Object.keys(projectsByIndustry).map(industry => (
+                  <div key={industry} className="space-y-6">
+                    <div className="border-b pb-2">
+                      <h2 className="text-2xl font-semibold text-primary">{industry}</h2>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {projectsByIndustry[industry].map((project) => (
+                        <ProjectCard key={project.id} project={project} />
+                      ))}
+                    </div>
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {projectsByIndustry[industry].map((project) => (
-                      <ProjectCard key={project.id} project={project} />
-                    ))}
-                  </div>
-                </div>
-              ))}
+                ))
+              )}
             </TabsContent>
           </Tabs>
         </div>
@@ -398,11 +426,12 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="group overflow-hidden bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
       <div className="relative aspect-[16/10] overflow-hidden">
-        <img 
+        <ProgressiveImage 
           src={project.image} 
           alt={project.title} 
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          loading="lazy"
+          width={400}
+          height={250}
         />
       </div>
       <div className="p-5">
