@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Category } from "lucide-react";
+import { ArrowRight, Folders } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const categories = [
@@ -26,7 +26,7 @@ const CategoriesPreview = () => {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="glass-button p-4 rounded-lg flex flex-col items-center justify-center text-center aspect-square">
-              <Category size={32} className="text-accent mb-2" />
+              <Folders size={32} className="text-accent mb-2" />
               <span className="font-medium">19+ Categories</span>
             </div>
             <div className="glass-button p-4 rounded-lg flex flex-col items-center justify-center text-center aspect-square">
