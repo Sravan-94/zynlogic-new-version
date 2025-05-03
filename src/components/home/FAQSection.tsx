@@ -1,6 +1,6 @@
-
 import React from "react";
-import { MessageSquareQuote } from "lucide-react";
+import { Clock, CreditCard, Truck, Globe, Package } from "lucide-react";
+import { Link } from "react-router-dom";
 import { 
   Accordion, 
   AccordionContent, 
@@ -8,88 +8,95 @@ import {
   AccordionTrigger 
 } from "@/components/ui/accordion";
 
-const faqs = [
-  {
-    question: "What services do you offer?",
-    answer: "We offer a comprehensive range of digital services including web design and development, mobile app development, brand identity creation, UX strategy, creative tech implementations using WebGL and 3D, as well as AI integrations and automations."
-  },
-  {
-    question: "How long does a typical project take?",
-    answer: "Project timelines vary depending on scope and complexity. A typical website project may take 6-12 weeks, while a comprehensive branding and digital product can take 3-6 months. We'll provide a detailed timeline during our consultation."
-  },
-  {
-    question: "What is your design process?",
-    answer: "Our design process involves discovery and research, strategy development, wireframing and prototyping, visual design, development, testing, and launch. We emphasize collaboration throughout, ensuring your vision guides our work."
-  },
-  {
-    question: "Do you work with startups or enterprise clients?",
-    answer: "We work with both startups and enterprise clients. Our flexible approach allows us to tailor our services to meet the unique needs and budgets of organizations at any stage of growth."
-  },
-  {
-    question: "How do you handle project management and communication?",
-    answer: "We use agile methodologies and dedicated project managers to ensure smooth execution. Communication happens through regular meetings, a dedicated Slack channel, and project management tools that provide full transparency on progress."
-  },
-  {
-    question: "What makes your agency different from others?",
-    answer: "Our unique blend of technical excellence and design sophistication sets us apart. We don't just build digital products—we craft comprehensive brand experiences that resonate with users and drive business results."
-  }
-];
+type FAQItem = {
+    id: string
+    icon: React.ReactNode
+    question: string
+    answer: string
+}
 
 const FAQSection = () => {
-  return (
-    <section className="py-24 px-6 md:px-10 lg:px-16 relative overflow-hidden">
-      <div className="absolute inset-0 bg-white/20 backdrop-blur-sm z-0" />
-      
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
-          <div className="flex justify-center mb-6">
-            <div className="p-4 rounded-full bg-white/30 backdrop-blur-md shadow-lg border border-white/40">
-              <MessageSquareQuote size={32} className="text-accent" />
+    const faqItems: FAQItem[] = [
+        {
+            id: 'item-1',
+            icon: <Clock className="m-auto size-4" />,
+            question: 'What are your business hours?',
+            answer: 'Our customer service team is available Monday through Friday from 9:00 AM to 8:00 PM EST, and weekends from 10:00 AM to 6:00 PM EST. During holidays, hours may vary and will be posted on our website.',
+        },
+        {
+            id: 'item-2',
+            icon: <CreditCard className="m-auto size-4" />,
+            question: 'How do subscription payments work?',
+            answer: 'Subscription payments are automatically charged to your default payment method on the same day each month or year, depending on your billing cycle. You can update your payment information and view billing history in your account dashboard.',
+        },
+        {
+            id: 'item-3',
+            icon: <Truck className="m-auto size-4" />,
+            question: 'Can I expedite my shipping?',
+            answer: 'Yes, we offer several expedited shipping options at checkout. Next-day and 2-day shipping are available for most U.S. addresses if orders are placed before 2:00 PM EST. International expedited shipping options vary by destination.',
+        },
+        {
+            id: 'item-4',
+            icon: <Globe className="m-auto size-4" />,
+            question: 'Do you offer localized support?',
+            answer: 'We offer multilingual support in English, Spanish, French, German, and Japanese. Our support team can assist customers in these languages via email, chat, and phone during standard business hours for each respective region.',
+        },
+        {
+            id: 'item-5',
+            icon: <Package className="m-auto size-4" />,
+            question: 'How do I track my order?',
+            answer: 'Once your order ships, you\'ll receive a confirmation email with a tracking number. You can use this number on our website or the carrier\'s website to track your package. You can also view order status and tracking information in your account dashboard under "Order History".',
+        },
+    ]
+
+    return (
+        <section className="bg-gray-50 dark:bg-gray-900 py-20">
+            <div className="mx-auto max-w-5xl px-4 md:px-6">
+                <div className="flex flex-col gap-10 md:flex-row md:gap-16">
+                    <div className="md:w-1/3">
+                        <div className="sticky top-20">
+                            <h2 className="mt-4 text-3xl font-bold text-primary">Frequently Asked Questions</h2>
+                            <p className="text-muted-foreground mt-4">
+                                Can't find what you're looking for? Contact our{' '}
+                                <Link
+                                    to="/contact"
+                                    className="text-accent font-medium hover:underline">
+                                    customer support team
+                                </Link>
+                            </p>
+                        </div>
+                    </div>
+                    <div className="md:w-2/3">
+                        <Accordion
+                            type="single"
+                            collapsible
+                            className="w-full space-y-2">
+                            {faqItems.map((item) => (
+                                <AccordionItem
+                                    key={item.id}
+                                    value={item.id}
+                                    className="bg-white shadow-sm rounded-lg border px-4 last:border-b">
+                                    <AccordionTrigger className="cursor-pointer items-center py-5 hover:no-underline">
+                                        <div className="flex items-center gap-3">
+                                            <div className="flex size-6">
+                                                {item.icon}
+                                            </div>
+                                            <span className="text-base">{item.question}</span>
+                                        </div>
+                                    </AccordionTrigger>
+                                    <AccordionContent className="pb-5">
+                                        <div className="px-9">
+                                            <p className="text-base">{item.answer}</p>
+                                        </div>
+                                    </AccordionContent>
+                                </AccordionItem>
+                            ))}
+                        </Accordion>
+                    </div>
+                </div>
             </div>
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Frequently Asked Questions</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Get answers to common questions about our services, process, and approach.
-          </p>
-        </div>
-        
-        <div className="max-w-3xl mx-auto">
-          <div className="glass-card p-6">
-            <Accordion type="single" collapsible className="w-full">
-              {faqs.map((faq, index) => (
-                <AccordionItem 
-                  key={index} 
-                  value={`item-${index}`} 
-                  className="border-b border-white/30 last:border-b-0"
-                >
-                  <AccordionTrigger className="text-lg font-medium text-primary py-6 hover:text-accent hover:no-underline">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-700 pb-6 leading-relaxed">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </div>
-        
-        <div className="mt-16 text-center">
-          <p className="text-lg text-gray-700">
-            Still have questions? We're here to help.
-          </p>
-          <div className="mt-6">
-            <a 
-              href="/contact" 
-              className="inline-flex items-center justify-center rounded-md px-6 py-3 text-base font-medium transition-colors bg-accent text-white hover:bg-accent/90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 shadow-lg hover:shadow-xl"
-            >
-              Contact Us
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+        </section>
+    )
+}
 
 export default FAQSection;

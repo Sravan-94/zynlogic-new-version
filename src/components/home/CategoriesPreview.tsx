@@ -1,65 +1,128 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Folders } from "lucide-react";
+import { Card } from '@/components/ui/card';
+import { 
+    ChevronRight, 
+    ShoppingBag, 
+    Stethoscope, 
+    Landmark, 
+    Lightbulb, 
+    Gamepad2, 
+    Utensils, 
+    Plane 
+} from 'lucide-react';
 import { Link } from "react-router-dom";
 
-const categories = [
-  { id: 1, name: "E-commerce", icon: "🛍️", description: "Online shopping platforms and marketplaces for businesses." },
-  { id: 2, name: "EdTech", icon: "🎓", description: "Educational technology solutions for modern learning." },
-  { id: 3, name: "Health", icon: "⚕️", description: "Digital health platforms and patient management systems." },
-  { id: 4, name: "Real Estate", icon: "🏢", description: "Property listing platforms and virtual tour solutions." },
-  { id: 5, name: "Finance", icon: "💰", description: "Financial management and investment tracking systems." },
-  { id: 6, name: "Travel", icon: "✈️", description: "Booking platforms and travel experience applications." },
+const industries = [
+  {
+    id: 1,
+    name: 'E-commerce',
+    icon: <ShoppingBag className="text-blue-500" />,
+    description: 'Online shopping platforms and marketplaces that connect buyers and sellers.',
+  },
+  {
+    id: 2,
+    name: 'Healthcare',
+    icon: <Stethoscope className="text-green-500" />,
+    description: 'Digital solutions for hospitals, clinics, and healthcare providers.',
+  },
+  {
+    id: 3,
+    name: 'Finance',
+    icon: <Landmark className="text-purple-500" />,
+    description: 'Banking, investment, and financial technology applications.',
+  },
+  {
+    id: 4,
+    name: 'Education',
+    icon: <Lightbulb className="text-yellow-500" />,
+    description: 'Learning platforms, educational tools, and knowledge sharing systems.',
+  },
+  {
+    id: 5,
+    name: 'Gaming',
+    icon: <Gamepad2 className="text-red-500" />,
+    description: 'Interactive entertainment, gaming platforms, and immersive experiences.',
+  },
+  {
+    id: 6,
+    name: 'Food & Beverage',
+    icon: <Utensils className="text-orange-500" />,
+    description: 'Restaurant management, food delivery, and culinary experiences.',
+  },
 ];
 
 const CategoriesPreview = () => {
-  return (
-    <section className="py-20 px-6 md:px-10 lg:px-16 bg-secondary-light/10">
-      <div className="max-w-7xl mx-auto">
-        <div className="glass-card mb-16 p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">Industry Expertise</h2>
-            <p className="mt-4 text-lg text-gray-600 max-w-2xl">
-              We specialize in various sectors, delivering outstanding digital solutions tailored to your industry needs.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="glass-button p-4 rounded-lg flex flex-col items-center justify-center text-center aspect-square">
-              <Folders size={32} className="text-accent mb-2" />
-              <span className="font-medium">19+ Categories</span>
-            </div>
-            <div className="glass-button p-4 rounded-lg flex flex-col items-center justify-center text-center aspect-square">
-              <span className="text-3xl mb-2">🌟</span>
-              <span className="font-medium">Specialized Solutions</span>
-            </div>
-          </div>
-        </div>
+    return (
+        <section className="py-12 md:py-16 bg-gradient-to-b from-gray-50 to-white">
+            <div className="mx-auto max-w-7xl px-6">
+                <div className="text-center mb-8">
+                    <h2 className="text-balance text-3xl font-semibold md:text-4xl">Industry Expertise</h2>
+                    <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
+                        We specialize in creating tailored digital solutions for various industries
+                    </p>
+                </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {categories.map((category) => (
-            <div 
-              key={category.id} 
-              className="service-card glass-card p-8 rounded-lg"
-            >
-              <div className="text-4xl mb-4">{category.icon}</div>
-              <h3 className="text-xl font-semibold text-primary mb-3">{category.name}</h3>
-              <p className="text-gray-600 mb-6">{category.description}</p>
-              <Link to="/categories" className="flex items-center text-accent hover:underline">
-                Explore <ArrowRight size={16} className="ml-2" />
-              </Link>
-            </div>
-          ))}
-        </div>
+                <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {industries.map((industry) => (
+                        <IndustryCard
+                            key={industry.id}
+                            name={industry.name}
+                            description={industry.description}
+                            icon={industry.icon}
+                        />
+                    ))}
+                </div>
 
-        <div className="mt-12 text-center">
-          <Button asChild variant="outline" className="glass-button">
-            <Link to="/categories">View All Categories</Link>
-          </Button>
-        </div>
-      </div>
-    </section>
-  );
-};
+                <div className="mt-8 text-center">
+                    <Button asChild variant="outline" className="gap-1">
+                        <Link to="/industries">
+                            View All Industries
+                            <ChevronRight className="ml-1 size-4" />
+                        </Link>
+                    </Button>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+const IndustryCard = ({
+    name,
+    description,
+    icon,
+    link = '/industries',
+}: {
+    name: string;
+    description: string;
+    icon: React.ReactNode;
+    link?: string;
+}) => {
+    return (
+        <Card className="p-5 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="relative">
+                <div className="size-10 flex items-center justify-center">{icon}</div>
+
+                <div className="space-y-2 py-3">
+                    <h3 className="text-base font-medium">{name}</h3>
+                    <p className="text-muted-foreground line-clamp-2 text-sm">{description}</p>
+                </div>
+
+                <div className="flex gap-3 border-t border-dashed pt-3">
+                    <Button
+                        asChild
+                        variant="secondary"
+                        size="sm"
+                        className="gap-1 pr-2 shadow-none hover:bg-gray-100">
+                        <Link to={link}>
+                            Learn More
+                            <ChevronRight className="ml-0 !size-3.5 opacity-50" />
+                        </Link>
+                    </Button>
+                </div>
+            </div>
+        </Card>
+    )
+}
 
 export default CategoriesPreview;

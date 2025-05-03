@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -33,37 +32,38 @@ const featuredProjects = [
 
 const ShowcasePreview = () => {
   return (
-    <section className="py-20 px-6 md:px-10 lg:px-16 bg-white">
+    <section className="py-12 md:py-16 px-6 md:px-10 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary">Selected Work</h2>
-            <p className="mt-4 text-xl text-gray-600 max-w-2xl">
+            <p className="mt-3 text-gray-600 max-w-2xl">
               A glimpse of our recent projects that showcase our expertise
             </p>
           </div>
           <Link to="/showcase" className="mt-4 md:mt-0">
-            <Button variant="outline">View All Projects</Button>
+            <Button variant="outline" className="hover:bg-gray-100">View All Projects</Button>
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {featuredProjects.map((project) => (
-            <Card key={project.id} className="overflow-hidden border-0 shadow-md hover:shadow-xl transition-shadow duration-300">
+            <Card key={project.id} className="overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-shadow duration-300">
               <div className="relative aspect-[4/3]">
                 <img 
                   src={project.image} 
                   alt={project.title} 
                   className="object-cover w-full h-full"
+                  loading="lazy"
                 />
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-4">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-xl font-semibold text-primary">{project.title}</h3>
                   <span className="text-sm text-gray-500">{project.year}</span>
                 </div>
-                <p className="text-gray-600 mb-4">{project.category}</p>
-                <div className="flex flex-wrap gap-2 mb-6">
+                <p className="text-gray-600 mb-2">{project.category}</p>
+                <div className="flex flex-wrap gap-2 mb-3">
                   {project.tags.map((tag, index) => (
                     <span 
                       key={index} 

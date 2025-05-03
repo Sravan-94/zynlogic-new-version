@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Code, FileText, Settings } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -44,17 +43,17 @@ const techStacks = {
 
 const TechStackSection = () => {
   return (
-    <section className="py-24 px-6 md:px-10 lg:px-16 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-12 md:py-16 px-6 md:px-10 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Our Technology Stack</h2>
+        <div className="text-center mb-8 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-3">Our Technology Stack</h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             We leverage cutting-edge technologies to deliver exceptional digital experiences that are both beautiful and functional.
           </p>
         </div>
         
         <Tabs defaultValue="frontend" className="w-full">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-5">
             <TabsList className="grid grid-cols-3 w-full max-w-md">
               <TabsTrigger value="frontend" className="flex items-center gap-2">
                 <Code size={18} />
@@ -71,10 +70,10 @@ const TechStackSection = () => {
             </TabsList>
           </div>
           
-          <div className="mt-4">
+          <div className="mt-3">
             <TabsContent value="frontend" className="mt-0">
-              <Card className="border-0 shadow-lg bg-white/70 backdrop-blur-lg">
-                <CardHeader>
+              <Card className="border border-gray-100 shadow-md bg-white/70 backdrop-blur-lg">
+                <CardHeader className="pb-2">
                   <CardTitle>Frontend Technologies</CardTitle>
                   <CardDescription>
                     Our frontend stack focuses on performance, aesthetics and user experience.
@@ -83,9 +82,9 @@ const TechStackSection = () => {
                 <CardContent>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
                     {techStacks.frontend.map((tech) => (
-                      <div key={tech.name} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all">
+                      <div key={tech.name} className="flex flex-col items-center p-2 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all">
                         <span className="font-medium text-primary">{tech.name}</span>
-                        <Badge variant="outline" className="mt-2">{tech.level}</Badge>
+                        <Badge variant="outline" className="mt-1">{tech.level}</Badge>
                       </div>
                     ))}
                   </div>
@@ -94,8 +93,8 @@ const TechStackSection = () => {
             </TabsContent>
             
             <TabsContent value="backend" className="mt-0">
-              <Card className="border-0 shadow-lg bg-white/70 backdrop-blur-lg">
-                <CardHeader>
+              <Card className="border border-gray-100 shadow-md bg-white/70 backdrop-blur-lg">
+                <CardHeader className="pb-2">
                   <CardTitle>Backend Technologies</CardTitle>
                   <CardDescription>
                     Powerful and scalable backend solutions for your digital products.
@@ -104,9 +103,9 @@ const TechStackSection = () => {
                 <CardContent>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
                     {techStacks.backend.map((tech) => (
-                      <div key={tech.name} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all">
+                      <div key={tech.name} className="flex flex-col items-center p-2 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all">
                         <span className="font-medium text-primary">{tech.name}</span>
-                        <Badge variant="outline" className="mt-2">{tech.level}</Badge>
+                        <Badge variant="outline" className="mt-1">{tech.level}</Badge>
                       </div>
                     ))}
                   </div>
@@ -115,8 +114,8 @@ const TechStackSection = () => {
             </TabsContent>
             
             <TabsContent value="design" className="mt-0">
-              <Card className="border-0 shadow-lg bg-white/70 backdrop-blur-lg">
-                <CardHeader>
+              <Card className="border border-gray-100 shadow-md bg-white/70 backdrop-blur-lg">
+                <CardHeader className="pb-2">
                   <CardTitle>Design Tools</CardTitle>
                   <CardDescription>
                     Advanced design capabilities for stunning visual experiences.
@@ -125,9 +124,9 @@ const TechStackSection = () => {
                 <CardContent>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
                     {techStacks.design.map((tech) => (
-                      <div key={tech.name} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all">
+                      <div key={tech.name} className="flex flex-col items-center p-2 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all">
                         <span className="font-medium text-primary">{tech.name}</span>
-                        <Badge variant="outline" className="mt-2">{tech.level}</Badge>
+                        <Badge variant="outline" className="mt-1">{tech.level}</Badge>
                       </div>
                     ))}
                   </div>
