@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -88,5 +89,9 @@
   
   .glass-card {
     @apply bg-white/50 backdrop-blur-md border border-white/30 shadow-lg rounded-2xl;
+  }
+  
+  .dark-glass-card {
+    @apply bg-black/50 backdrop-blur-md border border-gray-800 shadow-lg rounded-2xl;
   }
 }
