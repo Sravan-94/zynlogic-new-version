@@ -1,9 +1,10 @@
+
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { ChevronRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import * as React from 'react'
-import { Gemini, Replit, MagicUI, VSCodium, MediaWiki, GooglePaLM } from '@/components/logos'
+import { CloudService, CodeEditor, DesignSystem, DevEnvironment, KnowledgeBase, AIAssistant } from '@/components/logos'
 
 export default function IntegrationsSection() {
     return (
@@ -16,39 +17,39 @@ export default function IntegrationsSection() {
 
                 <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     <IntegrationCard
-                        title="Google Gemini"
-                        description="Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.">
-                        <Gemini />
+                        title="Cloud Infrastructure"
+                        description="Deploy and scale your applications with our cloud integration. Seamlessly connect to leading cloud providers.">
+                        <CloudService />
                     </IntegrationCard>
 
                     <IntegrationCard
-                        title="Replit"
-                        description="Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.">
-                        <Replit />
+                        title="Developer IDE"
+                        description="Write, test, and debug your code with full integration support for your favorite development environments.">
+                        <CodeEditor />
                     </IntegrationCard>
 
                     <IntegrationCard
-                        title="Magic UI"
-                        description="Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.">
-                        <MagicUI />
+                        title="Design Framework"
+                        description="Create beautiful interfaces with our design system integrations. Supports popular UI libraries and frameworks.">
+                        <DesignSystem />
                     </IntegrationCard>
 
                     <IntegrationCard
-                        title="VSCodium"
-                        description="Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.">
-                        <VSCodium />
+                        title="DevOps Pipeline"
+                        description="Streamline your CI/CD workflow with our DevOps integrations. Automate testing and deployment processes.">
+                        <DevEnvironment />
                     </IntegrationCard>
 
                     <IntegrationCard
-                        title="MediaWiki"
-                        description="Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.">
-                        <MediaWiki />
+                        title="Documentation Hub"
+                        description="Centralize your technical documentation with our knowledge base integrations. Keep your team informed.">
+                        <KnowledgeBase />
                     </IntegrationCard>
 
                     <IntegrationCard
-                        title="Google PaLM"
-                        description="Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.">
-                        <GooglePaLM />
+                        title="AI Productivity Suite"
+                        description="Enhance your workflow with AI-powered tools that automate repetitive tasks and provide intelligent suggestions.">
+                        <AIAssistant />
                     </IntegrationCard>
                 </div>
             </div>
@@ -58,9 +59,9 @@ export default function IntegrationsSection() {
 
 const IntegrationCard = ({ title, description, children, link = '/showcase' }: { title: string; description: string; children: React.ReactNode; link?: string }) => {
     return (
-        <Card className="p-5 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+        <Card className="p-5 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 backdrop-blur-sm bg-white/90">
             <div className="relative">
-                <div className="*:size-10">{children}</div>
+                <div className="*:size-10 mb-2">{children}</div>
 
                 <div className="space-y-2 py-3">
                     <h3 className="text-base font-medium">{title}</h3>
