@@ -10,6 +10,7 @@ import CategoriesPreview from "@/components/home/CategoriesPreview";
 import StatsSection from "@/components/home/StatsSection";
 import FAQSection from "@/components/home/FAQSection";
 import CTASection from "@/components/home/CTASection";
+import HomeTestimonialsSection from "@/components/home/TestimonialsSection";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <ShowcasePreview />
       <CategoriesPreview />
       <StatsSection />
+      <HomeTestimonialsSection />
       <FAQSection />
       <CTASection />
     </Layout>

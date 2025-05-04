@@ -101,6 +101,10 @@ export default {
 				'slide-out-right': {
 					'0%': { transform: 'translateX(0)' },
 					'100%': { transform: 'translateX(100%)' },
+				},
+				'marquee': {
+					from: { transform: 'translateX(0)' },
+					to: { transform: 'translateX(calc(-50% - var(--gap)/2))' },
 				}
 			},
 			animation: {
@@ -111,6 +115,7 @@ export default {
 				'scale-in': 'scale-in 0.5s ease-out',
 				'slide-in-right': 'slide-in-right 0.3s ease-out',
 				'slide-out-right': 'slide-out-right 0.3s ease-out',
+				'marquee': 'marquee var(--duration) linear infinite',
 			}
 		}
 	},
