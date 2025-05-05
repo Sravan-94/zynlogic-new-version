@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Hero() {
   const [titleNumber, setTitleNumber] = useState(0);
   const titles = useMemo(
-    () => ["amazing", "new", "wonderful", "beautiful", "smart"],
+    () => ["Websites", "Apps", "Platforms", "Solutions", "Software"],
     []
   );
 
@@ -32,8 +32,8 @@ function Hero() {
             </Button>
           </div>
           <div className="flex gap-2 flex-col">
-            <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular">
-              <span className="text-spektr-cyan-50">This is something</span>
+            <h1 className="text-4xl md:text-4xl max-w-2xl tracking-tighter text-center font-regular">
+              <span className="text-spektr-cyan-50">Transforming Ideas into Powerful</span>
               <span className="relative flex w-full justify-center overflow-hidden text-center md:pb-2 md:pt-1">
                 &nbsp;
                 {titles.map((title, index) => (
@@ -61,10 +61,8 @@ function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              Managing a small business today is already tough. Avoid further
-              complications by ditching outdated, tedious trade methods. Our
-              goal is to streamline SMB trade, making it easier and faster than
-              ever.
+            Custom code, crafted with care, designed for your growth.
+
             </p>
           </div>
           <div className="flex flex-row gap-3 mt-1">

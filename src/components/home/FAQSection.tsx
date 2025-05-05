@@ -12,28 +12,28 @@ const FAQSection = () => {
   const faqItems: FAQItem[] = [{
     id: 'item-1',
     icon: <Clock className="m-auto size-4" />,
-    question: 'What are your business hours?',
-    answer: 'Our customer service team is available Monday through Friday from 9:00 AM to 8:00 PM EST, and weekends from 10:00 AM to 6:00 PM EST. During holidays, hours may vary and will be posted on our website.'
+    question: 'How long does it take to develop a website or mobile app',
+    answer: ' Project timelines vary based on the complexity and requirements. Typically, websites take 4–8 weeks, while mobile apps may take 8–16 weeks. We provide detailed timelines after project assessment.'
   }, {
     id: 'item-2',
     icon: <CreditCard className="m-auto size-4" />,
-    question: 'How do subscription payments work?',
-    answer: 'Subscription payments are automatically charged to your default payment method on the same day each month or year, depending on your billing cycle. You can update your payment information and view billing history in your account dashboard.'
+    question: 'What payment methods does Zynlogic Technologies accept?',
+    answer: 'We accept a variety of payment methods including bank transfers, credit/debit cards, and online payment gateways like PayPal. For larger projects, we typically follow a milestone-based payment structure to ensure transparency and mutual trust throughout the development process.'
   }, {
     id: 'item-3',
     icon: <Truck className="m-auto size-4" />,
-    question: 'Can I expedite my shipping?',
-    answer: 'Yes, we offer several expedited shipping options at checkout. Next-day and 2-day shipping are available for most U.S. addresses if orders are placed before 2:00 PM EST. International expedited shipping options vary by destination.'
+    question: 'Can I expedite the delivery of my digital project?',
+    answer: 'Yes, expedited project delivery options are available depending on the project scope and current scheduling. During the initial consultation, we’ll discuss fast-track possibilities and any associated priority charges if you need a quicker turnaround.'
   }, {
     id: 'item-4',
     icon: <Globe className="m-auto size-4" />,
-    question: 'Do you offer localized support?',
-    answer: 'We offer multilingual support in English, Spanish, French, German, and Japanese. Our support team can assist customers in these languages via email, chat, and phone during standard business hours for each respective region.'
+    question: ' Do you provide localized or region-specific support?',
+    answer: 'Absolutely! We offer localized support tailored to your region, timezone, and market requirements. Our global team ensures effective communication and seamless collaboration, no matter where your business is based.'
   }, {
     id: 'item-5',
     icon: <Package className="m-auto size-4" />,
-    question: 'How do I track my order?',
-    answer: 'Once your order ships, you\'ll receive a confirmation email with a tracking number. You can use this number on our website or the carrier\'s website to track your package. You can also view order status and tracking information in your account dashboard under "Order History".'
+    question: 'How can I monitor the progress of my project?',
+    answer: 'Throughout the project, we provide regular updates through scheduled meetings, progress reports, and project management tools. You’ll have full visibility on milestones, timelines, and deliverables to ensure everything stays on track.'
   }];
   return <section className="bg-gray-50 dark:bg-gray-900 py-20">
             <div className="mx-auto max-w-5xl px-4 md:px-6">

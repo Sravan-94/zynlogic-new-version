@@ -30,19 +30,19 @@ const ServiceCard = ({ title, imageSrc, className }: ServiceCardProps) => (
 
 const services = [
   {
-    title: "Suitcase App",
-    imageSrc: "/lovable-uploads/dca407e2-46f7-49b9-b3c9-b9fce2b4984a.png",
+    title: "Moblie Applications",
+    imageSrc: "https://media-hosting.imagekit.io/8848bf5602254ad1/WhatsApp%20Image%202025-05-05%20at%2019.09.47_64c56e6a.jpg?Expires=1841060419&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=IRZjRsulg83HUc1rOELDznaPabFCaWGVmNvTPh~MbXBXCaCFm8ig~uk~CzbHwlz4n9Bs9KCkbEVa4ppmyE~8bOADVwlCj54zMklROmhszmyty1iWYo10dftBToMbKfNu9fyAeuywWE9Y4eOy8pAeTjsJxR6mkqHH61NiLhM5cQAhRD8Ox2ZiNkOnk0vjo92GSHApTCl-CG9Er-7EJVgeVVsWtR8m03p8p26NfpVJ2Pg3Aw2W1jCCWhSOH9Z0tDH1rFjsK~gbhnQ6m5BBimfmjladhQSHhYLbD1yX3T8mdZy4I1aZh6wyxJzBcS57kGrhL00DYhXxcuyvtuIRRF8c2A__",
   },
   {
-    title: "Exchango Dashboard",
+    title: "Web Design & Development",
     imageSrc: "/lovable-uploads/69feb3ce-f73b-406c-b179-080d75bfcb04.png",
   },
   {
-    title: "Copay",
+    title: "Brand Identity ",
     imageSrc: "/lovable-uploads/14dcc525-6005-4635-b3d5-dc0666171b56.png",
   },
   {
-    title: "Paws & Plans App",
+    title: "AI Integrations",
     imageSrc: "/lovable-uploads/d36006bb-4131-42d7-af02-a12cfdd587e5.png",
   },
 ];

@@ -33,8 +33,8 @@ const testimonials = [
 const HomeTestimonialsSection = () => {
   return (
     <TestimonialsSection
-      title="Trusted by developers worldwide"
-      description="Join thousands of developers who are already building the future with our AI platform"
+      title="Trusted by 10+ countries"
+      description="Hundreds of organizations have entrusted Zynlogic to successfully execute and deliver their critical projects."
       testimonials={testimonials}
     />
   );

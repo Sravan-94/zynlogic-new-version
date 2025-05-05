@@ -116,7 +116,7 @@ const Navbar = () => {
                   </div>
                 </MenuItem>
                 
-                <Link to="/showcase" className="nav-link text-primary px-3 py-2">
+                <Link to="/our-work" className="nav-link text-primary px-3 py-2">
                   Our Work
                 </Link>
                 
@@ -240,41 +240,11 @@ const Navbar = () => {
                 >
                   Travel
                 </Link>
-                <Link
-                  to="/categories#interior"
-                  className="text-sm text-gray-600 hover:text-accent"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Interior
-                </Link>
-                <Link
-                  to="/categories#crm"
-                  className="text-sm text-gray-600 hover:text-accent"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  CRM
-                </Link>
-                <Link
-                  to="/categories#jobs"
-                  className="text-sm text-gray-600 hover:text-accent"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Jobs
-                </Link>
-              </div>
-              <div className="mt-2 pt-2 border-t">
-                <Link
-                  to="/categories"
-                  className="text-sm font-medium text-accent hover:underline"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  View All Industries
-                </Link>
               </div>
             </div>
             
             <Link
-              to="/showcase"
+              to="/our-work"
               className="text-xl font-medium text-primary"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -297,7 +267,10 @@ const Navbar = () => {
               Contact
             </Link>
             
-            <Button className="bg-accent text-white hover:bg-accent/90 w-full mt-4">
+            <Button 
+              className="bg-accent text-white hover:bg-accent/90 w-full"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Book a Call
             </Button>
           </div>

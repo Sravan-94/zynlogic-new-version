@@ -10,7 +10,8 @@ import PageTransition from "@/components/ui/page-transition";
 const Index = lazy(() => import("./pages/Index"));
 const Services = lazy(() => import("./pages/Services"));
 const Categories = lazy(() => import("./pages/Categories"));
-const Showcase = lazy(() => import("./pages/Showcase"));
+const OurWork = lazy(() => import("./pages/OurWork"));
+const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
 const NotFound = lazy(() => import("./pages/NotFound"));
@@ -43,7 +44,8 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/services" element={<Services />} />
               <Route path="/categories" element={<Categories />} />
-              <Route path="/showcase" element={<Showcase />} />
+              <Route path="/our-work" element={<OurWork />} />
+              <Route path="/project/:id" element={<ProjectDetail />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
