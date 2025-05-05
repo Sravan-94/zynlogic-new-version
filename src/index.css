@@ -94,4 +94,13 @@
   .dark-glass-card {
     @apply bg-black/50 backdrop-blur-md border border-gray-800 shadow-lg rounded-2xl;
   }
+  
+  .services-section {
+    background: linear-gradient(to right, #1A1F2C, #262C3B);
+  }
+  
+  .service-card-gradient {
+    background: linear-gradient(135deg, #9b87f5 0%, #7E69AB 100%);
+  }
 }
+

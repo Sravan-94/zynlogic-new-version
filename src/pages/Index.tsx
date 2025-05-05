@@ -11,12 +11,14 @@ import StatsSection from "@/components/home/StatsSection";
 import FAQSection from "@/components/home/FAQSection";
 import CTASection from "@/components/home/CTASection";
 import HomeTestimonialsSection from "@/components/home/TestimonialsSection";
+import ServicesSection from "@/components/home/ServicesSection";
 
 const Index = () => {
   return (
     <Layout>
       <HeroSection />
       <LogoCloud />
+      <ServicesSection />
       <TechStackSection />
       <IntegrationsSection />
       <ShowcasePreview />
