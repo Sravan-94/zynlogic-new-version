@@ -1,4 +1,3 @@
-
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -23,8 +22,8 @@ const ServiceCard = ({ title, imageSrc, className }: ServiceCardProps) => (
       </AspectRatio>
     </div>
     <div className="flex items-center gap-2 pl-1">
-      <span className="text-white text-lg font-medium">{title}</span>
-      <ArrowRight size={16} className="text-white ml-1" />
+      <span className="text-foreground text-lg font-medium">{title}</span>
+      <ArrowRight size={16} className="text-foreground ml-1" />
     </div>
   </div>
 );
@@ -50,13 +49,13 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="bg-black py-20 px-6 md:px-10 lg:px-16">
+    <section className="bg-white py-20 px-6 md:px-10 lg:px-16">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white">Services</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground">Services</h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 w-full max-w-6xl mx-auto">
           {services.map((service, index) => (
             <Link to="/services" key={index}>
               <ServiceCard {...service} />
