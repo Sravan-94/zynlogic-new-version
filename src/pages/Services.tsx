@@ -1,8 +1,62 @@
 
 import React from "react";
 import Layout from "@/components/layout/Layout";
+import { ArrowRight } from "lucide-react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
+interface ServiceCardProps {
+  title: string;
+  description: string;
+  icon: string;
+  features: string[];
+}
+
+const ServiceCard = ({ title, description, icon, features }: ServiceCardProps) => (
+  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="text-5xl mb-6">{icon}</div>
+    <h3 className="text-3xl font-bold text-primary mb-4">{title}</h3>
+    <p className="text-gray-600 mb-6">{description}</p>
+    <ul className="space-y-3 mb-8">
+      {features.map((feature, idx) => (
+        <li key={idx} className="flex items-center">
+          <span className="text-accent mr-2">•</span> {feature}
+        </li>
+      ))}
+    </ul>
+    <Button className="bg-accent text-white hover:bg-accent/90 flex items-center gap-2">
+      Let's Talk About {title.split(" ")[0]}
+      <ArrowRight size={16} />
+    </Button>
+  </div>
+);
+
+// Featured projects/services with consistent images matching the home page design
+const featuredServices = [
+  {
+    id: 1,
+    title: "Suitcase App",
+    imageSrc: "/lovable-uploads/dca407e2-46f7-49b9-b3c9-b9fce2b4984a.png",
+  },
+  {
+    id: 2,
+    title: "Exchango Dashboard",
+    imageSrc: "/lovable-uploads/69feb3ce-f73b-406c-b179-080d75bfcb04.png",
+  },
+  {
+    id: 3,
+    title: "Copay",
+    imageSrc: "/lovable-uploads/14dcc525-6005-4635-b3d5-dc0666171b56.png",
+  },
+  {
+    id: 4,
+    title: "Paws & Plans App",
+    imageSrc: "/lovable-uploads/d36006bb-4131-42d7-af02-a12cfdd587e5.png",
+  },
+];
+
+// Detailed services information
 const services = [
   {
     id: 1,
@@ -87,6 +141,7 @@ const services = [
 const Services = () => {
   return (
     <Layout>
+      {/* Hero Section */}
       <section className="py-20 px-6 md:px-10 lg:px-16">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl">
@@ -98,32 +153,35 @@ const Services = () => {
               establish a strong online presence and achieve their goals.
             </p>
           </div>
+          
+          {/* Featured Projects Section */}
+          <div className="bg-black py-16 px-6 md:px-10 lg:px-16 rounded-3xl mb-20">
+            <h2 className="text-3xl font-bold text-white text-center mb-12">Featured Projects</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+              {featuredServices.map((service) => (
+                <div key={service.id} className="flex flex-col">
+                  <div className="mb-4 overflow-hidden rounded-2xl bg-gradient-to-br from-purple-400 to-purple-600 shadow-lg">
+                    <AspectRatio ratio={3/2} className="overflow-hidden">
+                      <img 
+                        src={service.imageSrc} 
+                        alt={service.title} 
+                        className="h-full w-full object-cover transition-transform duration-300 hover:scale-105" 
+                      />
+                    </AspectRatio>
+                  </div>
+                  <div className="flex items-center gap-2 pl-1">
+                    <span className="text-white text-lg font-medium">{service.title}</span>
+                    <ArrowRight size={16} className="text-white ml-1" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
 
-          <div className="space-y-20">
-            {services.map((service, index) => (
-              <div 
-                key={service.id} 
-                className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-10 lg:gap-16`}
-              >
-                <div className="lg:w-1/2">
-                  <div className="text-5xl mb-6">{service.icon}</div>
-                  <h2 className="text-3xl font-bold text-primary mb-4">{service.title}</h2>
-                  <p className="text-gray-600 mb-6">{service.description}</p>
-                  <ul className="space-y-3 mb-8">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center">
-                        <span className="text-accent mr-2">•</span> {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <Button className="bg-accent text-white hover:bg-accent/90">
-                    Let's Talk About {service.title.split(" ")[0]}
-                  </Button>
-                </div>
-                <div className="lg:w-1/2 bg-gray-100 rounded-lg h-64 lg:h-auto flex items-center justify-center">
-                  <p className="text-gray-500 italic">Service Image Placeholder</p>
-                </div>
-              </div>
+          {/* Detailed Services Section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service) => (
+              <ServiceCard key={service.id} {...service} />
             ))}
           </div>
         </div>
