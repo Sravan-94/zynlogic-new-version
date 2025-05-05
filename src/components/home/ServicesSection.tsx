@@ -14,7 +14,7 @@ interface ServiceCardProps {
 const ServiceCard = ({ title, imageSrc, className }: ServiceCardProps) => (
   <div className={cn("flex flex-col", className)}>
     <div className="mb-4 overflow-hidden rounded-2xl bg-gradient-to-br from-purple-400 to-purple-600 shadow-lg">
-      <AspectRatio ratio={1/1} className="overflow-hidden">
+      <AspectRatio ratio={3/2} className="overflow-hidden">
         <img 
           src={imageSrc} 
           alt={title} 
@@ -32,19 +32,19 @@ const ServiceCard = ({ title, imageSrc, className }: ServiceCardProps) => (
 const services = [
   {
     title: "Suitcase App",
-    imageSrc: "/lovable-uploads/e27063ff-def1-4af1-ae4e-dfbfc821f747.png",
+    imageSrc: "/lovable-uploads/dca407e2-46f7-49b9-b3c9-b9fce2b4984a.png",
   },
   {
     title: "Exchango Dashboard",
-    imageSrc: "/lovable-uploads/e27063ff-def1-4af1-ae4e-dfbfc821f747.png",
+    imageSrc: "/lovable-uploads/69feb3ce-f73b-406c-b179-080d75bfcb04.png",
   },
   {
     title: "Copay",
-    imageSrc: "/lovable-uploads/e27063ff-def1-4af1-ae4e-dfbfc821f747.png",
+    imageSrc: "/lovable-uploads/14dcc525-6005-4635-b3d5-dc0666171b56.png",
   },
   {
     title: "Paws & Plans App",
-    imageSrc: "/lovable-uploads/e27063ff-def1-4af1-ae4e-dfbfc821f747.png",
+    imageSrc: "/lovable-uploads/d36006bb-4131-42d7-af02-a12cfdd587e5.png",
   },
 ];
 
