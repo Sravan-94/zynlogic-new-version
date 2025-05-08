@@ -92,6 +92,10 @@ const links = [
                 title: 'Help',
                 href: '/help',
             },
+            {
+                title: 'Testimonials',
+                href: '/testimonials',
+            },
         ],
     },
     {

@@ -17,9 +17,9 @@ const CTASection = () => {
           <Button asChild className="bg-accent text-white hover:bg-accent/90">
             <Link to="/contact">Book a Call</Link>
           </Button>
-          <Button asChild variant="outline" className="text-white border-white hover:bg-white/10">
-            <Link to="/showcase">Explore Our Work</Link>
-          </Button>
+          <Button asChild variant="outline" className="text-black hover:bg-black/10">
+  <Link to="/our-work">Explore Our Work</Link>
+</Button>
         </div>
       </div>
     </section>

@@ -31,7 +31,7 @@ const About = () => {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" 
+                src="https://media-hosting.imagekit.io/8e802cbf7b2a4a56/WhatsApp%20Image%202025-05-07%20at%2011.14.37_7f333b4c.jpg?Expires=1841207618&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=au1W~55NA4TS2pALmxzz9I8Rv8oURq5KUtUJWdRv91umd0zCtgGQM~gCp85yfM4xP0O9~9ZOSl5yzhCdAxv9wz9jX3ZO0Co7py6MxYBhno54uxLbdkJLHWPcGKtqM10iqRQNq5yulqR7C~oCESWrrt7xrMl~bC6~VDdvOhlE59i2HnCCoZiGXKx3~Sf8EY6YlqXFo0BbAZkFxtg-9ZY9jYBZxC7zGQqyzE9qpsu~tY7Nxm8K~HB3b~fyBcWS664JFZTsIHutKJNhG7z8qRDeu0ZnyppLtMeHYExfOckQSutd4aGJypFMQUQC~uFaYg~EBchaR~3DQkCUvmTk6dyHsg__" 
                 alt="Team Collaboration" 
                 className="rounded-lg shadow-xl w-full border border-gray-800"
               />

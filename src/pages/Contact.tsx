@@ -53,9 +53,10 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
-                Get In Touch
-              </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">
+  Get In Touch
+</h1>
+
               <p className="text-xl text-gray-600 mb-8">
                 Ready to discuss your project? Fill out the form and our team will get back to you within 24 hours.
               </p>
@@ -64,35 +65,42 @@ const Contact = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-2">Email Us</h3>
                   <a href="mailto:hello@lander.studio" className="text-accent hover:underline">
-                    hello@lander.studio
+                    contact@zynlogic.com
                   </a>
                 </div>
                 
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-2">Call Us</h3>
                   <a href="tel:+15551234567" className="text-accent hover:underline">
-                    +1 (555) 123-4567
+                    +91 9966100311
                   </a>
                 </div>
                 
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-2">Visit Us</h3>
                   <address className="text-gray-600 not-italic">
-                    123 Design Avenue<br />
-                    San Francisco, CA 94103<br />
-                    United States
+                    kavuri hills<br />
+                    Trendz Aspire,Madhapur,Hitech city<br />
+                    Hyderabad, Telangana
                   </address>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-primary mb-4">Follow Us</h3>
-                <div className="flex space-x-6">
-                  <a href="#" className="text-primary hover:text-accent">Twitter</a>
-                  <a href="#" className="text-primary hover:text-accent">LinkedIn</a>
-                  <a href="#" className="text-primary hover:text-accent">Instagram</a>
-                  <a href="#" className="text-primary hover:text-accent">Dribbble</a>
-                </div>
+  <h3 className="text-xl font-semibold text-primary mb-4">Follow Us</h3>
+  <div className="flex space-x-6">
+    <a href="https://x.com/zynlogic" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent">
+      Twitter
+    </a>
+    <a href="https://www.linkedin.com/company/zynlogic/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent">
+      LinkedIn
+    </a>
+    <a href="https://www.instagram.com/zynlogic?igsh=MXEydHhkZXk1dGRobw==" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent">
+      Instagram
+    </a>
+  </div>
+
+
               </div>
             </div>
             
@@ -168,11 +176,11 @@ const Contact = () => {
                         <SelectValue placeholder="Select budget range" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="10k">Under $10,000</SelectItem>
-                        <SelectItem value="25k">$10,000 - $25,000</SelectItem>
-                        <SelectItem value="50k">$25,000 - $50,000</SelectItem>
-                        <SelectItem value="100k">$50,000 - $100,000</SelectItem>
-                        <SelectItem value="100k+">$100,000+</SelectItem>
+                        <SelectItem value="10k"> less than 1 Lakh</SelectItem>
+                        <SelectItem value="25k"> 1 Lakh - 2.5 Lakh</SelectItem>
+                        <SelectItem value="50k">2.5 Lakh - 5 Lakh</SelectItem>
+                        <SelectItem value="100k">5 Lakh - 10 Lakh</SelectItem>
+                        <SelectItem value="100k+">10 Lakh+</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>

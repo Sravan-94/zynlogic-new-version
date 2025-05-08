@@ -80,12 +80,7 @@ const categories = [
     icon: <Briefcase className="h-8 w-8 text-orange-500" />, 
     description: "Job boards and recruitment platforms for connecting talent with opportunities." 
   },
-  { 
-    id: 10, 
-    name: "Legal", 
-    icon: <Scale className="h-8 w-8 text-slate-500" />, 
-    description: "Legal service platforms and document management systems." 
-  },
+  
   { 
     id: 11, 
     name: "NGOs", 
@@ -148,7 +143,7 @@ const Categories = () => {
       <section className="py-20 px-6 md:px-10 lg:px-16">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">
               Industry Expertise
             </h1>
             <p className="text-xl text-gray-600 mb-12">
@@ -164,7 +159,7 @@ const Categories = () => {
                 className="bg-white p-8 rounded-lg border border-gray-100 hover:shadow-lg transition-all duration-300"
               >
                 <div className="mb-4">{category.icon}</div>
-                <h2 className="text-2xl font-semibold text-primary mb-3">{category.name}</h2>
+                <h2 className="text-2xl font-semibold text-black mb-3">{category.name}</h2>
                 <p className="text-gray-600 mb-6">{category.description}</p>
                 <Button 
                   asChild 

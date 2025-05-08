@@ -63,7 +63,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-6">
             <div className="relative">
               <NavMenu setActive={setActive}>
-                <Link to="/" className="nav-link text-primary px-3 py-2">
+                <Link to="/" className="nav-link text-black px-3 py-2">
                   Home
                 </Link>
                 
@@ -116,21 +116,29 @@ const Navbar = () => {
                   </div>
                 </MenuItem>
                 
-                <Link to="/our-work" className="nav-link text-primary px-3 py-2">
+                <Link to="/our-work" className="nav-link text-black px-3 py-2">
                   Our Work
                 </Link>
                 
-                <Link to="/about" className="nav-link text-primary px-3 py-2">
+                <Link to="/about" className="nav-link text-black px-3 py-2">
                   About
                 </Link>
                 
-                <Link to="/contact" className="nav-link text-primary px-3 py-2">
+                <Link to="/contact" className="nav-link text-black px-3 py-2">
                   Contact
                 </Link>
               </NavMenu>
             </div>
 
-            <Button className="bg-accent text-white hover:bg-accent/90">Book a Call</Button>
+            <Button asChild className="bg-accent text-white hover:bg-accent/90">
+           <a 
+            href="https://calendly.com/jaswanth-zynlogic/30min?share_attribution=expiring_link" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Book a Call
+          </a>
+            </Button>
           </div>
         </div>
       </nav>
@@ -141,7 +149,7 @@ const Navbar = () => {
           <div className="flex flex-col p-6 space-y-6">
             <Link
               to="/"
-              className="text-xl font-medium text-primary"
+              className="text-xl font-medium text-black"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
@@ -245,7 +253,7 @@ const Navbar = () => {
             
             <Link
               to="/our-work"
-              className="text-xl font-medium text-primary"
+              className="text-xl font-medium text-black"
               onClick={() => setIsMenuOpen(false)}
             >
               Our Work
@@ -253,7 +261,7 @@ const Navbar = () => {
             
             <Link
               to="/about"
-              className="text-xl font-medium text-primary"
+              className="text-xl font-medium text-black"
               onClick={() => setIsMenuOpen(false)}
             >
               About
@@ -261,7 +269,7 @@ const Navbar = () => {
             
             <Link
               to="/contact"
-              className="text-xl font-medium text-primary"
+              className="text-xl font-medium text-black"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
