@@ -996,7 +996,7 @@ const ProjectDetail = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {/* Image on the left side */}
             <div className="h-full">
-              <div className="w-full h-auto aspect-[3/4] rounded-lg overflow-hidden">
+              <div className="w-full h-auto aspect-[3/3] rounded-lg overflow-hidden">
                 <img 
                   src={project.imageUrl}
                   alt={project.title}
@@ -1027,6 +1027,36 @@ const ProjectDetail = () => {
             </div>
           </div>
 
+          {/* Project Info section */}
+          <div className="bg-white rounded-lg p-6 shadow-sm mb-12">
+            <h2 className="text-xl font-bold text-zinc-900 mb-4">Project Info</h2>
+
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-sm font-medium text-zinc-500">Client</h3>
+                <p className="text-zinc-900">{project.client}</p>
+              </div>
+
+              <div>
+                <h3 className="text-sm font-medium text-zinc-500">Year</h3>
+                <p className="text-zinc-900">{project.year}</p>
+              </div>
+
+              {project.technologies && project.technologies.length > 0 && (
+                <div>
+                  <h3 className="text-sm font-medium text-zinc-500">Technologies</h3>
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {project.technologies.map((tech, index) => (
+                      <span key={index} className="px-2 py-1 bg-gray-100 text-gray-800 rounded text-xs">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+          
           {/* Reviews and Video section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {project.review && (
@@ -1062,36 +1092,6 @@ const ProjectDetail = () => {
                 </div>
               </div>
             )}
-          </div>
-
-          {/* Project Info section */}
-          <div className="bg-white rounded-lg p-6 shadow-sm mb-12">
-            <h2 className="text-xl font-bold text-zinc-900 mb-4">Project Info</h2>
-
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-sm font-medium text-zinc-500">Client</h3>
-                <p className="text-zinc-900">{project.client}</p>
-              </div>
-
-              <div>
-                <h3 className="text-sm font-medium text-zinc-500">Year</h3>
-                <p className="text-zinc-900">{project.year}</p>
-              </div>
-
-              {project.technologies && project.technologies.length > 0 && (
-                <div>
-                  <h3 className="text-sm font-medium text-zinc-500">Technologies</h3>
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    {project.technologies.map((tech, index) => (
-                      <span key={index} className="px-2 py-1 bg-gray-100 text-gray-800 rounded text-xs">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
           </div>
 
           {/* Call to action section */}
