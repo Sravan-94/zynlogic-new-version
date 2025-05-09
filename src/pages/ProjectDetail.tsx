@@ -4,9 +4,12 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { projects, getProjectById } from "@/data/projects";
 
 
-const projects = [
+// We're now using the shared projects data from @/data/projects
+// This array is just for reference, we'll use the imported data
+const projectsReference = [
   {
     id: 1,
     title: "Juicy Chemistry",
@@ -933,8 +936,22 @@ const projects = [
 
 const ProjectDetail = () => {
   const { id } = useParams();
-  const projectId = Number(id);
-  const project = projects.find((proj) => proj.id === projectId);
+  console.log('Project ID from params:', id);
+  
+  // Ensure we have a valid number for the project ID
+  let projectId;
+  try {
+    projectId = parseInt(id || '0', 10);
+    if (isNaN(projectId)) projectId = 0;
+  } catch (e) {
+    projectId = 0;
+  }
+  
+  console.log('Parsed Project ID:', projectId);
+  
+  // Find the project with the matching ID using the helper function
+  const project = getProjectById(projectId);
+  console.log('Found project:', project);
 
   if (!project) {
     return (
