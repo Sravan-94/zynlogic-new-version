@@ -9,9 +9,10 @@ import { projects, getProjectById } from "@/data/projects";
 
 // We're now using the shared projects data from @/data/projects
 // This array is just for reference, we'll use the imported data
+// IMPORTANT: Project IDs now use the format 'project1', 'project2', etc. to match OurWork page cards
 const projectsReference = [
   {
-    id: 1,
+    id: "project1", // Card 1 in OurWork page - Juicy Chemistry
     title: "Juicy Chemistry",
     category: "E-Commerce",
     type: "Website",
@@ -35,7 +36,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 2,
+    id: "project2", // Card 2 in OurWork page - Chumbak
     title: "Chumbak",
     category: "Portfolio",
     type: "Website",
@@ -58,7 +59,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 3,
+    id: "project3", // Card 3 in OurWork page - Retail E-Commerce
     title: "Retail E-Commerce",
     category: "Retail",
     type: "Website",
@@ -82,7 +83,7 @@ const projectsReference = [
   },
   // From here continue adding projects up to id: 40
   {
-    id: 4,
+    id: "project4", // Card 4 in OurWork page
     title: "Another Project",
     category: "E-Commerce",
     type: "Website",
@@ -128,7 +129,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 6,
+    id: "project6", // Card 6 in OurWork page
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -174,7 +175,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 8,
+    id: "project8", // Card 8 in OurWork page
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -220,7 +221,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 10,
+    id: "project10", // Card 10 in OurWork page
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -243,11 +244,11 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 11,
-    title: "Yet Another Project",
-    category: "Portfolio",
+    id: "project11", // Card 11 in OurWork page - Educate Online learning app
+    title: "Educate Online learning app",
+    category: "Education",
     type: "Website",
-    imageUrl: "https://your-link-5.jpg",
+    imageUrl: "https://media-hosting.imagekit.io/6c35a831e48d4378/education%20app%201.png?Expires=1841397645&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=h0o6TQXRObc3-B94LwyAHT1x7ChgEyYqdpA0v4YVMZ~zrrDeA6tzvCWCGj4nCd2s~E1YMiKAFcLH~E9JUi~ugai4MZ2ew2MB5GEd4cBiecVacmCAVXxKQLGWHSXycrMAuh~7cuHoazHx6VLTHidDYXvxufRRyNS2XZjOye8mQUi1l2mOCQRUc8G1zdlvnVUFvaPbLRRs9HGxo-LM3VosVxdPsXvAluIowUy108SEZLYETkCEd2OJSovtVIZ4VKw7nbqRFTfnnLz0VH8RuKeshtjA~D99upvl9vZSfMHFx-WdIewdhJjP99WkftgmruIBFXseK5kKP4GvX8LRoNrQDg__",
     description: "Portfolio sample for designers.",
     client: "Freelance Designer",
     year: 2025,
@@ -266,7 +267,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 12,
+    id: "project12", // Card 12 in OurWork page
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -312,7 +313,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 14,
+    id: "project14", // Card 14 in OurWork page
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -358,7 +359,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 16,
+    id: "project16", // Card 16 in OurWork page
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -404,7 +405,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 18,
+    id: "project18", // Card 18 in OurWork page
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -450,7 +451,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 20,
+    id: "project20", // Card 20 in OurWork page
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -496,7 +497,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 22,
+    id: "project22", // Card 22 in OurWork page - Mobile App
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -542,7 +543,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 24,
+    id: "project24", // Card 24 in OurWork page - Mobile App
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -588,7 +589,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 26,
+    id: "project26", // Card 26 in OurWork page - Mobile App
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -634,7 +635,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 28,
+    id: "project28", // Card 28 in OurWork page - Mobile App
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -680,7 +681,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 30,
+    id: "project30", // Card 30 in OurWork page - Mobile App
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -704,7 +705,7 @@ const projectsReference = [
   },
   {
     id: 31,
-    title: "Yet Another Project",
+    title: "Educate: Online Learning App",
     category: "Portfolio",
     type: "Website",
     imageUrl: "https://your-link-5.jpg",
@@ -726,7 +727,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 32,
+    id: "project32", // Card 32 in OurWork page - Mobile App
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -772,7 +773,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 34,
+    id: "project34", // Card 34 in OurWork page - Mobile App
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -818,7 +819,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 36,
+    id: "project36", // Card 36 in OurWork page - Mobile App
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -864,7 +865,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 38,
+    id: "project38", // Card 38 in OurWork page - Mobile App
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -910,7 +911,7 @@ const projectsReference = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 40,
+    id: "project40", // Card 40 in OurWork page - Mobile App
     title: "Yet Another Project",
     category: "Portfolio",
     type: "Website",
@@ -938,16 +939,15 @@ const ProjectDetail = () => {
   const { id } = useParams();
   console.log('Project ID from params:', id);
   
-  // Ensure we have a valid number for the project ID
-  let projectId;
-  try {
-    projectId = parseInt(id || '0', 10);
-    if (isNaN(projectId)) projectId = 0;
-  } catch (e) {
-    projectId = 0;
+  // Use the ID directly as a string to match our project data structure
+  let projectId = id || 'project1'; // Default to project1 if no ID is provided
+  
+  // If the ID doesn't have the 'project' prefix, add it
+  if (!projectId.startsWith('project')) {
+    projectId = `project${projectId}`;
   }
   
-  console.log('Parsed Project ID:', projectId);
+  console.log('Project ID to use:', projectId);
   
   // Find the project with the matching ID using the helper function
   const project = getProjectById(projectId);

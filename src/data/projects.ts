@@ -1,7 +1,7 @@
 // Shared project data for consistent access across components
 
 export interface Project {
-  id: number;
+  id: string; // Changed from number to string to match OurWork page format
   title: string;
   category: string;
   type: string;
@@ -32,7 +32,7 @@ const imageUrls = [
 // Sample project data
 export const projects: Project[] = [
   {
-    id: 1,
+    id: "project1",
     title: "Juicy Chemistry",
     category: "E-Commerce",
     type: "Website",
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 2,
+    id: "project2",
     title: "Chumbak",
     category: "Portfolio",
     type: "Website",
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    id: 3,
+    id: "project3",
     title: "Retail E-Commerce",
     category: "Retail",
     type: "Website",
@@ -117,7 +117,7 @@ export const projects: Project[] = [
     const category = categories[i % categories.length];
     
     return {
-      id: i + 4,
+      id: `project${projectId}`,  // Changed to string format to match OurWork page
       title: `Project ${i + 4}`,
       category: category,
       type: type,
@@ -143,6 +143,6 @@ export const projects: Project[] = [
 ];
 
 // Function to get a project by ID
-export const getProjectById = (id: number): Project | undefined => {
+export const getProjectById = (id: string): Project | undefined => {
   return projects.find(project => project.id === id);
 };

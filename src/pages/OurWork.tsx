@@ -104,16 +104,14 @@ const projectNames = {
 
 // Function to get the appropriate image for a project based on position in the filtered list
 const getProjectImage = (project, index) => {
-  // Use the project ID to get the corresponding image from the configuration
-  const projectKey = `project${project.id}`;
-  return projectImages[projectKey] || project.imageUrl;
+  // Use the project ID directly since it's already in the format 'project1', 'project2', etc.
+  return projectImages[project.id] || project.imageUrl;
 };
 
 // Function to get the project name based on position in the filtered list
 const getProjectName = (project, index) => {
-  // Use the project ID to get the corresponding name from the configuration
-  const projectKey = `project${project.id}`;
-  return projectNames[projectKey] || project.title;
+  // Use the project ID directly since it's already in the format 'project1', 'project2', etc.
+  return projectNames[project.id] || project.title;
 };
 
 const OurWork = () => {
@@ -142,8 +140,17 @@ const OurWork = () => {
     const mobileAppProjects = projects.filter(project => project.type === "Mobile App");
     
     // Sort each array by ID to ensure consistent order
-    websiteProjects.sort((a, b) => a.id - b.id);
-    mobileAppProjects.sort((a, b) => a.id - b.id);
+    // Extract numeric part from string IDs (e.g., 'project1' -> 1)
+    websiteProjects.sort((a, b) => {
+      const aNum = parseInt(a.id.replace('project', ''), 10);
+      const bNum = parseInt(b.id.replace('project', ''), 10);
+      return aNum - bNum;
+    });
+    mobileAppProjects.sort((a, b) => {
+      const aNum = parseInt(a.id.replace('project', ''), 10);
+      const bNum = parseInt(b.id.replace('project', ''), 10);
+      return aNum - bNum;
+    });
     
     // Create a new array with alternating projects
     const alternatingProjects = [];
