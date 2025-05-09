@@ -3,7 +3,7 @@
 export interface Project {
   id: string; // Changed from number to string to match OurWork page format
   title: string;
-  category: string;
+  category: string; // Allowed categories include: E-Commerce, CRM, Healthcare, Educational, Food & Delivery, Retail, Portfolio, Finance, Fashion
   type: string;
   imageUrl: string; // Used in OurWork page (card view)
   detailImageUrl?: string; // Used in ProjectDetail page
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     category: "E-Commerce",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/2f589ed679fb4ee3/WhatsApp%20Image%202025-05-06%20at%2017.22.21_20eaa8f2.jpg",
-    detailImageUrl: "https://media-hosting.imagekit.io/2cd0f8c04e9c468b/original-438c01314162ba2f8862925.png?Expires=1841381485&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ikw017d209sRPSYRlOH6I9gApSaIb1j0RWe30hgVVvnj~-U9i-PHerYWjef8vMqfauM-MzXI9YDQwW~E0Iq1NY8k6akReQDClnYEJFek8TTYf0SfJr65gY~WJGHjnd~sy1O4G0dVRCe3o--ZX~QtSkjBW3E7TYTgnBdd2Q08aXa0ddw~uUYee2Kj4se3WfrKndnJerdeFjAPY~RnLV4vCpgMFD9aq~rqcvWnzwlQZQZfRGryYEeeQP-jxibvcxwuOpOnEmeYstpC6m1sN-r4I8wjwYcPQ3P6rTGrYgsrvkDjLAHZZsuR6HJDaa3cPdnizTC6zSsIcVX5rnSBqO6xDA__",
+    detailImageUrl: "https://media-hosting.imagekit.io/57874a9b05534692/WhatsApp%20Image%202025-05-06%20at%2017.22.22_40ec6352.jpg?Expires=1841405156&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=VqBleHuXHjcd7LCCV052suyIj9Va3NLcdiBT3I1jIFTrN7krhVOE8o~03Ho6YYZSbHCZHGMiW2QYJaLNHlVbnp~xyIbIhBumUveJ5752GZi-Tw6zeWSXCLoQSv7RmiPddJ1LZhzlBissXZcCDK7uM6jLSNH7sSGLvvu9JRKxQOhy0L~mjfmFaYXS8kW4dNw3ONEUEctxZ-eOld4gcn9IpPCOf8Eo7fvg9NN53Nj0TXJpxsyZaHwqiYbXwlVHvfSbzp6dsujKCWGQhw4fI8PDQYoLZEse22AaW9h7hM3XgzepuIiZtNOGnLvB1igP5tMjrM3YPA8C9yypZEx-Bo--vA__",
     description: "A modern e-commerce website for organic products.",
     client: "Juicy Chemistry",
     year: 2023,
@@ -102,7 +102,7 @@ export const projects: Project[] = [
     title: "Chumbak",
     category: "Portfolio",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/4f3ae5b3b3104423/WhatsApp%20Image%202025-05-06%20at%2014.38.35_532e64a7.jpg",
+    imageUrl: "https://media-hosting.imagekit.io/25d455fc6576409f/WhatsApp%20Image%202025-05-06%20at%2014.38.36_d771d972.jpg?Expires=1841405128&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UFMJyQP8kDCUEafE1H3jfOYf077oDD~FHvW~UPH~Cs36NT38-VgahDv1ZwkN-Lv940KJjURzMwpZxPzALl9hX6KbbHp85kL8nhrn6XxWJgBHNMjP48~C2jTManFzPlrt90R~loHBfU20q39SLYm0NIL2cH7d6F9lH~z1hmmRmtsIWcS2e-0o1wb8VDhhf2h7J65gAUs5efPK2c4Vfj-z9UseSJRPnW9t-Aq7KeeAx6Ry6urZfyQaQ4~Vu9ki-MGQDHf~TzakpJZdQRMfcnEzOhDGrwVc4wLZYoSm1w-yKbZmuKZlv-5zLDZQG23N-huT8lFFj89F2WIChi36Gi97zw__",
     description: "A clean and modern portfolio website.",
     client: "Chumbak",
     year: 2024,
@@ -143,6 +143,836 @@ export const projects: Project[] = [
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
+  {
+    id: "project4",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project5",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project6",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project7",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project8",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project9",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project10",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project11",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project12",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project13",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project14",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project15",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project16",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project17",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project18",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project20",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project21",
+    title: "Bharthkart",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project22",
+    title: "Trendsi - fashion dropshipping",
+    category: "Fashion",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project23",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project24",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project25",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project26",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project27",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project28",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project29",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project30",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project31",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project32",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project33",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project34",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project35",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project36",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project37",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project38",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project39",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    id: "project40",
+    title: "Retail E-Commerce",
+    category: "Retail",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
+    description: "A powerful retail shopping platform.",
+    client: "Retail Co.",
+    year: 2024,
+    technologies: ["Next.js", "Stripe", "Vercel"],
+    features: [
+      "Product filtering",
+      "Payment gateway integration",
+      "Mobile optimized"
+    ],
+    review: {
+      clientName: "Sarah Lee",
+      clientRole: "Project Manager",
+      message: "Professional work, delivered on time.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+ 
+
   // Generate more projects with different categories
   ...Array.from({ length: 37 }).map((_, i) => {
     const categories = [
