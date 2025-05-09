@@ -105,13 +105,16 @@ export const projects: Project[] = [
   // Generate more projects with different categories
   ...Array.from({ length: 37 }).map((_, i) => {
     const categories = [
-      "Website", "Mobile App", "E-Commerce", "CRM", "Healthcare", 
+      "E-Commerce", "CRM", "Healthcare", 
       "Educational", "Food & Delivery", "Retail", "Portfolio", "Finance"
     ];
-    const types = ["Website", "Mobile App", "Web Application"];
+    
+    // Determine type based on project ID
+    // Projects 1-20 are Websites, Projects 21-40 are Mobile Apps
+    const projectId = i + 4;
+    const type = projectId <= 20 ? "Website" : "Mobile App";
     
     const category = categories[i % categories.length];
-    const type = types[i % types.length];
     
     return {
       id: i + 4,

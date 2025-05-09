@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -9,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { toast } from "sonner";
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,31 +20,56 @@ const Contact = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData(prevData => ({
+      ...prevData,
       [name]: value
-    });
+    }));
   };
 
   const handleSelectChange = (name: string, value: string) => {
-    setFormData({
-      ...formData,
+    setFormData(prevData => ({
+      ...prevData,
       [name]: value
-    });
+    }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    toast.success("Message sent! We'll get back to you soon.");
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      service: "",
-      budget: "",
-      message: ""
-    });
+    setIsSubmitting(true);
+    
+    try {
+      // For demonstration, we'll log the form data
+      console.log('Form submitted with data:', formData);
+      
+      // In a real implementation, you would send this data to your backend
+      // For example, using fetch:
+      // await fetch('/api/contact', {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify(formData)
+      // });
+      
+      // For now, we'll simulate a successful submission
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // Show success message
+      toast.success("Message sent! We'll get back to you soon.");
+      
+      // Reset the form
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        service: "",
+        budget: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast.error("Error sending message. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -53,9 +78,9 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">
-  Get In Touch
-</h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">
+                Get In Touch
+              </h1>
 
               <p className="text-xl text-gray-600 mb-8">
                 Ready to discuss your project? Fill out the form and our team will get back to you within 24 hours.
@@ -87,26 +112,24 @@ const Contact = () => {
               </div>
 
               <div>
-  <h3 className="text-xl font-semibold text-primary mb-4">Follow Us</h3>
-  <div className="flex space-x-6">
-    <a href="https://x.com/zynlogic" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent">
-      Twitter
-    </a>
-    <a href="https://www.linkedin.com/company/zynlogic/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent">
-      LinkedIn
-    </a>
-    <a href="https://www.instagram.com/zynlogic?igsh=MXEydHhkZXk1dGRobw==" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent">
-      Instagram
-    </a>
-  </div>
-
-
+                <h3 className="text-xl font-semibold text-primary mb-4">Follow Us</h3>
+                <div className="flex space-x-6">
+                  <a href="https://x.com/zynlogic" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent">
+                    Twitter
+                  </a>
+                  <a href="https://www.linkedin.com/company/zynlogic/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent">
+                    LinkedIn
+                  </a>
+                  <a href="https://www.instagram.com/zynlogic?igsh=MXEydHhkZXk1dGRobw==" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent">
+                    Instagram
+                  </a>
+                </div>
               </div>
             </div>
             
             <div className="bg-white p-8 rounded-lg border border-gray-100 shadow-sm">
               <h2 className="text-2xl font-semibold text-primary mb-6">Contact Form</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="name">Your Name</Label>
@@ -199,9 +222,15 @@ const Contact = () => {
                   />
                 </div>
                 
-                <Button type="submit" className="w-full bg-accent text-white hover:bg-accent/90">
-                  Send Message
+                <Button 
+                  type="submit" 
+                  className="w-full bg-accent text-white hover:bg-accent/90"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
+                
+                {/* No need for hidden field with the new approach */}
               </form>
             </div>
           </div>
