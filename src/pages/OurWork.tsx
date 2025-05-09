@@ -6,21 +6,10 @@ import { Link } from "react-router-dom";
 import { projects } from "@/data/projects";
 
 const OurWork = () => {
-  // Get unique categories from our projects
-  const uniqueCategories = [...new Set(projects.map(project => project.category))];
-  
-  // Use these categories for filtering
-  const categories = uniqueCategories.length > 0 ? uniqueCategories : [
+  // Use only Website and Mobile App categories for filtering
+  const categories = [
     "Website",
-    "Mobile App",
-    "E-Commerce",
-    "CRM",
-    "Healthcare",
-    "Educational",
-    "Food & Delivery",
-    "Retail",
-    "Portfolio",
-    "Finance"
+    "Mobile App"
   ];
 
   // Add state for the selected category

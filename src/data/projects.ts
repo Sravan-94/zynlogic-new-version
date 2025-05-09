@@ -5,7 +5,8 @@ export interface Project {
   title: string;
   category: string;
   type: string;
-  imageUrl: string;
+  imageUrl: string; // Used in OurWork page (card view)
+  detailImageUrl?: string; // Used in ProjectDetail page
   description: string;
   client?: string;
   year: number;
@@ -36,6 +37,7 @@ export const projects: Project[] = [
     category: "E-Commerce",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/2f589ed679fb4ee3/WhatsApp%20Image%202025-05-06%20at%2017.22.21_20eaa8f2.jpg",
+    detailImageUrl: "https://media-hosting.imagekit.io/2cd0f8c04e9c468b/original-438c01314162ba2f8862925.png?Expires=1841381485&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ikw017d209sRPSYRlOH6I9gApSaIb1j0RWe30hgVVvnj~-U9i-PHerYWjef8vMqfauM-MzXI9YDQwW~E0Iq1NY8k6akReQDClnYEJFek8TTYf0SfJr65gY~WJGHjnd~sy1O4G0dVRCe3o--ZX~QtSkjBW3E7TYTgnBdd2Q08aXa0ddw~uUYee2Kj4se3WfrKndnJerdeFjAPY~RnLV4vCpgMFD9aq~rqcvWnzwlQZQZfRGryYEeeQP-jxibvcxwuOpOnEmeYstpC6m1sN-r4I8wjwYcPQ3P6rTGrYgsrvkDjLAHZZsuR6HJDaa3cPdnizTC6zSsIcVX5rnSBqO6xDA__",
     description: "A modern e-commerce website for organic products.",
     client: "Juicy Chemistry",
     year: 2023,
