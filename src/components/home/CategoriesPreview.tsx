@@ -11,7 +11,7 @@ import {
     Utensils, 
     Plane 
 } from 'lucide-react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const industries = [
   {
@@ -53,6 +53,13 @@ const industries = [
 ];
 
 const CategoriesPreview = () => {
+    const navigate = useNavigate();
+    
+    const handleViewAllIndustries = () => {
+        // Navigate to categories page and scroll to top
+        navigate('/categories');
+        window.scrollTo(0, 0);
+    };
     return (
         <section className="py-12 md:py-16 bg-gradient-to-b from-gray-50 to-white">
             <div className="mx-auto max-w-7xl px-6">
@@ -75,11 +82,13 @@ const CategoriesPreview = () => {
                 </div>
 
                 <div className="mt-8 text-center">
-                    <Button asChild variant="outline" className="gap-1">
-                        <Link to="/industries">
-                            View All Industries
-                            <ChevronRight className="ml-1 size-4" />
-                        </Link>
+                    <Button 
+                        variant="outline" 
+                        className="gap-1"
+                        onClick={handleViewAllIndustries}
+                    >
+                        View All Industries
+                        <ChevronRight className="ml-1 size-4" />
                     </Button>
                 </div>
             </div>
@@ -98,6 +107,14 @@ const IndustryCard = ({
     icon: React.ReactNode;
     link?: string;
 }) => {
+    const navigate = useNavigate();
+    
+    const handleLearnMore = () => {
+        // Navigate to our-work page and scroll to top
+        navigate('/our-work');
+        window.scrollTo(0, 0);
+    };
+
     return (
         <Card className="p-5 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="relative">
@@ -110,14 +127,13 @@ const IndustryCard = ({
 
                 <div className="flex gap-3 border-t border-dashed pt-3">
                     <Button
-                        asChild
                         variant="secondary"
                         size="sm"
-                        className="gap-1 pr-2 shadow-none hover:bg-gray-100">
-                        <Link to={link}>
-                            Learn More
-                            <ChevronRight className="ml-0 !size-3.5 opacity-50" />
-                        </Link>
+                        className="gap-1 pr-2 shadow-none hover:bg-gray-100"
+                        onClick={handleLearnMore}
+                    >
+                        Learn More
+                        <ChevronRight className="ml-0 !size-3.5 opacity-50" />
                     </Button>
                 </div>
             </div>

@@ -166,7 +166,7 @@ const Categories = () => {
                   variant="ghost"
                   className="p-0 hover:bg-transparent text-accent hover:text-accent/80"
                 >
-                  <Link to="/showcase" className="flex items-center">
+                  <Link to="/our-work" className="flex items-center">
                     Explore Work <ArrowRight size={16} className="ml-2" />
                   </Link>
                 </Button>

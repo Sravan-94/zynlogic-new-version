@@ -275,12 +275,16 @@ const Navbar = () => {
               Contact
             </Link>
             
-            <Button 
-              className="bg-accent text-white hover:bg-accent/90 w-full"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Book a Call
-            </Button>
+            <Button asChild className="w-full bg-accent text-white hover:bg-accent/90 py-3 text-lg">
+                <a 
+                  href="https://calendly.com/jaswanth-zynlogic/30min?share_attribution=expiring_link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMenuOpen(false)} // Close menu on click
+                >
+                  Book a Call
+                </a>
+              </Button>
           </div>
         </div>
       )}
