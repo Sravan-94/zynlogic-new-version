@@ -33,29 +33,26 @@ const Contact = () => {
     }));
   };
 
+  // FormSubmit will handle the actual form submission
+  // We'll keep this handler for form validation and UI state management
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+    // We don't prevent default since we want the form to actually submit to FormSubmit
+    // e.preventDefault();
     setIsSubmitting(true);
     
     try {
-      // For demonstration, we'll log the form data
+      // Log the form data for debugging
       console.log('Form submitted with data:', formData);
       
-      // In a real implementation, you would send this data to your backend
-      // For example, using fetch:
-      // await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData)
-      // });
-      
-      // For now, we'll simulate a successful submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // FormSubmit will handle the actual email sending
+      // The form will be submitted to FormSubmit's servers
       
       // Show success message
       toast.success("Message sent! We'll get back to you soon.");
       
-      // Reset the form
+      // Reset will happen after redirect back from FormSubmit
+      // We're keeping this for when we implement AJAX submission
+      /*
       setFormData({
         name: "",
         email: "",
@@ -64,6 +61,7 @@ const Contact = () => {
         budget: "",
         message: ""
       });
+      */
     } catch (error) {
       console.error('Error submitting form:', error);
       toast.error("Error sending message. Please try again later.");
@@ -129,7 +127,12 @@ const Contact = () => {
             
             <div className="bg-white p-8 rounded-lg border border-gray-100 shadow-sm">
               <h2 className="text-2xl font-semibold text-primary mb-6">Contact Form</h2>
-              <form className="space-y-6" onSubmit={handleSubmit}>
+              <form 
+                action="https://formsubmit.co/contact@zynlogic.com" 
+                method="POST" 
+                onSubmit={handleSubmit} 
+                className="space-y-6"
+              >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="name">Your Name</Label>
@@ -222,6 +225,15 @@ const Contact = () => {
                   />
                 </div>
                 
+                {/* FormSubmit configuration fields */}
+                <input type="hidden" name="_subject" value="New contact form submission from Zynlogic website" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value="https://zynlogic.com/thank-you" />
+                
+                {/* Honeypot field to prevent spam */}
+                <input type="text" name="_honey" style={{ display: 'none' }} />
+                
                 <Button 
                   type="submit" 
                   className="w-full bg-accent text-white hover:bg-accent/90"
@@ -229,8 +241,6 @@ const Contact = () => {
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
-                
-                {/* No need for hidden field with the new approach */}
               </form>
             </div>
           </div>

@@ -19,6 +19,47 @@ export interface Project {
     rating: number;
   };
   videoUrl?: string;
+  
+  // Enhanced project detail sections
+  overview?: {
+    title?: string; // Default: "Overview"
+    content?: string; // Default: project.description
+    additionalContent?: string; // Additional content for the overview section
+    highlightPoints?: string[]; // Key points to highlight in the overview
+  };
+  
+  projectInfo?: {
+    title?: string; // Default: "Project Info"
+    additionalDetails?: {
+      label: string;
+      value: string;
+    }[];
+  };
+  
+  clientFeedback?: {
+    title?: string; // Default: "Client Feedback"
+    testimonials?: {
+      clientName: string;
+      clientRole: string;
+      message: string;
+      rating: number;
+      clientImage?: string;
+    }[];
+  };
+  
+  projectVideo?: {
+    title?: string; // Default: "Project Video"
+    description?: string;
+    thumbnailUrl?: string;
+  };
+  
+  // Additional sections unique to each project
+  additionalSections?: {
+    title: string;
+    content: string;
+    position: 'top' | 'middle' | 'bottom';
+    imageUrl?: string;
+  }[];
 }
 
 // Collection of project image URLs
@@ -116,14 +157,70 @@ export const projects: Project[] = [
     
     const category = categories[i % categories.length];
     
+    // Special case for project11 - Educate Online learning app
+    if (projectId === 11) {
+      return {
+        id: `project${projectId}`,
+        title: "Educate: Online learning app",
+        category: "Education",
+        type: "Website",
+        imageUrl: "https://media-hosting.imagekit.io/6c35a831e48d4378/education%20app%201.png?Expires=1841397645&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=h0o6TQXRObc3-B94LwyAHT1x7ChgEyYqdpA0v4YVMZ~zrrDeA6tzvCWCGj4nCd2s~E1YMiKAFcLH~E9JUi~ugai4MZ2ew2MB5GEd4cBiecVacmCAVXxKQLGWHSXycrMAuh~7cuHoazHx6VLTHidDYXvxufRRyNS2XZjOye8mQUi1l2mOCQRUc8G1zdlvnVUFvaPbLRRs9HGxo-LM3VosVxdPsXvAluIowUy108SEZLYETkCEd2OJSovtVIZ4VKw7nbqRFTfnnLz0VH8RuKeshtjA~D99upvl9vZSfMHFx-WdIewdhJjP99WkftgmruIBFXseK5kKP4GvX8LRoNrQDg__",
+        description: "An interactive online learning platform for students of all ages.",
+        client: "Educate Inc.",
+        year: 2024,
+        technologies: ["React", "Node.js", "MongoDB"],
+        features: [
+          "Interactive lessons",
+          "Progress tracking",
+          "Live tutoring sessions",
+          "Mobile-friendly interface"
+        ],
+        review: {
+          clientName: "Sarah Johnson",
+          clientRole: "CEO, Educate Inc.",
+          message: "The platform exceeded our expectations. Our students love the interactive features!",
+          rating: 5
+        },
+        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      };
+    }
+    
+    // Special case for project28 - Make sure it's a Mobile App as indicated in comments
+    if (projectId === 28) {
+      return {
+        id: `project${projectId}`,
+        title: `Mobile App Project ${projectId}`,
+        category: category,
+        type: "Mobile App", // Ensure this is Mobile App as indicated in comments
+        imageUrl: imageUrls[i % imageUrls.length] || "https://images.unsplash.com/photo-1579621970795-87facc2f976d",
+        description: `This is a mobile application in the ${category} category.`,
+        client: `Client ${projectId}`,
+        year: 2023,
+        technologies: ["React Native", "Firebase", "Redux"],
+        features: [
+          "Offline functionality",
+          "Push notifications",
+          "User authentication"
+        ],
+        review: {
+          clientName: `Client ${projectId}`,
+          clientRole: "Product Manager",
+          message: "The mobile app has significantly improved our customer engagement!",
+          rating: 5
+        },
+        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      };
+    }
+    
+    // Default case for all other projects
     return {
       id: `project${projectId}`,  // Changed to string format to match OurWork page
-      title: `Project ${i + 4}`,
+      title: `Project ${projectId}`,
       category: category,
       type: type,
       imageUrl: imageUrls[i % imageUrls.length] || "https://images.unsplash.com/photo-1579621970795-87facc2f976d",
       description: `This is an example project in the ${category} category.`,
-      client: `Client ${i + 4}`,
+      client: `Client ${projectId}`,
       year: 2020 + (i % 5),
       technologies: ["React", "TypeScript", "Tailwind CSS"],
       features: [
@@ -132,7 +229,7 @@ export const projects: Project[] = [
         "Performance optimized"
       ],
       review: {
-        clientName: `Client ${i + 4}`,
+        clientName: `Client ${projectId}`,
         clientRole: "Project Manager",
         message: "Great work and excellent service!",
         rating: 4 + (i % 2)
