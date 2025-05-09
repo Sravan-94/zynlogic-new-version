@@ -2,6 +2,9 @@ import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 
 const projects = [
   {
@@ -30,12 +33,12 @@ const projects = [
   },
   {
     id: 2,
-    title: "Chumvak",
+    title: "Chumbak",
     category: "Portfolio",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/4f3ae5b3b3104423/WhatsApp%20Image%202025-05-06%20at%2014.38.35_532e64a7.jpg",
     description: "A clean and modern portfolio website.",
-    client: "Chumvak",
+    client: "Chumbak",
     year: 2024,
     technologies: ["React", "TypeScript", "Tailwind CSS"],
     features: [
@@ -943,6 +946,7 @@ const ProjectDetail = () => {
     );
   }
 
+ 
   return (
     <Layout>
       <div className="py-16 px-6 md:px-10 bg-gray-50 min-h-screen">

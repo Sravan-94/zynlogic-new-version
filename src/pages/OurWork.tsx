@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 
 const OurWork = () => {
   // 10 categories as specified
@@ -152,9 +153,9 @@ const OurWork = () => {
           {/* Project Grid - 3 cards per row */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {filteredProjects.map(project => (
-              <a 
+              <Link 
                 key={project.id} 
-                href={`/project/${project.id}`}
+                to={`/project/${project.id}`}
                 className="block h-full"
               >
                 <div className="bg-white rounded-lg shadow-md overflow-hidden h-full flex flex-col transition-all duration-300 hover:shadow-lg">
@@ -186,7 +187,7 @@ const OurWork = () => {
                     <h3 className="font-medium text-zinc-900">{project.title}</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
           
