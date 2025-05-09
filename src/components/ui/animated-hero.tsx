@@ -54,7 +54,7 @@ function Hero() {
             </div>
             {/* Text */}
             <p className="text-medium font-medium text-black">
-              500+ Clients Worldwide
+              500+ Clients 
             </p>
           </div>
           
