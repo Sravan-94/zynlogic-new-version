@@ -25,7 +25,7 @@ function Hero() {
   return (
     <div className="w-full">
       <div className="container mx-auto">
-        <div className="flex gap-4 py-8 md:py-12 items-center justify-center flex-col">
+        <div className="flex gap-8 py-8 md:py-12 items-center justify-center flex-col">
           
           {/* 👇🏻 Add this new card above title */}
           <div className="flex items-center space-x-3 rounded-full border px-1 py-1 shadow-sm bg-white" style={{ borderColor: "#a9a9aa", borderWidth: "2px" }}>
@@ -54,7 +54,7 @@ function Hero() {
             </div>
             {/* Text */}
             <p className="text-medium font-medium text-black">
-              500+ Clients Worldwide
+              500+ Clients
             </p>
           </div>
           
