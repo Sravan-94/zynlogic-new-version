@@ -952,6 +952,13 @@ const ProjectDetail = () => {
   // Find the project with the matching ID using the helper function
   const project = getProjectById(projectId);
   console.log('Found project:', project);
+  
+  // Add default values for optional properties to prevent runtime errors
+  if (project) {
+    project.features = project.features || [];
+    project.technologies = project.technologies || [];
+    project.client = project.client || 'Unknown Client';
+  }
 
   if (!project) {
     return (
@@ -985,79 +992,94 @@ const ProjectDetail = () => {
             </div>
           </div>
 
-          <div className="w-full h-auto aspect-[16/9] rounded-lg overflow-hidden mb-10">
-            <img 
-              src={project.imageUrl}
-              alt={project.title}
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="md:col-span-2">
-              <h2 className="text-xl font-bold text-zinc-900 mb-4">Overview</h2>
-              <p className="text-zinc-700 mb-6 leading-relaxed">
-                {project.description}
-              </p>
-
-              <h2 className="text-xl font-bold text-zinc-900 mb-4">Features</h2>
-              <ul className="list-disc pl-5 text-zinc-700 space-y-2 mb-6">
-                {project.features.map((feature, index) => (
-                  <li key={index}>{feature}</li>
-                ))}
-              </ul>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                {project.review && (
-                  <div className="bg-white rounded-lg p-6 shadow-md flex flex-col justify-center">
-                    <h2 className="text-2xl font-bold text-zinc-900 mb-4 text-center">What Our Client Says</h2>
-                    <p className="text-zinc-700 italic text-center mb-4">"{project.review.message}"</p>
-                    <div className="text-center">
-                      <p className="font-semibold text-zinc-900">{project.review.clientName}</p>
-                      <p className="text-sm text-zinc-500">{project.review.clientRole}</p>
-                    </div>
-                    <div className="flex justify-center mt-4">
-                      {Array.from({ length: project.review.rating }).map((_, idx) => (
-                        <span key={idx} className="text-yellow-400 text-xl">★</span>
-                      ))}
-                      {Array.from({ length: 5 - project.review.rating }).map((_, idx) => (
-                        <span key={idx} className="text-gray-300 text-xl">★</span>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {project.videoUrl && (
-                  <div className="bg-white rounded-lg p-6 shadow-md flex flex-col justify-center">
-                    <h2 className="text-2xl font-bold text-zinc-900 mb-4 text-center">Project Walkthrough</h2>
-                    <div className="w-full aspect-video rounded-lg overflow-hidden shadow">
-                      <iframe 
-                        src={project.videoUrl}
-                        title="Project Video"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="w-full h-full"
-                      ></iframe>
-                    </div>
-                  </div>
-                )}
+          {/* Main content area - Image on left, Overview/Features on right */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* Image on the left side */}
+            <div className="h-full">
+              <div className="w-full h-auto aspect-[3/4] rounded-lg overflow-hidden">
+                <img 
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
-
-            <div className="bg-white rounded-lg p-6 shadow-sm h-fit">
-              <h2 className="text-xl font-bold text-zinc-900 mb-4">Project Info</h2>
-
-              <div className="space-y-4">
+            
+            {/* Overview and Features stacked on the right side */}
+            <div className="flex flex-col">
+              <div>
+                <h2 className="text-xl font-bold text-zinc-900 mb-4">Overview</h2>
+                <p className="text-zinc-700 mb-6 leading-relaxed">
+                  {project.description}
+                </p>
+              </div>
+              
+              {project.features && project.features.length > 0 && (
                 <div>
-                  <h3 className="text-sm font-medium text-zinc-500">Client</h3>
-                  <p className="text-zinc-900">{project.client}</p>
+                  <h2 className="text-xl font-bold text-zinc-900 mb-4">Features</h2>
+                  <ul className="list-disc pl-5 text-zinc-700 space-y-2 mb-6">
+                    {project.features.map((feature, index) => (
+                      <li key={index}>{feature}</li>
+                    ))}
+                  </ul>
                 </div>
+              )}
+            </div>
+          </div>
 
-                <div>
-                  <h3 className="text-sm font-medium text-zinc-500">Year</h3>
-                  <p className="text-zinc-900">{project.year}</p>
+          {/* Reviews and Video section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {project.review && (
+              <div className="bg-white rounded-lg p-6 shadow-md flex flex-col justify-center">
+                <h2 className="text-2xl font-bold text-zinc-900 mb-4 text-center">What Our Client Says</h2>
+                <p className="text-zinc-700 italic text-center mb-4">"{project.review.message}"</p>
+                <div className="text-center">
+                  <p className="font-semibold text-zinc-900">{project.review.clientName}</p>
+                  <p className="text-sm text-zinc-500">{project.review.clientRole}</p>
                 </div>
+                <div className="flex justify-center mt-4">
+                  {Array.from({ length: project.review.rating }).map((_, idx) => (
+                    <span key={idx} className="text-yellow-400 text-xl">★</span>
+                  ))}
+                  {Array.from({ length: 5 - project.review.rating }).map((_, idx) => (
+                    <span key={idx} className="text-gray-300 text-xl">★</span>
+                  ))}
+                </div>
+              </div>
+            )}
 
+            {project.videoUrl && (
+              <div className="bg-white rounded-lg p-6 shadow-md flex flex-col justify-center">
+                <h2 className="text-2xl font-bold text-zinc-900 mb-4 text-center">Project Walkthrough</h2>
+                <div className="w-full aspect-video rounded-lg overflow-hidden shadow">
+                  <iframe 
+                    src={project.videoUrl}
+                    title="Project Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  ></iframe>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Project Info section */}
+          <div className="bg-white rounded-lg p-6 shadow-sm mb-12">
+            <h2 className="text-xl font-bold text-zinc-900 mb-4">Project Info</h2>
+
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-sm font-medium text-zinc-500">Client</h3>
+                <p className="text-zinc-900">{project.client}</p>
+              </div>
+
+              <div>
+                <h3 className="text-sm font-medium text-zinc-500">Year</h3>
+                <p className="text-zinc-900">{project.year}</p>
+              </div>
+
+              {project.technologies && project.technologies.length > 0 && (
                 <div>
                   <h3 className="text-sm font-medium text-zinc-500">Technologies</h3>
                   <div className="flex flex-wrap gap-2 mt-2">
@@ -1068,10 +1090,11 @@ const ProjectDetail = () => {
                     ))}
                   </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
 
+          {/* Call to action section */}
           <div className="bg-purple-100 rounded-lg p-8 text-center">
             <h2 className="text-2xl font-bold text-purple-900 mb-4">Ready to start your project?</h2>
             <p className="text-purple-800 mb-6 max-w-2xl mx-auto">
