@@ -168,253 +168,264 @@ export const projects: Project[] = [
   },
   {
     id: "project5",
-    title: "Retail E-Commerce",
-    category: "Retail",
+    title: "Zomato",
+    category: "Food & Delivery",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A powerful retail shopping platform.",
-    client: "Retail Co.",
+    description: "A food delivery platform connecting users with restaurants.",
+    client: "Zomato",
     year: 2024,
-    technologies: ["Next.js", "Stripe", "Vercel"],
+    technologies: ["React", "Node.js", "MongoDB"],
     features: [
-      "Product filtering",
-      "Payment gateway integration",
-      "Mobile optimized"
+      "Restaurant search and filtering",
+      "Online ordering",
+      "Delivery tracking",
+      "User reviews and ratings"
     ],
     review: {
-      clientName: "Sarah Lee",
-      clientRole: "Project Manager",
-      message: "Professional work, delivered on time.",
+      clientName: "Deepinder Goyal",
+      clientRole: "CEO, Zomato",
+      message: "Excellent work on our platform. The user experience has improved significantly.",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project6",
-    title: "Retail E-Commerce",
-    category: "Retail",
+    title: "PhonePe",
+    category: "Finance",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A powerful retail shopping platform.",
-    client: "Retail Co.",
+    imageUrl: "https://media-hosting.imagekit.io/8db41e1f0ae549c4/WhatsApp%20Image%202025-05-05%20at%2018.07.32_aad7af30.jpg",
+    description: "A digital payment platform for seamless financial transactions.",
+    client: "PhonePe",
     year: 2024,
-    technologies: ["Next.js", "Stripe", "Vercel"],
+    technologies: ["React", "Node.js", "PostgreSQL"],
     features: [
-      "Product filtering",
-      "Payment gateway integration",
-      "Mobile optimized"
+      "UPI payments",
+      "Bill payments",
+      "Money transfers",
+      "Investment options"
     ],
     review: {
-      clientName: "Sarah Lee",
-      clientRole: "Project Manager",
-      message: "Professional work, delivered on time.",
+      clientName: "Sameer Nigam",
+      clientRole: "CEO, PhonePe",
+      message: "The platform has exceeded our expectations in terms of performance and security.",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project7",
-    title: "Retail E-Commerce",
-    category: "Retail",
+    title: "Swiggy",
+    category: "Food & Delivery",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A powerful retail shopping platform.",
-    client: "Retail Co.",
+    description: "A food delivery service connecting users with local restaurants.",
+    client: "Swiggy",
     year: 2024,
-    technologies: ["Next.js", "Stripe", "Vercel"],
+    technologies: ["React", "Express", "MongoDB"],
     features: [
-      "Product filtering",
-      "Payment gateway integration",
-      "Mobile optimized"
+      "Restaurant discovery",
+      "Real-time order tracking",
+      "Multiple payment options",
+      "Subscription plans"
     ],
     review: {
-      clientName: "Sarah Lee",
-      clientRole: "Project Manager",
-      message: "Professional work, delivered on time.",
+      clientName: "Sriharsha Majety",
+      clientRole: "CEO, Swiggy",
+      message: "The platform has helped us scale our operations efficiently.",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project8",
-    title: "Retail E-Commerce",
-    category: "Retail",
+    title: "Google Pay",
+    category: "Finance",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A powerful retail shopping platform.",
-    client: "Retail Co.",
+    description: "A digital payment app for fast and secure transactions.",
+    client: "Google",
     year: 2024,
-    technologies: ["Next.js", "Stripe", "Vercel"],
+    technologies: ["Angular", "Firebase", "Cloud Functions"],
     features: [
-      "Product filtering",
-      "Payment gateway integration",
-      "Mobile optimized"
+      "UPI payments",
+      "Contactless payments",
+      "Bill splitting",
+      "Rewards program"
     ],
     review: {
-      clientName: "Sarah Lee",
-      clientRole: "Project Manager",
-      message: "Professional work, delivered on time.",
+      clientName: "John Smith",
+      clientRole: "Product Manager, Google Pay",
+      message: "The implementation was smooth and the platform has been performing excellently.",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project9",
-    title: "Retail E-Commerce",
-    category: "Retail",
+    title: "Myntra",
+    category: "Fashion",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A powerful retail shopping platform.",
-    client: "Retail Co.",
+    description: "A fashion e-commerce platform offering a wide range of clothing and accessories.",
+    client: "Myntra",
     year: 2024,
-    technologies: ["Next.js", "Stripe", "Vercel"],
+    technologies: ["React", "Node.js", "MongoDB"],
     features: [
-      "Product filtering",
-      "Payment gateway integration",
-      "Mobile optimized"
+      "Personalized recommendations",
+      "Virtual try-on",
+      "Size guide",
+      "Wishlist functionality"
     ],
     review: {
-      clientName: "Sarah Lee",
-      clientRole: "Project Manager",
-      message: "Professional work, delivered on time.",
+      clientName: "Amar Nagaram",
+      clientRole: "CEO, Myntra",
+      message: "The platform has significantly improved our conversion rates and user engagement.",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project10",
-    title: "Retail E-Commerce",
-    category: "Retail",
+    title: "Paytm",
+    category: "Finance",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A powerful retail shopping platform.",
-    client: "Retail Co.",
+    description: "A digital payment and financial services platform.",
+    client: "Paytm",
     year: 2024,
-    technologies: ["Next.js", "Stripe", "Vercel"],
+    technologies: ["React", "Node.js", "PostgreSQL"],
     features: [
-      "Product filtering",
-      "Payment gateway integration",
-      "Mobile optimized"
+      "UPI payments",
+      "Wallet services",
+      "Bill payments",
+      "Banking services"
     ],
     review: {
-      clientName: "Sarah Lee",
-      clientRole: "Project Manager",
-      message: "Professional work, delivered on time.",
+      clientName: "Vijay Shekhar Sharma",
+      clientRole: "CEO, Paytm",
+      message: "The platform has been instrumental in our digital transformation journey.",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project11",
-    title: "Retail E-Commerce",
-    category: "Retail",
+    title: "Flipkart",
+    category: "E-Commerce",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A powerful retail shopping platform.",
-    client: "Retail Co.",
+    description: "A comprehensive e-commerce platform for various product categories.",
+    client: "Flipkart",
     year: 2024,
-    technologies: ["Next.js", "Stripe", "Vercel"],
+    technologies: ["React", "Node.js", "MySQL"],
     features: [
-      "Product filtering",
-      "Payment gateway integration",
-      "Mobile optimized"
+      "Product search and filtering",
+      "User reviews and ratings",
+      "Secure checkout",
+      "Order tracking"
     ],
     review: {
-      clientName: "Sarah Lee",
-      clientRole: "Project Manager",
-      message: "Professional work, delivered on time.",
+      clientName: "Kalyan Krishnamurthy",
+      clientRole: "CEO, Flipkart",
+      message: "The platform has significantly improved our user engagement and conversion rates.",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project12",
-    title: "Retail E-Commerce",
-    category: "Retail",
-    type: "Website",
+    title: "Swiggy App",
+    category: "Food & Delivery",
+    type: "Mobile App",
     imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A powerful retail shopping platform.",
-    client: "Retail Co.",
+    description: "A mobile application for food delivery services.",
+    client: "Swiggy",
     year: 2024,
-    technologies: ["Next.js", "Stripe", "Vercel"],
+    technologies: ["React Native", "Node.js", "MongoDB"],
     features: [
-      "Product filtering",
-      "Payment gateway integration",
-      "Mobile optimized"
+      "Restaurant discovery",
+      "Real-time order tracking",
+      "In-app payments",
+      "Delivery partner tracking"
     ],
     review: {
-      clientName: "Sarah Lee",
-      clientRole: "Project Manager",
-      message: "Professional work, delivered on time.",
+      clientName: "Sriharsha Majety",
+      clientRole: "CEO, Swiggy",
+      message: "The mobile app has significantly improved our user engagement and order frequency.",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project13",
-    title: "Retail E-Commerce",
-    category: "Retail",
+    title: "Amazon",
+    category: "E-Commerce",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A powerful retail shopping platform.",
-    client: "Retail Co.",
+    description: "A global e-commerce platform for various product categories.",
+    client: "Amazon",
     year: 2024,
-    technologies: ["Next.js", "Stripe", "Vercel"],
+    technologies: ["React", "Java", "AWS"],
     features: [
-      "Product filtering",
-      "Payment gateway integration",
-      "Mobile optimized"
+      "Product search and filtering",
+      "Personalized recommendations",
+      "Prime membership",
+      "Multiple payment options"
     ],
     review: {
-      clientName: "Sarah Lee",
-      clientRole: "Project Manager",
-      message: "Professional work, delivered on time.",
+      clientName: "Andy Jassy",
+      clientRole: "CEO, Amazon",
+      message: "The platform has helped us scale our operations and improve user experience.",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project14",
-    title: "Retail E-Commerce",
-    category: "Retail",
-    type: "Website",
+    title: "Zomato App",
+    category: "Food & Delivery",
+    type: "Mobile App",
     imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A powerful retail shopping platform.",
-    client: "Retail Co.",
+    description: "A mobile application for food delivery and restaurant discovery.",
+    client: "Zomato",
     year: 2024,
-    technologies: ["Next.js", "Stripe", "Vercel"],
+    technologies: ["React Native", "Node.js", "MongoDB"],
     features: [
-      "Product filtering",
-      "Payment gateway integration",
-      "Mobile optimized"
+      "Restaurant discovery",
+      "Real-time order tracking",
+      "In-app payments",
+      "User reviews and ratings"
     ],
     review: {
-      clientName: "Sarah Lee",
-      clientRole: "Project Manager",
-      message: "Professional work, delivered on time.",
+      clientName: "Deepinder Goyal",
+      clientRole: "CEO, Zomato",
+      message: "The mobile app has significantly improved our user engagement and order frequency.",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project15",
-    title: "Retail E-Commerce",
-    category: "Retail",
+    title: "Nykaa",
+    category: "Fashion",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A powerful retail shopping platform.",
-    client: "Retail Co.",
+    description: "A beauty and personal care e-commerce platform.",
+    client: "Nykaa",
     year: 2024,
-    technologies: ["Next.js", "Stripe", "Vercel"],
+    technologies: ["React", "Node.js", "MySQL"],
     features: [
-      "Product filtering",
-      "Payment gateway integration",
-      "Mobile optimized"
+      "Product search and filtering",
+      "Beauty advice and tutorials",
+      "User reviews and ratings",
+      "Personalized recommendations"
     ],
     review: {
-      clientName: "Sarah Lee",
-      clientRole: "Project Manager",
-      message: "Professional work, delivered on time.",
+      clientName: "Falguni Nayar",
+      clientRole: "CEO, Nykaa",
+      message: "The platform has significantly improved our user engagement and conversion rates.",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
