@@ -528,19 +528,19 @@ export const projects: Project[] = [
   },
   {
     id: "project21",
-    title: "app 1",
+    title: "Bharatkart Seller",
     category: "E-Commerce",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/7ab5c2dacaf8465e/WhatsApp%20Image%202025-05-05%20at%2020.27.10_6714b0fd.jpg",
-    description: "A feature-rich mobile application for seamless shopping experiences.",
-    client: "App Innovations",
+    imageUrl: "https://media-hosting.imagekit.io/fcc457b24d6146ee/WhatsApp%20Image%202025-05-06%20at%2014.38.40_5bf8d2a0.jpg?Expires=1841405198&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=iGAhSbFp9eRMOFv-9mwlvC~7V18Fm9n2zPLi5wDJrsQAclKwjk3wn44iUp4RSW5yUGQ6rR9M8IaYvubr06o9EA7Qp5xcsXxP0LaxLiVWmwHZYQEzumaZHyq8-C1-CvxYBquNTRlcWvHbn2vT~uKk2XCFkEi0KKdKgJ856L44hUyOcl4fAsOyFdY3cX42TLRcXwV~KsCaPbbijxOEx85qTLz3kMjTqw~bHqxdBkz6BCe7fAokVz8bvDif0ly690mvRtgybEK6BA9Qum2QaWg97AuZjv0P3dOqeLs6TBEqLwg93Go0EDmBjyptCajgpTrJOi0CGDyU23T4X12Sg8XUDg__",
+    description: "Bharatkart Seller is a feature-rich mobile application for seamless shopping experiences.",
+    client: "Bharatkart",
     year: 2024,
     technologies: ["React Native", "Firebase", "Redux"],
     features: [
-      "Voice search",
-      "AR product view",
-      "Offline catalog browsing",
-      "Social sharing"
+      "Buy directly from trusted Indian manufacturers and suppliers.",
+      "Post custom product needs and get matched sellers.",
+      "Explore thousands of products across multiple industries.",
+      "Smooth, user-friendly app for easy browsing and buying."
     ],
     review: {
       clientName: "Michael Chen",
@@ -552,19 +552,19 @@ export const projects: Project[] = [
   },
   {
     id: "project22",
-    title: "app 2",
+    title: "Trendsi - Fashion Dropshipping",
     category: "Productivity",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/fff3fd4ead144d2b/WhatsApp%20Image%202025-05-05%20at%2020.27.12_77247ef7.jpg",
-    description: "A comprehensive productivity application for professionals and teams.",
-    client: "Productivity Plus",
+    imageUrl: "https://media-hosting.imagekit.io/4f85d33140354166/WhatsApp%20Image%202025-05-06%20at%2014.38.39_dc49322e.jpg?Expires=1841405175&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=hJLtsN05dXJmqbIAlNYXZ7HaqZ3~8qBoFaSti2Hn2-uo0mws0yVpI67scz0HybTlt-TCdY3XAk9Rhkj6ogRUPweVG1EA8O4JNBfrj7SvVk6iYHPJIglP-JSE6MLjUBnqD5T60N~LfZwwY2lo8DSvBuXonkvraXIdmKaGSxZG0KMU0evvg5InPcc0aL7x-9rO0fZgtfgHBeyWwdpKDd80Er~zVg62-fnhWRKtQOAu2H6SxK6TqiN2HmRdgGVw5OXVXMH9Qrzzp79rPU739NQYTEgTrAzglWTfLhnYLhf7oUM8XbCsl9HtH2KTU03XONdVSg7P0m8pUoL~jQZ~7U0iYw__",
+    description: "Trendsi is a comprehensive fashion dropshipping application for professionals and teams.",
+    client: "Trendsi",
     year: 2024,
     technologies: ["Flutter", "Firebase", "Google Cloud"],
     features: [
-      "Task management",
-      "Calendar integration",
-      "Team collaboration",
-      "Document sharing"
+      "One-click product import with ready-to-use media.",
+      "Flexible wholesale with low minimum order quantities.",
+      "Custom manufacturing with full design ownership.",
+      "Private labeling and customized packaging options."
     ],
     review: {
       clientName: "Jennifer Wong",
@@ -576,19 +576,19 @@ export const projects: Project[] = [
   },
   {
     id: "project23",
-    title: "crm app 1",
+    title: "Automate Sales",
     category: "CRM",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/65b2b5daf2e04f32/WhatsApp%20Image%202025-05-05%20at%2018.17.23_f45317c9.jpg",
-    description: "A comprehensive CRM mobile application for sales teams on the go.",
-    client: "CRM Solutions",
+    imageUrl: "https://media-hosting.imagekit.io/bb0b655043a448e8/WhatsApp%20Image%202025-05-06%20at%2017.51.45_c65a9a50.jpg?Expires=1841405354&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=w9DF~ce9ZJUfbJU0fb8JuzOGN8YvMJuDIjgifw5muDlh8KZlrmAbz7yTIVLFTg5NIBRv0X2OWFDvDuNreEVIv6tywjX-QtUbhEvfUBUSGm6oZtjvafkaMPk8db3eM1Ol01upGX1Oims74mrz2y~Uo8VCz9pYbiCiHWfSpmXEob4lB~YOPcyofWJiKtX16vYWtI-HfMGDg0lcH7GbmfC~bwzRns0iQeCp6uUZjVKRI8BhOF94x9FW36unImX1B66rNmbi1nCVFOnnpkN7elEUETRIZQoNGi3K2-bR5d~qlLTRyU40oP3hg91JWDgz-TIHWjO5D9X-gJLJeUkAFaiNbw__",
+    description: "Automate Sales is a CRM mobile application for sales teams on the go.",
+    client: "Automate Sales",
     year: 2024,
     technologies: ["React Native", "AWS", "GraphQL"],
     features: [
-      "Lead management",
-      "Pipeline visualization",
-      "Task assignment",
-      "Performance analytics"
+      "Assign tasks with voice notes and attachments.",
+      "Automated WhatsApp and email task reminders.",
+      "Real-time dashboard for team performance tracking.",
+      "Recurring tasks and smart follow-up automation."
     ],
     review: {
       clientName: "Robert Johnson",
@@ -600,19 +600,19 @@ export const projects: Project[] = [
   },
   {
     id: "project24",
-    title: "crm app 2",
+    title: "Salesmate - Sales CRM",
     category: "CRM",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/2bdb2eaba9314bc1/WhatsApp%20Image%202025-05-05%20at%2017.27.25_f87c9d53.jpg",
-    description: "An advanced customer relationship management app for enterprise teams.",
-    client: "Enterprise Solutions Inc.",
+    imageUrl: "https://media-hosting.imagekit.io/b92e2e6152864bfc/WhatsApp%20Image%202025-05-06%20at%2018.06.23_6b466652.jpg?Expires=1841405372&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=WZdKYCywg1wiO5iFKmZZMb~-LQMUxxpCl0O-zl0g1EpLVtr6ujEpGBp2F0yMoJgH9RyyzNcTLgMU~-UpJk32rw0AsUxfmpw-v3YCK0U9S5ngz9Fs5-vZrrNgP-W~Bre5nKS27mn2siKc2mjJUGSfR9byE-j~qTZe8ZG~Ju2PLMoW2DdymexJFE2FTX9tr-YpqBozMhuS1lj92h6185S~EsJoKPkyCtyjQAJry~Qg0hbN2tdP~LlC9~w6rU2~-8UGPK5GBKnzr5DYpObtoWWoInmKWgbgtgOtt1F8IXr-9Qhr0RBWPWdniQc5r0BnotopB-DlXf3XCGUdx99qaat8YQ__",
+    description: "Salesmate is an AI-powered CRM platform that streamlines sales, marketing, and support processes for teams.",
+    client: "Salesmate",
     year: 2024,
     technologies: ["Flutter", "Firebase", "AI Analytics"],
     features: [
-      "AI-powered insights",
-      "Customer journey mapping",
-      "Automated follow-ups",
-      "Integration with email and calling"
+      "Manage deals with customizable sales pipelines.",
+      "Automate emails using personalized templates.",
+      "Built-in calling with activity logging.",
+      "Real-time sync across mobile and desktop."
     ],
     review: {
       clientName: "Amanda Peters",
@@ -624,19 +624,19 @@ export const projects: Project[] = [
   },
   {
     id: "project25",
-    title: "food 1",
+    title: "Cloud Kitchen - Dine Delicious",
     category: "Food & Delivery",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/9c8607d8375a4f55/WhatsApp%20Image%202025-05-05%20at%2018.07.19_59df7558.jpg",
-    description: "A food delivery application connecting users with their favorite restaurants.",
-    client: "Food Connect",
+    imageUrl: "https://media-hosting.imagekit.io/8bf4213e28784388/Untitled%20design.png?Expires=1841470244&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=U0ujFVx6A5Cf3GmsUvVrp7Pw7SJ~dJRsiZ98T-pVTmxbj2ngoIctvu~MNdKf-frtyMNnTUuYAao2NFE9pAqBCYc0s5KZW8n0fPs3yZ0NFVBa7FLaAc~gLVSpGSg4FV1KUCy1xQF9Q3J6RTooCuAvYTqvWRLBvf~-P~FAkSnWoa1~LbFTMFWGKVNj4BJr6VS6mqWDrDz4n8lvptjZUGUMFREK5oqnZgr15FPlJ4nf633MksRVSScrQ5n5ndVtaHi7ISndc99W6MFxJov-3P4j2xKWE39GXYdmT~eYVR0Xj73Vi7voFvR4Qu3ieS1vtG70YwLu1MHTobCtb~-kq2q3kw__",
+    description: "Dine Delicious is a food delivery application connecting users with their favorite restaurants.",
+    client: "Dine Delicious",
     year: 2024,
     technologies: ["React Native", "Node.js", "MongoDB"],
     features: [
-      "Real-time order tracking",
-      "Restaurant discovery",
-      "Personalized recommendations",
-      "Contactless delivery options"
+      "Order history and delivery tracking",
+      "Restaurant ratings and reviews",
+      "Contactless payment options",
+      "Push notifications for order updates"
     ],
     review: {
       clientName: "Lisa Wang",
@@ -648,19 +648,19 @@ export const projects: Project[] = [
   },
   {
     id: "project26",
-    title: "food 2",
+    title: "Kitchen - The Food Stop",
     category: "Food & Delivery",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/6fcfb7daec10440b/WhatsApp%20Image%202025-05-05%20at%2020.27.07_d8c5b4ca.jpg",
-    description: "A premium food delivery app for gourmet restaurants and specialized cuisines.",
-    client: "Gourmet Eats",
+    imageUrl: "https://media-hosting.imagekit.io/7747517a2ff34993/Untitled%20design%20(1).png?Expires=1841470709&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=NajuqYyntg6fASBdSMsK8Q2LHLueGx0mc28VCteLW91vUT5XFoviluE66L8aVakHHLzJROVl5waheUMa-nmWv9wMtc4PQpzJjwJ8opDrea3aFhnI7dwZv5cQO9U9El7QEEYrM~Uh6eANOF6t6INlgz9XVOC1M62PmBOI-LUrwBvz~DpurRowsQRFLR2kHqKGv8NQTHTixi8M721B579gzyNptfr47LYso0uasaF0cRC~LxXz-jHxp-vx19oMzgDjey1E0CRdWBMxFwOFWMZbiGWM0FiX4qsDENn~eOnwSWA6xZSFfKDUR3-y08BkrJEu3E7kShbTuCrwC1eFwE01rQ__",
+    description: "Kitchen - The Food Stop is a premium food delivery app for gourmet restaurants and specialized cuisines.",
+    client: "Kitchen - The Food Stop",
     year: 2024,
     technologies: ["React Native", "Express", "MongoDB"],
     features: [
-      "Cuisine specialization",
-      "Chef profiles",
-      "Ingredient transparency",
-      "Special dietary options"
+      "Order pure vegetarian meals online with ease.",
+      "Fast doorstep delivery across Lucknow city.",
+      "User-friendly interface for seamless navigation.",
+      "Regular updates with performance enhancements."
     ],
     review: {
       clientName: "Thomas Reynolds",
@@ -672,19 +672,19 @@ export const projects: Project[] = [
   },
   {
     id: "project27",
-    title: "Grofers",
-    category: "Food & Delivery",
+    title: "Tourism Analytics",
+    category: "Travel",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/2d83437c09034324/WhatsApp%20Image%202025-05-05%20at%2020.27.11_e0d09124.jpg",
-    description: "A grocery delivery application that brings fresh produce and essentials to your doorstep.",
-    client: "Grofers",
+    imageUrl: "https://media-hosting.imagekit.io/90b9f967366a4871/WhatsApp%20Image%202025-05-10%20at%2012.58.21_ccd5b65c.jpg?Expires=1841470926&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=L~rwRjYIC6Z-2FOHNCjFrcwWoKwr77hoR5kDvLFdZYk8EgM9sD6I0IO5C9HbrFB1eUwFY57~kJHKQo5Kym6-z8uj0FoZcBhk1w-k1kY8lqkH76uiOvvBTrw0ysyUd3BvGwcmRqCbj3lUCCSwdqyH2q~bamTc514KL9MpuADoGmeDjqB~1wpgpOASyZJLj1v7zStYEkTwiUdH3SbBBqxzmY8pSf69wJzoyAkSn8mIdNSnQszbphaNYX4wcdorTSEfHoRS1HOnfoAy6FpzUc0w2BB-XxDZS-VD1rqhLGKPvHopSFH7cphnfgOVEM3prp00WjBzER1hJB14DSY8WrKfIw__",
+    description: "Tourism Analytics is a travel analytics application that helps users plan and book their trips.",
+    client: "Tourism Analytics",
     year: 2024,
     technologies: ["React Native", "Node.js", "MongoDB"],
     features: [
-      "Scheduled delivery",
-      "Express delivery options",
-      "Loyalty program",
-      "Subscription service"
+      "Explore 400+ destinations with detailed information.",
+      "View high-quality photos of each tourist spot.",
+      "Create personalized itineraries and save favorite places.",
+      "Access travel tips, entry fees, and nearby attractions."
     ],
     review: {
       clientName: "Albinder Dhindsa",
@@ -696,19 +696,19 @@ export const projects: Project[] = [
   },
   {
     id: "project28",
-    title: "Lenskart",
+    title: "India Tourist Places",
     category: "Retail",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/69106931396b4338/WhatsApp%20Image%202025-05-05%20at%2018.22.02_7a48302d.jpg",
-    description: "An eyewear shopping application with virtual try-on technology.",
-    client: "Lenskart",
+    imageUrl: "https://media-hosting.imagekit.io/0fd58728174941b4/WhatsApp%20Image%202025-05-10%20at%2012.58.22_4f02bc53.jpg?Expires=1841471311&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=EvuxUD1t~cExg85iFDNvuy4CohAp8yFvHSVvKVV5Z-Qiy17fe46EOLf~i08adFKC6LFF8zfqYqM8qF2nxEv75axho6DAYvJn6Uc2lzQKXNApFH4HyNx7qxuWghOdhgDG8TguwJCAtyBK1gPkpda3NW4hseIK0oJzot~55NSTO7PXbpfPCnLyVFYqQEtnpwEafa9oD-~ZlfJVWAHHz4XWco57LZWuZ4uIILkKPbIRS6410nSLN6gcsUdQaXdesjobeS3BwfVK1jpd-SuJmoFzRVxQr5IVi21ERDX-N~fRuvuCFqu4LQ~Z6oDTgVTllgh~BZNmA5rVPBzMYqL8ThcBeg__",
+    description: "India Tourist Places is an the country's most iconic destinations, cultural wonders, and hidden gems for unforgettable travel experiences..",
+    client: "India Tourist Places",
     year: 2024,
     technologies: ["Flutter", "Firebase", "AR Kit"],
     features: [
-      "Virtual try-on",
-      "Frame size recommendation",
-      "Prescription management",
-      "Home eye test booking"
+      "Real-time tourism performance data and insights.",
+      "Comprehensive macroeconomic and supply pipeline analysis.",
+      "Access to global travel trends and brand affinity.",
+      "Secure, open data platform for stakeholders."
     ],
     review: {
       clientName: "Peyush Bansal",
@@ -720,19 +720,19 @@ export const projects: Project[] = [
   },
   {
     id: "project29",
-    title: "Pepperfry",
-    category: "Retail",
+    title: "DocIndia",
+    category: "Health",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/c389708161ed4163/WhatsApp%20Image%202025-05-05%20at%2020.27.07_65aa4078.jpg",
-    description: "A furniture and home decor shopping app with 3D visualization features.",
-    client: "Pepperfry",
+    imageUrl: "https://media-hosting.imagekit.io/c9af1b1d9dd4406c/Untitled%20design.png?Expires=1841471826&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=qSGMtRoPjVYOcEnSN6LIDGNQ2ztvLzOwKcQd37xEtfh6DHPP4wn02f64NXuxnL6nTP0GixMxbPELYCjOlJHVEgDU-x~WF5eP9OzrZHtiwDyldb4jIF4DmkIngyPtmcuvMb-lU79qQEf2HC~51r9QbzvcnBDx6vU1NuSpSpwoexvo5cPTp0VX063Rp0jQDRxORlkkCuHkRtTWuxl0WYMW7CWjB6r6XGH83V-XQIj~v66JSlYLlfAOgEv8rpwsnh1OoPvmRRLbGYPzTPy-tM5Pezq1O6Upwf3L5ngzSz2yPOkFD3NYa~xk0vEZBZ3WfS6grz9ROMP0l0WWLsda0FmMww__",
+    description: "DocIndia is a furniture and home decor shopping app with 3D visualization features.",
+    client: "DocIndia",
     year: 2024,
     technologies: ["React Native", "Node.js", "AR Framework"],
     features: [
-      "AR furniture placement",
-      "Room planning tool",
-      "Interior design consultation",
-      "EMI options"
+      "Connect with over 4,600 verified doctors nationwide.",
+      "Book in-person or online consultations seamlessly.",
+       "Access doctor credentials, reviews, and clinic details.",
+      "Free, user-friendly platform for all patients."
     ],
     review: {
       clientName: "Ambareesh Murty",
@@ -744,19 +744,19 @@ export const projects: Project[] = [
   },
   {
     id: "project30",
-    title: "MakeMyTrip",
-    category: "Travel",
+    title: "MedCart",
+    category: "Health",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/176737cc179b4376/original-f1e2b34a8a8030e12f2a83625ecac051.webp",
-    description: "A comprehensive travel booking application for flights, hotels, and holiday packages.",
-    client: "MakeMyTrip",
+    imageUrl: "https://media-hosting.imagekit.io/d228a62ae286450b/WhatsApp%20Image%202025-05-06%20at%2017.51.44_bc6618f9.jpg?Expires=1841471963&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=bJDZ3QrxA2e-ztXtBMX6RSstGqjEh4o6~g4sFtu5Y48iKpfUav711eRVIlFK3cELTqrWtjzPSZ0w7bKorkCi2ZCOGSsHAFZtfOM1l9jct5vNSUBL-pM142x--3cK1jWx1wbq8zxygW6L7WuuIhPUZ0W0Fro2AiZ4V2O1o-bld9jGlzqFSHeqO92DDB0vvsqIOiQ1~~-qzA9EbqTAlhfJT3aAzoKSA2YGcRBtVHahAj3a~bNBRiffftMIbE9b3ePE699pOzF7kRQ0nvQWgTTzFOx2QbakdYPHXi2YTxIvzzoXzEALGCXjTOT-Dxy63WkNwPFVxk41pyPAv2MfJgOp5Q__",
+    description: "MedCart is a pharmacy application for medicines and healthcare products.",
+    client: "MedCart",
     year: 2024,
     technologies: ["React Native", "Node.js", "MongoDB"],
     features: [
-      "Multi-city flight booking",
-      "Hotel comparison",
-      "Trip reviews",
-      "Last-minute deals"
+      "Over 100,000 medicines and healthcare products available.",
+       "Express delivery within 2 hours across India.",
+      "Real-time order tracking from pharmacy to doorstep.",
+      "24/7 customer support for assistance anytime."
     ],
     review: {
       clientName: "Deep Kalra",
@@ -768,19 +768,19 @@ export const projects: Project[] = [
   },
   {
     id: "project31",
-    title: "Snapdeal",
-    category: "E-Commerce",
+    title: "The Personalised Learning App",
+    category: "Education",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/2754ebafe0214d06/WhatsApp%20Image%202025-05-05%20at%2020.26.38_218488e8.jpg",
-    description: "A value-focused e-commerce platform offering a wide range of products at competitive prices.",
-    client: "Snapdeal",
+    imageUrl: "https://media-hosting.imagekit.io/4ecced60806b4d3b/WhatsApp%20Image%202025-05-06%20at%2017.51.44_bc6618f9.jpg?Expires=1841472149&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=hwTjybbs7G978IK-D~gUB4oQSojSn-OQO3NQJhIft5NY7NPh-8ek-cybdxMuScfnU~j2g4OJRbSCM66GkXTSsKNMl3lHfzgMqFJFc4YN4lch11qzskQBj~xDwRUIf3tKyWtaGND2cjcq1zU1Znhw5wwqZWZOHVIKiCVDr9GXuAaij-EIkNnDV8bxvFzkVRBqlLq3ZTSS9IUlhkwaa5vg7Ya3ZUUTImoW1Q67d-FPeY57TJj0Ewv7My7I3qadvwywNrEeW4lwTDqVeOdo30yUQQC0UsoS4g1YBSAWzouW1Sveqtwu37-doSRVk4Q~AQB1bCnAPaDHEoCP5pvseFs15Q__",
+    description: "The Personalised Learning App is an application for education.",
+    client: "The Personalised Learning App",
     year: 2024,
     technologies: ["React Native", "Node.js", "MongoDB"],
     features: [
-      "Deal of the day",
-      "Flash sales",
-      "Budget filtering",
-      "Comparison shopping"
+      "Hybrid learning: in-class or live online classes",
+      "Recorded lectures and digital study materials available.",
+      "AI-powered assessments, quizzes, and mock exams",
+      "Integrated attendance and performance analytics dashboard."
     ],
     review: {
       clientName: "Kunal Bahl",
@@ -792,19 +792,21 @@ export const projects: Project[] = [
   },
   {
     id: "project32",
-    title: "BookMyShow",
-    category: "Entertainment",
+    title: "Educate : Online Learning App",
+    category: "Education",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/97d565499025469f/WhatsApp%20Image%202025-05-05%20at%2020.27.12_f46d2e07.jpg",
-    description: "An entertainment ticketing platform for movies, events, and experiences.",
-    client: "BookMyShow",
+    imageUrl: "https://media-hosting.imagekit.io/6ef1ffc0f34e4c11/WhatsApp%20Image%202025-05-10%20at%2012.58.21_d12c29fb.jpg?Expires=1841472255&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=M3b6zBFsH7g5930aBmxAVo7iOpVACGPNdr9ud6PQ88N7HPXtLn1ipaKVLRRuIRHBwxsh0DDA7WKGxfEjuH20vOdvIEY0V2DwckMHbyrJlbKV~Q9DO8m2Ht2lWDa4yY8FLaCAmHVjaaPmGUykPM7IQ4oANtP~0eizHIXVWbtNsM4HQU1mdpd58Ihe98aDo66eBTO-h7EVkCLY8pBp3MTJWm1lucShzgv9sAo4ZuAPFyBYl1x8F1P3lO4uIFbTqkdKtXwmfoJm3Tl-s6-9ZBosGnMiNeme6J9gARXI96w~3VGn-0D5mfXkSQpgP27NxI1zSg4u~xNbn1IacEKM4Vj3yQ__",
+    description: "Educate is an online learning app that provides personalized education to students.",
+    client: "Educate Online Learning App",
     year: 2024,
     technologies: ["React Native", "Node.js", "MySQL"],
     features: [
-      "Seat selection",
-      "Food pre-ordering",
-      "Event recommendations",
-      "M-ticket functionality"
+      "Instant 1-on-1 live video tutoring sessions.",
+      "AI-generated study materials, assignments, and tests.",  
+       "Interactive whiteboard for real-time collaboration.",
+      "Seamless scheduling and batch management.",
+
+
     ],
     review: {
       clientName: "Ashish Hemrajani",
@@ -816,19 +818,19 @@ export const projects: Project[] = [
   },
   {
     id: "project33",
-    title: "FirstCry",
-    category: "Retail",
+    title: "Jobvisit",
+    category: "Job Portal",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/76f13343a8874ae5/WhatsApp%20Image%202025-05-05%20at%2020.27.09_2ef24b7d.jpg",
-    description: "A baby and kids products shopping application with parenting guidance.",
-    client: "FirstCry",
+    imageUrl: "https://media-hosting.imagekit.io/947c953e027e4015/Untitled%20design%20(1).png?Expires=1841475054&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=0CUrteOeB5MfU1TGoL8SJaXT47IJrZrTxltrv7CwWLW1i0J61CXvYO0dTnR9L0bE2tfeQBI50d6eylDVS21LhcozZIVrzK49m3IiM9ZIvx2XAZZrfY7t7~VyfQ-yhvq5fidt6Cy9G01ForLE5GiuxOMH55EwZqS4xcuYPFK~b~OHm9XPKdnMoXSxXm3d-fzVmsrRHIjKNFoLg-o7IDOQuNrZfONpBnK6PlL8cLE7ceBpjLjJvacPTezQlKOgkLfJFpQ~6swwFL-r5Rx0gSKqIqSTjbzqeaW3u6sT3-CmLBuf4lrm3dWyEKWNlMz6bEJlw~nPLUNBUUKmuxN729fWqA__",
+    description: "JobVisit is a job platform connecting seekers with employers",
+    client: "Jobvisit",
     year: 2024,
     technologies: ["React Native", "Node.js", "MongoDB"],
     features: [
-      "Age-based recommendations",
-      "Parenting articles",
-      "Baby registry",
-      "Club membership"
+      "Connect with top employers across various industries.",
+      "Streamlined application process for job seekers.",
+      "Access to a wide range of job listings.",
+     "User-friendly interface for easy navigation"
     ],
     review: {
       clientName: "Supam Maheshwari",
@@ -840,19 +842,19 @@ export const projects: Project[] = [
   },
   {
     id: "project34",
-    title: "Groww",
-    category: "Finance",
+    title: "Vital Jobs India - Employer",
+    category: "Job Portal",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/c0843e9ded804015/WhatsApp%20Image%202025-05-05%20at%2020.27.11_29a4fa4c.jpg",
-    description: "An investment platform application for stocks, mutual funds, and digital gold.",
-    client: "Groww",
+    imageUrl: "https://media-hosting.imagekit.io/2a6fc204763b48e9/Untitled%20design%20(2).png?Expires=1841475403&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=hX89Gcfjlry45khHgLeUudS5grzS38j~8AdF5IOVC253CUuw~Cz8leCh-eLmRXqrU9iz9c5wEAcGdW1Ye2wd7V3UtwwjjcH-d6xdfXCem0JdfxNjnSkE6p6dMcJKRqxyHp50cjn6WiV9DQg6gDp3zkE-5Y7xgI~myvwfewe49RtYRz9b00IgwdDdsx4leG-r4WAuCanWgbupEZ64b75t88ipjC0YJse3UoLeJG5Hnh3AcebcLqt7kVjm50CQVM2rjoc1JGJzB-ssQasoair63yycfKzj9UIKEeG2L~WMLeQOBTUZbpNAY5oft0He5qacHGp7IlvEfWlDJL6NZg9ggA__",
+    description: "Vital Jobs India – Employer simplifies recruitment with efficient tools",
+    client: "Vital Jobs India",
     year: 2024,
     technologies: ["React Native", "Node.js", "PostgreSQL"],
     features: [
-      "Portfolio tracking",
-      "SIP investments",
-      "Market insights",
-      "Educational content"
+      "Post unlimited job vacancies at no cost.",
+      "Three-step manual verification ensures job authenticity.",
+      "Streamlined candidate application tracking and management.",
+      "Integrated interview scheduling and onboarding tools."
     ],
     review: {
       clientName: "Lalit Keshre",
@@ -864,19 +866,19 @@ export const projects: Project[] = [
   },
   {
     id: "project35",
-    title: "Urban Company",
-    category: "Services",
+    title: "HexaHome: Buy, Rent, Sell & PG",
+    category: "Real Estate",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/e2f9de24290b498a/WhatsApp%20Image%202025-05-05%20at%2018.31.55_3d5e0f55.jpg",
-    description: "A home services application connecting users with professional service providers.",
-    client: "Urban Company",
+    imageUrl: "https://media-hosting.imagekit.io/4a67e72c97404070/WhatsApp%20Image%202025-05-10%20at%2012.58.22_d8b4ea7e.jpg?Expires=1841475609&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=sXsKfW~e41SJjuV017tEVAfOV~DtNhh-2zgtv1A0KxsUvVEptLVqwOvdomhwTj1tR4P64AlYXbv~FC2pJD8Tlbz7iEP~z15QZBySQ3X~XPR9DoEdU5q5A9cPzkmXFUsu1KX0ppJoUiol3SrZGgRgBLeETNyS0Fm5E5DCyG9F86h9E4djI1Jp82z5eWOBuGebDQUdDWT3BHfnHeoe1ikxByfNYCT0c6dyfm-zBNpFADJF3LoBeUtsFmQ~apxilSVjCbaoJYBUlbwrusRuuL-fAGBzUMQznGIewmxcaPGt84Vr-5Dm7eGl8N5uAwICia1GacdUGU3ti4~1rtKQ1o9O5g__",
+    description: "HexaHome is a comprehensive real estate platform for buying, selling, and renting properties.",
+    client: "HexaHome",
     year: 2024,
     technologies: ["React Native", "Node.js", "MongoDB"],
     features: [
-      "Service booking",
-      "Professional profiles",
-      "Real-time tracking",
-      "Subscription plans"
+      "Zero brokerage listings directly from property owners.",
+      "Advanced filters for location, budget, and amenities.",
+      "PG and co-living accommodations across major cities.",
+      "Real-time alerts and seller tools for listings."
     ],
     review: {
       clientName: "Abhiraj Bhal",
@@ -888,19 +890,19 @@ export const projects: Project[] = [
   },
   {
     id: "project36",
-    title: "Zerodha",
-    category: "Finance",
+    title: "India Property Dekho",
+    category: "Real Estate",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/ad3b8c84693747fb/original-f1e2b34a8a8030e12f2a83625ecac051.webp",
-    description: "A discount broking platform application for stock trading and investments.",
-    client: "Zerodha",
+    imageUrl: "https://media-hosting.imagekit.io/237cdba80da84568/Untitled%20design%20(3).png?Expires=1841475863&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=pAk1eoyF8EeHCu31WlY0UidrxhiYe-jYVFSAvxPXWEZx~JF13BXBzh15c1uyRK01tgC0MtomA7ckXahLeZvjfUWavqK14H2HvthppCohDBcF462GU8ca4cq~Rwukf2pBLN9RHBdsfeqRi345xTlWGjRAvncQQBMz~DxVpOMu7UDIU1RtR-8oSk13A~KqtmGOkbk8TDTiSColP9e9nPU6kJItmyYf7o9a~b7yP6RHNcUi~tSY891TKO8nadabr0YcMmccsbReCrheU1qjgtyB2TMjk3nYP8qYIsOag7TBeVOv06TvgyrG2HevMJ1L3R2MyipnWieJAUx4qOozDkcuPQ__",
+    description: "India Property Dekho simplifies property searches with verified listings and advanced filters.",
+    client: "India Property Dekho",
     year: 2024,
     technologies: ["React Native", "Java", "PostgreSQL"],
     features: [
-      "Real-time market data",
-      "Advanced charting",
-      "Paperless account opening",
-      "F&O trading"
+      "Over 100,000 verified residential and commercial listings.",
+      "Advanced filters for budget, location, and amenities.",
+      "High-quality images, floor plans, and virtual tours.",
+      "Free ad posting for property owners and agents."
     ],
     review: {
       clientName: "Nithin Kamath",
@@ -912,19 +914,19 @@ export const projects: Project[] = [
   },
   {
     id: "project37",
-    title: "1mg",
-    category: "Healthcare",
+    title: "Auto Rentals・Car Rentals App",
+    category: "Auto Rentals・Car Rentals App",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/67fb377a0d5e4b59/WhatsApp%20Image%202025-05-05%20at%2020.27.09_2775ac77.jpg",
-    description: "A healthcare platform for medicine delivery and online consultations.",
-    client: "1mg",
+    imageUrl: "https://media-hosting.imagekit.io/86a7283e55664549/Untitled%20design%20(4).png?Expires=1841476251&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=B3g0ga7V7jF4KjOwimdWkQshs-nGh6JzcMxKu3wWzX5A5w25aZ-Xvx810uRkpvfwZ1bECAUt3aUq1UHaWOhlIAAWef0OIM~qU1WdkafM3LDgDIRymv0GbFMbC9EvS6HG0Maw~a7M94hYi~a9YecyBPSSxoMIo3Y8RNz2IYzwmjWLSpoPkmxaRef-3~YelSSdmsmjYZk-Blem8BCITD291f67xj4a1cQl-q3y9Oubba~rhByp5-mOPJjOtfBSvLPfeSa1yyFO22MdBaBbV6LtWeszizxwCSujNdT8px~goPGBdf0~vZMyla40AvJCqrfIan-JkUdHjcWfNvMLdhS4HQ__",
+    description: "Auto Rentals・Car Rentals App offers global vehicle bookings with transparent pricing",
+    client: "Auto Rentals",
     year: 2024,
     technologies: ["React Native", "Node.js", "MongoDB"],
     features: [
-      "Medicine delivery",
-      "Online doctor consultation",
-      "Health records",
-      "Lab test booking"
+      "Access to over 50,000 global rental locations.",
+      "Wide selection: economy, SUV, luxury, minivan, 4x4.",
+      "Monthly, weekly, and electric car rental options.",
+      "Real-time booking with no hidden charges." 
     ],
     review: {
       clientName: "Prashant Tandon",
@@ -936,19 +938,19 @@ export const projects: Project[] = [
   },
   {
     id: "project38",
-    title: "Cult.fit",
-    category: "Healthcare",
+    title: "VCars - Self Drive Car Rental",
+    category: "Auto Rentals・Car Rentals App",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/ec0cb6c707a2424f/original-cd739778d99a850a4ded174d188bdbb5.webp",
-    description: "A fitness and wellness application for workouts, meditation, and healthy meals.",
-    client: "Cult.fit",
+    imageUrl: "https://media-hosting.imagekit.io/35fb0f98c4e740cd/Untitled%20design%20(5).png?Expires=1841476603&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=r9ILF0rE3GCTZzWiu3~~l6abx6IuZJUUcG5s4v0Zy4HnDAC4AT9UG~L~TbFgVQ80RHN9IgcMqiiunnY1~N2Z8l40tOnrVgltTXcTW7BGinjx8qM4pzoF2o6IIic6uVquVqhKtPnfpMmdxWdnjiGb8kzDgSi2b3SaPb~5FgMH~tSc4BOdWXtHo39-hBzElVBnesV4cjkDbhezhoT8ufVJ~AnqJ42JNhMsfk5jfHwCybEEMpZuTJZL4pi08a0HhuwIth2VyO28rpTKlIFaZCqsFRRrjNsBPa7a8MgBPoI0l6bC3TdlZ01zNAZA521G19RjE2ywtT02bGS4LDbbZhOZEQ__",
+    description: "VCars - Self Drive Car Rental offers a seamless car rental experience with transparent pricing and flexible options.",
+    client: "VCars",
     year: 2024,
     technologies: ["React Native", "Node.js", "MongoDB"],
     features: [
-      "Live fitness classes",
-      "Workout tracking",
-      "Meditation sessions",
-      "Healthy meal delivery"
+      "Choose from 40+ car models across 5 cities.",
+      "Flexible rental durations: hourly, daily, weekly, monthly.",
+      "Zero down payment with subscription plans.",
+      "24/7 roadside assistance and minimal paperwork." 
     ],
     review: {
       clientName: "Mukesh Bansal",
@@ -960,19 +962,19 @@ export const projects: Project[] = [
   },
   {
     id: "project39",
-    title: "Cleartrip",
-    category: "Travel",
+    title: "Bidkaro",
+    category: "Auction",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/11c927eed8384c8f/original-d0050409c3a61b4125176ec94fc1b5d6.webp",
-    description: "A travel booking application with a focus on simplicity and transparency.",
-    client: "Cleartrip",
+    imageUrl: "https://media-hosting.imagekit.io/c79be7dc68d2419d/Untitled%20design%20(6).png?Expires=1841477332&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=oCkfpstO68XC2WQkGVY~lXI7IGE3PTQj5sTVx3~8ZU-pBAUzs9sHG2H5hN-Ir8dEy5bWwTF-mRjnBQ2od9uVWZ67cpFVLTKuW1zsk3PbNnt6N0DvoxSzwShpiFYWJEHkPpo-Eu1oIwN6HGJKk9AAW3Wm6P9g2nJ3NJy9gjrhAhlviZFCTq0dvHiKk2D0uhHx8MQQf0bm~y25-HZENX3VXkqYyDQb73tX6mIFbIjCdmtL6uX~oXWfabmZMYGjr2tLGXCjK39gXoe3OjcL~9B-fMjVTHV6wemCVlwLLxNZaq029egJXCAYT4rynLZtUwJ9BrvQpG2mB0uMmj-SDXTG5Q__`",
+    description: "Bidkaro is an auction platform connecting buyers and sellers for various assets.",
+    client: "Bidkaro",
     year: 2024,
     technologies: ["React Native", "Node.js", "PostgreSQL"],
     features: [
-      "Flight booking",
-      "Hotel reservation",
-      "Holiday packages",
-      "Local experiences"
+      "Access inventory from banks, NBFCs, and insurance companies.",
+      "Browse listings for two-wheelers, four-wheelers, and commercial vehicles.",
+      "Find construction and farm equipment for sale.",
+      "User-friendly interface for seamless browsing and purchasing." 
     ],
     review: {
       clientName: "Stuart Crighton",
@@ -984,19 +986,19 @@ export const projects: Project[] = [
   },
   {
     id: "project40",
-    title: "Unacademy",
-    category: "Educational",
+    title: "Cricket Auction",
+    category: "Auction",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/11c927eed8384c8f/original-d0050409c3a61b4125176ec94fc1b5d6.webp",
-    description: "An educational platform application offering courses for competitive exams and skill development.",
-    client: "Unacademy",
+    imageUrl: "https://media-hosting.imagekit.io/09acd26d2f18496a/Untitled%20design%20(7).png?Expires=1841477342&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=yjA5DYSoPrNKuX~JlUKl7fnuEqniYqiEiMlKMUMeXU4qoISFQkMLQMAjLXv9T6n7Z4GSAJqFaIsdSBOtPcrNitMpIaf56f3HNzrToB97l7v07U06bAYohm6AeiCj917KUGzKHA78CcXMQFL9TwrQS1nnYw~v24wOMkxmgaher1-p5nvjpnuPGU1xHqR~FYZ74wS6-bbGgTaV45f8TaEGpZ8lybV9uWGPVe76U8K5zQx3fk1MB8u2tQNEi38xWkAKN2kJ1U6ww1w3gr0szHPMuzEjcpKHqg~XWlvJ57rYe18fWNSgsVxKL8zM4Ob995prmy3OWpo-ILToWdf37oeyow__",
+    description: "Cricket Auction is a mobile app that allows users to host live cricket and sports auctions seamlessly.",
+    client: "Cricket Auction",
     year: 2024,
     technologies: ["React Native", "Node.js", "MongoDB"],
     features: [
-      "Live classes",
-      "Recorded sessions",
-      "Practice tests",
-      "Personalized study plans"
+      "Host live cricket and sports auctions seamlessly.",
+      "Customize bidding rules and set team budgets.",
+      "Import/export player lists via Excel or PDF.",
+      "Stream auctions with live overlays and themes." 
     ],
     review: {
       clientName: "Gaurav Munjal",
