@@ -191,14 +191,14 @@ const Navbar = () => {
                   className="text-sm text-gray-600 hover:text-accent"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Creative Tech
+                  Entraprise
                 </Link>
                 <Link
                   to="/services#ai"
                   className="text-sm text-gray-600 hover:text-accent"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  AI Integrations
+                  AI Integrations & Automations
                 </Link>
               </div>
             </div>

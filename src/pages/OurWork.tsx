@@ -339,11 +339,6 @@ const OurWork = () => {
                           Website
                         </Badge>
                       )}
-                      {project.category && (
-                        <Badge variant="outline" className="bg-gray-100 text-gray-800 hover:bg-gray-200 border-gray-300">
-                          {project.category}
-                        </Badge>
-                      )}
                     </div>
                     <h3 className="font-medium text-zinc-900 line-clamp-2">{getProjectName(project, index)}</h3>
                   </div>
