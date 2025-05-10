@@ -102,9 +102,10 @@ const projectNames = {
   project40: "Unacademy",
 };
 
-// Function to get the appropriate image for a project based on position in the filtered list
+// Function to get the appropriate image for a project based on its ID
 const getProjectImage = (project, index) => {
-  // Use the project ID directly since it's already in the format 'project1', 'project2', etc.
+  // Always prioritize projectImages mapping as it contains the correct URLs
+  // This ensures we're using the images defined in OurWork.tsx, not projects.ts
   return projectImages[project.id] || project.imageUrl;
 };
 
@@ -121,60 +122,59 @@ const OurWork = () => {
     "Mobile App"
   ];
 
-  // Add state for the selected category
+  // Add state for the selected category and filtered projects
   const [selectedCategory, setSelectedCategory] = useState("All Work");
+  const [filteredProjects, setFilteredProjects] = useState([]);
 
-  // Current timestamp for cache busting
-  const timestamp = Date.now();
-  
-  // Filter projects based on selected category
-  let filteredProjects = projects.filter(project => {
-    if (selectedCategory === "All Work") return true;
-    return project.type === selectedCategory;
-  });
-  
-  // When "All Work" is selected, alternate between Website and Mobile App projects
-  if (selectedCategory === "All Work") {
-    // Create separate arrays for website and mobile app projects
-    const websiteProjects = projects.filter(project => project.type === "Website");
-    const mobileAppProjects = projects.filter(project => project.type === "Mobile App");
+  useEffect(() => {
+    let projectsToShow = [];
     
-    // Sort each array by ID to ensure consistent order
-    // Extract numeric part from string IDs (e.g., 'project1' -> 1)
-    websiteProjects.sort((a, b) => {
-      const aNum = parseInt(a.id.replace('project', ''), 10);
-      const bNum = parseInt(b.id.replace('project', ''), 10);
-      return aNum - bNum;
-    });
-    mobileAppProjects.sort((a, b) => {
-      const aNum = parseInt(a.id.replace('project', ''), 10);
-      const bNum = parseInt(b.id.replace('project', ''), 10);
-      return aNum - bNum;
-    });
-    
-    // Create a new array with alternating projects
-    const alternatingProjects = [];
-    const maxLength = Math.max(websiteProjects.length, mobileAppProjects.length);
-    
-    for (let i = 0; i < maxLength; i++) {
-      // Add a website project if available
-      if (i < websiteProjects.length) {
-        alternatingProjects.push(websiteProjects[i]);
+    if (selectedCategory === "All Work") {
+      // Create a mapping of all projects by their ID for easy lookup
+      const projectsById = {};
+      projects.forEach(project => {
+        projectsById[project.id] = project;
+      });
+      
+      // Create the exact alternating pattern requested: project1, project21, project2, project22, etc.
+      const alternatingProjects = [];
+      
+      // Determine how many pairs we can create
+      // We'll look for projects 1-20 (website) and 21-40 (mobile app)
+      for (let i = 1; i <= 20; i++) {
+        // Add the website project (project1, project2, etc.)
+        const websiteId = `project${i}`;
+        if (projectsById[websiteId]) {
+          alternatingProjects.push(projectsById[websiteId]);
+        }
+        
+        // Add the corresponding mobile app project (project21, project22, etc.)
+        const mobileAppId = `project${i + 20}`;
+        if (projectsById[mobileAppId]) {
+          alternatingProjects.push(projectsById[mobileAppId]);
+        }
       }
       
-      // Add a mobile app project if available
-      if (i < mobileAppProjects.length) {
-        alternatingProjects.push(mobileAppProjects[i]);
-      }
+      projectsToShow = alternatingProjects;
+      console.log(`Showing ${projectsToShow.length} projects with alternating pattern: project1, project21, project2, project22, etc.`);
+    } else {
+      // Filter by specific category
+      projectsToShow = projects.filter(project => project.type === selectedCategory);
+      
+      // Sort by project ID number
+      projectsToShow.sort((a, b) => {
+        const aNum = parseInt(a.id.replace('project', ''), 10);
+        const bNum = parseInt(b.id.replace('project', ''), 10);
+        return aNum - bNum;
+      });
+      
+      console.log(`Showing ${projectsToShow.length} ${selectedCategory} projects`);
     }
     
-    // Use the alternating projects array
-    filteredProjects = alternatingProjects;
-    
-    // Log the number of projects for debugging
-    console.log(`Showing ${filteredProjects.length} projects in total (alternating Website and Mobile App)`);
-  }
+    setFilteredProjects(projectsToShow);
+  }, [selectedCategory]);
 
+  
   return (
     <Layout>
       <div className="py-16 px-6 md:px-10 bg-gray-50">
