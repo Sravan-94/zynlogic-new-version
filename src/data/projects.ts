@@ -79,20 +79,20 @@ export const projects: Project[] = [
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/2f589ed679fb4ee3/WhatsApp%20Image%202025-05-06%20at%2017.22.21_20eaa8f2.jpg",
     detailImageUrl: "https://media-hosting.imagekit.io/57874a9b05534692/WhatsApp%20Image%202025-05-06%20at%2017.22.22_40ec6352.jpg?Expires=1841405156&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=VqBleHuXHjcd7LCCV052suyIj9Va3NLcdiBT3I1jIFTrN7krhVOE8o~03Ho6YYZSbHCZHGMiW2QYJaLNHlVbnp~xyIbIhBumUveJ5752GZi-Tw6zeWSXCLoQSv7RmiPddJ1LZhzlBissXZcCDK7uM6jLSNH7sSGLvvu9JRKxQOhy0L~mjfmFaYXS8kW4dNw3ONEUEctxZ-eOld4gcn9IpPCOf8Eo7fvg9NN53Nj0TXJpxsyZaHwqiYbXwlVHvfSbzp6dsujKCWGQhw4fI8PDQYoLZEse22AaW9h7hM3XgzepuIiZtNOGnLvB1igP5tMjrM3YPA8C9yypZEx-Bo--vA__",
-    description: "A modern e-commerce website for organic products.",
+    description: "A certified organic personal care brand with a focus on sustainability and clean beauty.",
     client: "Juicy Chemistry",
     year: 2023,
     technologies: ["Next.js", "Tailwind CSS", "Stripe API"],
     features: [
-      "Product listing and search",
-      "Cart and checkout system",
-      "Secure payment integration",
-      "User account management"
+      "Organic skincare product catalog",
+      "Seamless cart and checkout flow",
+      "Subscription-based product ordering",
+      "Eco-friendly brand storytelling"
     ],
     review: {
-      clientName: "John Doe",
-      clientRole: "CEO, Juicy Chemistry",
-      message: "Amazing website development services. Highly satisfied!",
+      clientName: "Megha Asher",
+      clientRole: "Co-Founder, Juicy Chemistry",
+      message: "Zynlogic understood our brand ethos perfectly and delivered a clean, high-performing site. We’re thrilled!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -103,19 +103,20 @@ export const projects: Project[] = [
     category: "Portfolio",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/25d455fc6576409f/WhatsApp%20Image%202025-05-06%20at%2014.38.36_d771d972.jpg?Expires=1841405128&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UFMJyQP8kDCUEafE1H3jfOYf077oDD~FHvW~UPH~Cs36NT38-VgahDv1ZwkN-Lv940KJjURzMwpZxPzALl9hX6KbbHp85kL8nhrn6XxWJgBHNMjP48~C2jTManFzPlrt90R~loHBfU20q39SLYm0NIL2cH7d6F9lH~z1hmmRmtsIWcS2e-0o1wb8VDhhf2h7J65gAUs5efPK2c4Vfj-z9UseSJRPnW9t-Aq7KeeAx6Ry6urZfyQaQ4~Vu9ki-MGQDHf~TzakpJZdQRMfcnEzOhDGrwVc4wLZYoSm1w-yKbZmuKZlv-5zLDZQG23N-huT8lFFj89F2WIChi36Gi97zw__",
-    description: "A clean and modern portfolio website.",
+    description: "A vibrant lifestyle brand with quirky designs across fashion and home.",
     client: "Chumbak",
     year: 2024,
     technologies: ["React", "TypeScript", "Tailwind CSS"],
     features: [
-      "Responsive design",
-      "SEO optimized",
-      "Performance enhanced"
+      "Stylish product showcases",
+      "Smooth shopping experience",
+      "Mobile-first responsive design",
+      "Easy returns and support"
     ],
     review: {
-      clientName: "Jane Smith",
-      clientRole: "Founder, Chumvak",
-      message: "They delivered exactly what I imagined. Great experience!",
+      clientName: "Vivek Prabhakar",
+      clientRole: "Co-Founder, Chumbak",
+      message: "Zynlogic captured our brand’s personality flawlessly. The new site is fun, fast, and customer-friendly!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -126,19 +127,20 @@ export const projects: Project[] = [
     category: "CRM",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/ae480e6896a547a2/WhatsApp%20Image%202025-05-06%20at%2017.51.44_bc6618f9.jpg?Expires=1841405335&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=OH~grjpfUUau1j0u7uis1qq5--hl74e-thfhhkS2fSaK10VtP0VAdMv8xm6PoicKLEWwE~KkWJzCFVSqG5tXnKVCGziAbjQt-VHRC8b41qJc0eODdZsn312cgjA1Lv1gwJ7mCu2Tv~XR3yx5NAAClFFrjSuSX3DHfCDUOX0vF9-6VIr7Msj8cVhsGy3NK42JL-QXUczdr~DuIMlkfIEIcD6cNrHehNju5K5vj2apKK5aVesDD~pDddYwP4JsR7mBAGRAhPA1khkB5Nli4AzGz9G3hbSvlRGcBLv83d7kqSXauYtH0KB7Zann2SspP29uZ~tCDyla9H4GqZTwyN9XBg__",
-    description: "A powerful retail shopping platform.",
+    description: "A comprehensive cloud-based suite for business CRM and ERP needs.",
     client: "Apptivo",
     year: 2024,
     technologies: ["Next.js", "Stripe", "Vercel"],
     features: [
-      "Product filtering",
-      "Payment gateway integration",
-      "Mobile optimized"
+      "Custom CRM workflows",
+      "Integrated invoicing tools",
+      "Role-based user access",
+      "Real-time analytics dashboard"
     ],
     review: {
-      clientName: "Sarah Lee",
-      clientRole: "Project Manager",
-      message: "Professional work, delivered on time.",
+      clientName: "Bastin Gerald",
+      clientRole: "Founder & CEO, Apptivo",
+      message: "Zynlogic streamlined our platform’s UX and performance. A dependable and skilled tech partner.",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -149,343 +151,344 @@ export const projects: Project[] = [
     category: "CRM",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/b3f08712c0804330/WhatsApp%20Image%202025-05-06%20at%2017.22.22_40ec6352.jpg?Expires=1841405316&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=XlI5tGlWOAcp-OH2xNpDgPLLCZxBWGYhsT~7xSZdwi2y4H4Armtma9V-EK8rgIJd84gCQeci2jiSWcs8Rdy-HHuez9wJ5epH28frxjrcwlhfmyO4F8kj3MnH7x7DXXCd1065-RvB9Gzck2lxNSeWBl3MPGmZzLqX3bV8vVfl2~aQ7OQjKaZa2c4onkPGzSOmxvYp9EZnVwhijNPvLNeUYdA~FfZaYA8zmGgfLhoSExIkPhjRZeLJgw7dvT5hH5nCu1L7WJracyH3NgzRMrdUyyuOkd4jaHLi8-zfA-pjkzSgmYblQv9HwNkdZuinngBkg2Q4SfW5skYgfpkTRJE8ug__",
-    description: "A powerful retail shopping platform.",
+    description: "An all-in-one collaboration platform for CRM, communication, and project management.",
     client: "Bitrix24",
     year: 2024,
     technologies: ["Next.js", "Stripe", "Vercel"],
     features: [
-      "Product filtering",
-      "Payment gateway integration",
-      "Mobile optimized"
+      "Unified communication tools",
+      "Custom CRM automation",
+      "Task and project tracking",
+      "Team collaboration dashboard"
     ],
     review: {
-      clientName: "Sarah Lee",
-      clientRole: "Project Manager",
-      message: "Professional work, delivered on time.",
+      clientName: "Dmitry Valyanov",
+      clientRole: "President, Bitrix24",
+      message: "Zynlogic brought clarity and structure to our complex platform. Outstanding execution and support!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project5",
-    title: "Zomato",
+    title: "hungerbox",
     category: "Food & Delivery",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A food delivery platform connecting users with restaurants.",
-    client: "Zomato",
+    imageUrl: "https://media-hosting.imagekit.io/6e99c6bcfd184f73/food%20website%201.png?Expires=1841475303&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=tZJ9T4zlY9JisLIXKlQ~97DTVmRUSwSLiRXfX2bnjn0~IcOqnu6vzvfsuLNdi6Gu~9w-xTT9vm98yiCpR1Ulmbh3DlvGbYN9WGg~hEYE-KzSXEogmPdqspZyrxWIY4TmrredeMuE7AeIYCfiVGuxAuFulNzY1Qp-X-UPR7chv0mBMI9MKmwm~BPdj~R52qE4MZeu6m-Sn2TprwcI5Oup4bbY3tCbd0740kHF5tSAdgzbzKD4ob~y-fDLPSXuAH0MC78oIcueFIaaTPxAsxTxln8KlCnHArs~01RV7EyEE01yG3LyC-Hv0boeDBFg-dPv4SKwoBn-kaErV-3fq7iM~w__",
+    description: "A smart food ordering platform for corporate cafeterias and large institutions.",
+    client: "hungerbox",
     year: 2024,
     technologies: ["React", "Node.js", "MongoDB"],
     features: [
-      "Restaurant search and filtering",
-      "Online ordering",
-      "Delivery tracking",
-      "User reviews and ratings"
+      "Real-time cafeteria menus",
+      "Contactless QR ordering",
+      "Wallet and payment integration",
+      "Admin analytics panel"
     ],
     review: {
-      clientName: "Deepinder Goyal",
-      clientRole: "CEO, Zomato",
-      message: "Excellent work on our platform. The user experience has improved significantly.",
+      clientName: "Sandipan Mitra",
+      clientRole: "CEO, HungerBox",
+      message: "Zynlogic transformed our food tech experience with intuitive design and flawless functionality.",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project6",
-    title: "PhonePe",
-    category: "Finance",
+    title: "Biryanibykilo",
+    category: "Food & Delivery",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/8db41e1f0ae549c4/WhatsApp%20Image%202025-05-05%20at%2018.07.32_aad7af30.jpg",
-    description: "A digital payment platform for seamless financial transactions.",
-    client: "PhonePe",
+    imageUrl: "https://media-hosting.imagekit.io/1bceb9cd8c0048d5/food%20website%202.png?Expires=1841475303&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=zW7kXw07zvzikECfamj7M5lPPuGlV4M9Q-ej4v7exsbCQk64Us4am58rPzrFyN-jcgLPO9esuzy3RK4jhzxOAiJjB9QYVNGluh7g1gW7qpckQpjS15bn4kYTOoM4-vUIEflGNOrXJzDFUtXU7SZhNXRQJvsQFAZzYrtOwwUnbVkOvKeMCzf5smsoPiuy-M25K3vekAb4ktI64BXDJ4oxp8LBNPKSTowdmzD3XbWh4c9w6PuByB82648Gnld7oSgd3x3E9m~fJIUwBUZ5mqDFEG9xR92Yh5E3LecTORubdttcUGUOSIkarhigWMDOmtv4TYABaM-Aymk7AjWlBnbCrg__",
+    description: "A premium biryani delivery brand offering authentic, handi-cooked meals.",
+    client: "Biryanibykilo",
     year: 2024,
     technologies: ["React", "Node.js", "PostgreSQL"],
     features: [
-      "UPI payments",
-      "Bill payments",
-      "Money transfers",
-      "Investment options"
+      "Menu-based food ordering",
+      "Handi cooking time tracker",
+      "Integrated delivery logistics",
+      "Loyalty and referral programs"
     ],
     review: {
-      clientName: "Sameer Nigam",
-      clientRole: "CEO, PhonePe",
-      message: "The platform has exceeded our expectations in terms of performance and security.",
+      clientName: "Kaushik Roy",
+      clientRole: "Co-Founder, Biryani By Kilo",
+      message: "Zynlogic delivered a high-performance platform that matches our premium food experience. Highly recommended!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project7",
-    title: "Swiggy",
-    category: "Food & Delivery",
+    title: "Traveltriangle",
+    category: "Tourism",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A food delivery service connecting users with local restaurants.",
-    client: "Swiggy",
+    imageUrl: "https://media-hosting.imagekit.io/bd99e486328645c6/tourism%20website%201.png?Expires=1841397646&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=JzullprwseKQE5-uBYqO5TS64o7v5TGpMubWQkQc2OmKQM90GXRkZmY~QpuAEwS91XCnLvYQpZiN3A6~D62BjQQmtazunEw7BITrdmouLmBhkvY5Am5Bu4lMHrp3cSOXZpIcSEMe3Qu~yKtx~wQIRd6ItiqsHn20reZfb3lNX1-Tb98XbZ7jGVMLTE6Zym81SDVT2cl7DFPpoVwfpgwFkzD5RcUsPP3u9L7g97aTrKkq1RIThwAyt2-M8NEVd3NIrHoywAWXfFDho51lTwsx7AbOZq~javh6NHYAJ5qNZoJSy9osdfjmsam7r46L75nQEiF7dQCEasgfDHi2qNIruw__",
+    description: "A marketplace connecting travelers with curated holiday packages from verified agents.",
+    client: "Traveltriangle",
     year: 2024,
     technologies: ["React", "Express", "MongoDB"],
     features: [
-      "Restaurant discovery",
-      "Real-time order tracking",
-      "Multiple payment options",
-      "Subscription plans"
+      "Custom trip planning tool",
+      "Agent comparison interface",
+      "Secure booking system",
+      "Traveler reviews and ratings"
     ],
     review: {
-      clientName: "Sriharsha Majety",
-      clientRole: "CEO, Swiggy",
-      message: "The platform has helped us scale our operations efficiently.",
+      clientName: "Sanchit Garg",
+      clientRole: "Co-Founder, TravelTriangle",
+      message: "Zynlogic built a travel platform that balances usability and scale. Excellent delivery and support!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project8",
-    title: "Google Pay",
-    category: "Finance",
+    title: "kiomoi",
+    category: "Tourism & Travel",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A digital payment app for fast and secure transactions.",
-    client: "Google",
+    imageUrl: "https://media-hosting.imagekit.io/27191b89377e4e6a/tourism%20website%202.png?Expires=1841397646&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=SxZTPc~kXKbOBbaojk~l7ZUmZ6AvfckOeSRBsSlum-QoqWk46TAIiKfY51obPAm6StwxPVU7e3GC8hTc4zywkrqqgWZHvZSfzvQvMuBl5DoDPjl5tEjhRkhpowxWUgyY0b0SjBEf6ABUyC2Dtofbybr1qthGeL0YL~I2swBgM-cs5aHaPevZBuxcltHPi8OXr0oPD2vZ~8YaoOiXkV4MGD2hhobR2370GN1WXwSZgVMr4HerlWfHEOp16BctK9K~K0tRTbo3pyh8jWgnslzm7qbqn3gI37pP9WtmW-QT0MHu~BoZ5~PBL9T7ftQfAoVUE3R93G5Zot1aoR60NfrPdA__",
+    description: "A travel platform offering customized tour planning and booking solutions.",
+    client: "kiomoi",
     year: 2024,
     technologies: ["Angular", "Firebase", "Cloud Functions"],
     features: [
-      "UPI payments",
-      "Contactless payments",
-      "Bill splitting",
-      "Rewards program"
+      "Dynamic itinerary builder",
+      "Secure online payments",
+      "Tour package management",
+      "Real-time booking engine"
     ],
     review: {
-      clientName: "John Smith",
-      clientRole: "Product Manager, Google Pay",
-      message: "The implementation was smooth and the platform has been performing excellently.",
+      clientName: "Amit Sharma",
+      clientRole: "CEO, Kiomoi",
+      message:"Zynlogic delivered a seamless travel booking platform beyond expectations. Truly impressive work!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project9",
-    title: "Myntra",
-    category: "Fashion",
+    title: "Medmonks",
+    category: "Healthcare",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A fashion e-commerce platform offering a wide range of clothing and accessories.",
-    client: "Myntra",
+    imageUrl: "https://media-hosting.imagekit.io/3ba7d0c0a777410d/healthcare%20website%202.png?Expires=1841397646&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=VUn~2odmD5wPLAdKaCbxQlveSGxjnAdBOEYc2xb75y4byD94F3j6VSj5uradtItK6jjglvCCIqrhTDJAPwiZO8dBE2XMS6K2Nifm7Cnv7xIYIU7QRQ36QMf~gYCnqRH~zAdPagYih6SpHRzgQqAuz3G8AxvnOO6kzkeODhjbnVGzTQnclrWgqA0B6KlILZUpUSb2BwW5MPBpN6bLVwwdlANtS7bcQMfwvhmeIthcY0VJeyANMKys0WSRVRAjmCC8fWskX0Dtk096yiSiyxQXIF9w6kWS7PC3Q282lnHjAO7YENRfNXBIM~Qz5qhrAoVzk2IaDuce3OWrptlpk4ucXg__",
+    description: "Medmonks connects global patients with trusted healthcare providers in India for affordable and high-quality medical treatments.",
+    client: "Medmonks",
     year: 2024,
     technologies: ["React", "Node.js", "MongoDB"],
     features: [
-      "Personalized recommendations",
-      "Virtual try-on",
-      "Size guide",
-      "Wishlist functionality"
+      "AI-Driven Doctor Matching",
+      "Verified Hospital Profiles",
+      "24-Hour Cost Estimates",
+      "Multilingual Support"
     ],
     review: {
-      clientName: "Amar Nagaram",
-      clientRole: "CEO, Myntra",
-      message: "The platform has significantly improved our conversion rates and user engagement.",
+      clientName: "Sanchit Sharma",
+      clientRole: "CEO, Medmonks",
+      message: "Medmonks revolutionized our approach to medical tourism. Their seamless service and expert support made everything easy.",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project10",
-    title: "Paytm",
-    category: "Finance",
+    title: "Healcard",
+    category: "Healthcare",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A digital payment and financial services platform.",
-    client: "Paytm",
+    imageUrl: "https://media-hosting.imagekit.io/13f4c493714946b3/healthcare%20website%203.png?Expires=1841397646&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=yMnLDluuIWkszCnaOxSvFBuBwjyUPhzQXWl9~KC4FSO2nwuHoEBi~MjEEaQBcHNl~Sw~2nN6QWTrWc0~lPFqZb~M0LJzFmMB2S73KxesV-a~DA7O25aHOkS8V6i~bn7J-q~X9ksqlm2AbM-tTf9w08Qpsv4AlZ1x2Rbz636ZtJdBzhoU0VuTFjL7ss4SRqvGroSnjcjFgLEjLhA6hEMdUelip5MuV0OEaRLqdak5FluyMB5uMKgTa~9OExbe2-RV09U6PVBcOnA95srNVIVTUjsjJdWvyBBANmUR4N91at9djjYIBRACnkg9pzDf9Njt4q1BoJsHhIoCBBq-3xKEWQ__",
+    description: "A cloud-based healthcare platform for patients, doctors, and pharmacies.",
+    client: "Healcard",
     year: 2024,
     technologies: ["React", "Node.js", "PostgreSQL"],
     features: [
-      "UPI payments",
-      "Wallet services",
-      "Bill payments",
-      "Banking services"
+      "AI-powered EMR system",
+      "Online appointment scheduling",
+      "Telemedicine and e-prescriptions",
+      "Secure medical record management"
     ],
     review: {
-      clientName: "Vijay Shekhar Sharma",
-      clientRole: "CEO, Paytm",
-      message: "The platform has been instrumental in our digital transformation journey.",
+      clientName: "Dr. Jane Smith",
+      clientRole: "CEO, Healcard",
+      message: "Zynlogic delivered a robust healthcare solution with excellent support!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project11",
-    title: "Flipkart",
-    category: "E-Commerce",
+    title: "Pearlacademy",
+    category: "Education",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A comprehensive e-commerce platform for various product categories.",
-    client: "Flipkart",
+    imageUrl: "https://media-hosting.imagekit.io/40a74932c8ca4a20/education%20website%201.png?Expires=1841397645&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=TigXwqlcxkmvWaGV~7c6czGv3ZhH2yEIOpxQsOHUVXycenBZ2aVvqj9k0CKxu6oQhfK9bDQnkMU9un3gtMrgRKnlpgf1kNZlGoDYQM5-OaskYuDom296pM4UFEBLY7HhTwGqn5AoRpnD5qW~koBflnumNxSJj1pMYgEK1Dgp3oBv-YxujfenJTq0yQWJgKJxx~oXZhxk2LIvSC~UsSNPmIAzIFTHjL3omMN8WDYLtrqpfGNpSd7v9lpC8v-QZ7ZTJNgX1Q16P9pAqovWGKpzsXdLZLNMLp4w7xHONXaGmsesuM-En-QrhlcNdkvpHnIJ0VtfiUDKw9SQL8INrEZH4w__",
+    description: "A premier institute offering globally recognized degrees in design, fashion, and creative business.",
+    client: "Pearlacademy",
     year: 2024,
     technologies: ["React", "Node.js", "MySQL"],
     features: [
-      "Product search and filtering",
-      "User reviews and ratings",
-      "Secure checkout",
-      "Order tracking"
+      "Virtual avatar builder integration",
+      "Online portfolio showcase platform",
+      "Interactive course preview system",
+      "Real-time lecture streaming"
     ],
     review: {
-      clientName: "Kalyan Krishnamurthy",
-      clientRole: "CEO, Flipkart",
-      message: "The platform has significantly improved our user engagement and conversion rates.",
+      clientName: "Priya Sharma",
+      clientRole: "Director, Pearl Academy",
+      message: "Zynlogic created a dynamic, user-centric platform for creative education. Truly exceptional!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project12",
-    title: "Swiggy App",
-    category: "Food & Delivery",
+    title: "Welingkar",
+    category: "Education",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A mobile application for food delivery services.",
-    client: "Swiggy",
+    imageUrl: "https://media-hosting.imagekit.io/2b91069da4764c2c/education%20website%202.png?Expires=1841397645&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=gEB81XICdS1JkM4sJ0Gp-m4hwqbeVf-zchDAMQBBkQ6cFikiE3JmDk-1qm3h1Vcm8WBmR2Mc1HF74mvOc~7Ik8iaXip8Jfe1LKpWGZzWFfx17lHpAxuMTMyR31YQX6ZtQDbl7AhMrIGv3CXTVsSM2OHpm1oDf-YUpF7q~Vv7IOdpTr-MEBR4QBx8fdDFX3Jom0S3B9oilrmsGHnkaU5i9F-r1vIreRhsMHeYnQDEANtQCoD-j2FY64xunLSgq75urx4abpcmUtP3mEcLAAUUcBKdj37EGsBilBzVo7ptdIDMD7Xr51iCzpxLIIMuIddB4oTUabewb3I5nKL1~xa2Mw__",
+    description: "A premier B-school fostering innovative management education and industry-ready leaders.",
+    client: "WeSchool",
     year: 2024,
     technologies: ["React Native", "Node.js", "MongoDB"],
     features: [
-      "Restaurant discovery",
-      "Real-time order tracking",
-      "In-app payments",
-      "Delivery partner tracking"
+      "Immersive design thinking workshops",
+      "Virtual experiential learning platform",
+      "Global faculty collaboration portal",
+      "Real-time industry project tracker"
     ],
     review: {
-      clientName: "Sriharsha Majety",
-      clientRole: "CEO, Swiggy",
-      message: "The mobile app has significantly improved our user engagement and order frequency.",
+      clientName: "Dr. Uday Salunkhe",
+      clientRole: "Group Director, WeSchool",
+      message: "Zynlogic developed a transformative platform for modern management education. Exceptional work!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project13",
-    title: "Amazon",
-    category: "E-Commerce",
+    title: "Jobvisit",
+    category: "Job Portal",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A global e-commerce platform for various product categories.",
-    client: "Amazon",
+    imageUrl: "https://media-hosting.imagekit.io/eac444de48504390/job%20website%201.png?Expires=1841475303&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=WGlar605Kf8oI9xpK4fx~Of7nM7EACNsHDsDBTndcIr3TOhS0MsWvNjtTCTA-64heKSWmkn5d7OCWgyhSxE28XwAoh~jII2tcAe7IAe0VkQe1tRb~fE8LQ8XV-WcWsLqQrTNeE7odPhoABdczjvL468sF4dp8pLnBfxHPparo02D5WqSZS3umbz0Nz0jinMZquooDVIA1FhDRerOWX4vrUprSUprBgwhytmJc8wQzvd3eJSY0ha34QaSPqZgox-UpgdyoyXrWjW6IL2PTxuvw8~EbMU37tQJ-QIrqIGUMZ~CqAO9lJdtbJAK0ITVfEy0eeiv9lETlRRsX2AR9VZbPw__",
+    description: "An AI-driven recruitment platform connecting employers with top talent efficiently.",
+    client: "Jobvisit",
     year: 2024,
     technologies: ["React", "Java", "AWS"],
     features: [
-      "Product search and filtering",
-      "Personalized recommendations",
-      "Prime membership",
-      "Multiple payment options"
+      "AI-powered candidate matching system",
+      "Automated job posting tool",
+      "Profile-based job recommendation engine",
+      "Streamlined application tracking interface"
     ],
     review: {
-      clientName: "Andy Jassy",
-      clientRole: "CEO, Amazon",
-      message: "The platform has helped us scale our operations and improve user experience.",
+      clientName: "Sarah Johnson",
+      clientRole: "CEO, JobVisit.ai",
+      message: "Zynlogic created a smart, efficient recruitment platform. Outstanding results!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project14",
-    title: "Zomato App",
-    category: "Food & Delivery",
-    type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A mobile application for food delivery and restaurant discovery.",
-    client: "Zomato",
+    title: "Hiremee",
+    category: "Job Portal",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/4a0c59a835fd4d5f/job%20website%202.png?Expires=1841475303&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=vmPSMP6mBgXvP0vQ98IjST3jVNx2z2AVhcxJkXZE2ofqkxORI2YGp~XQAFAi70rM25abysrHRXXD13urm8vUJ78xNCJYIc50d~g7W5mtUNDmd3dyjHls8cq2yMncAqfcvIYH4sFCeX4r4wQ78QSd-MMs-hPzztI2eE5rh8oCbOpiDeeKGQjmcf-Amk5S6H4lPBwB1XSYDEixuBrj5tV-DF5tLRU7TLwJsRLUdrTbxID-zDpacWjSPSaH2xwEyFCYAWc5jZLaKeeayVypVv0BT~rbIbPeIE~AWnKjtHfkVv1-DjLNkdeP~kDjc-tGHws3XrmnB5d~I4vOZmmM-yEgww__",
+    description: "An AI-driven platform connecting students and recruiters with skill assessments.",
+    client: "Hiremee",
     year: 2024,
     technologies: ["React Native", "Node.js", "MongoDB"],
     features: [
-      "Restaurant discovery",
-      "Real-time order tracking",
-      "In-app payments",
-      "User reviews and ratings"
+      "AI-powered skill assessment system",
+      "Video profile showcasing tool",
+      "Pre-assessed candidate database",
+      "Detailed skill-gap analysis reports"
     ],
     review: {
-      clientName: "Deepinder Goyal",
-      clientRole: "CEO, Zomato",
-      message: "The mobile app has significantly improved our user engagement and order frequency.",
+      clientName: "Ravi Kumar",
+      clientRole: "CEO, HireMee",
+      message: "Zynlogic enhanced our recruitment platform with seamless AI integration. Highly impressive!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project15",
-    title: "Nykaa",
-    category: "Fashion",
+    title: "ssvcinfra",
+    category: "Real Estate",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/0a0313adf5f64705/WhatsApp%20Image%202025-05-06%20at%2014.38.38_f6c35d43.jpg",
-    description: "A beauty and personal care e-commerce platform.",
-    client: "Nykaa",
+    imageUrl: "https://media-hosting.imagekit.io/c2ab25f962f0487e/real%20estate%20website%201.png?Expires=1841475303&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=jGT5n02LulgQh6sRqEvM7KgJE3flUto~~cYErOnhKgZEPj7Zl1fSbWx-e~6V4Qdd6Vv5vV9ghVysPKXoMP0A6vt8fJjndkGoeUtOb6ZJhR-aBG1zHl3MTYt4hxvx3266uvWEtaWwX76ksdYzR0sm7D3lxRftfo~aRD-FLaS6S-rgL-F-0zFKl~kpWPrDYSCS9Gr39vePl5Aw5vJrIFsPVzhn~CEJvYVDfJ5~dtG-Jac9MerGjrz3fV5gf--~dx5kSm3-yTsmUydOXsifNnehYoZuQjo3AgyUpFbQiqFjTcZYJIvowulmAG2lFrC0Wvzf~NrLa0773q~IpZQP9-DY5A__",
+    description: "A leading construction firm delivering turnkey solutions for residential and commercial projects.",
+    client: "SSVC & Infrastructure Pvt. Ltd.",
     year: 2024,
     technologies: ["React", "Node.js", "MySQL"],
     features: [
-      "Product search and filtering",
-      "Beauty advice and tutorials",
-      "User reviews and ratings",
-      "Personalized recommendations"
+      "Customizable project design tool",
+      "Real-time construction progress dashboard",
+      "Integrated budget tracking system",
+      "Virtual 3D structure preview"
     ],
     review: {
-      clientName: "Falguni Nayar",
-      clientRole: "CEO, Nykaa",
-      message: "The platform has significantly improved our user engagement and conversion rates.",
+      clientName: "Mr. Jeevan C",
+      clientRole: "Director, SSVC & Infrastructure Pvt. Ltd.",
+      message:"Zynlogic created an innovative platform that streamlined our construction process. Highly efficient!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project16",
-    title: "Myntra App",
-    category: "Fashion",
+    title: "PropertyPanther",
+    category: "Real Estate",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/3f8597c685b64fa6/original-32be5e984093054360bf86a4415ad244.webp",
-    description: "A leading fashion e-commerce platform with a wide range of brands.",
-    client: "Myntra",
+    imageUrl: "https://media-hosting.imagekit.io/9f8e2f6495d645c3/real%20estate%20website%202.png?Expires=1841475303&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Mw9ok6CqOPTL6fnR1FtuSLOBGOzM8Dg0jTAClPlk6PfIllXH8WgICC7YKPd8IPFyniMHrroHhfWO1NsElrfpkLN7WT5p7QV~6BGskHoWwFtgIVyv0ujehV~nWaBfqkyWRSNLLJBUTJwqEb5Xclpx0tT1MDP8tO3KBLSpy0r0~Cck0pDylVceDKYjZE65jLy-qPZofP5Ifa7ogxFeRzpc6UsfqOzlixXpNnhe7t1i5ZVNDQbiCOM6lgGH3iKmYWElOo0vuuezJI35I3hwL7RQAFDM~ZV25sFqM-siCvm2dlIJqwhUrN~X4jtpQg1cynmJP~H95Piw7aMDmPXQPZ-z1Q__",
+    description: "A real estate consultancy connecting buyers with properties in Ahmedabad.",
+    client: "PropertyPanther",
     year: 2024,
     technologies: ["React", "Node.js", "MongoDB"],
     features: [
-      "Personalized recommendations",
-      "Size guide",
-      "Wishlist functionality",
-      "Flash sales"
+      "Personalized property matching system",
+      "24/7 expert consultation portal",
+      "Virtual property tour integration",
+      "Market trend analysis dashboard"
     ],
     review: {
-      clientName: "Amar Nagaram",
-      clientRole: "CEO, Myntra",
-      message: "The website has significantly improved our user engagement and conversion rates.",
+      clientName: "Sandeep Pandya",
+      clientRole: "Founder, Property Panther",
+      message: "Zynlogic delivered a seamless platform for property solutions. Highly professional!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project17",
-    title: "Ajio",
-    category: "Fashion",
+    title: "mychoize",
+    category: "Car Rental",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/049a00b0a87b4015/original-0521ffb927e909ac58f6b2f1e688c50b.webp",
-    description: "A premium online fashion store offering curated collections from multiple brands.",
-    client: "Ajio",
+    imageUrl: "https://media-hosting.imagekit.io/01d0a123d5c84636/car%20rental%201.png?Expires=1841475303&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=leX7L53vkNCaE3DArbNX-D4a59BVRE-xeAreiirFM8I~rhwsJ44R3NGWaTZG8a65rkN18vhEzOeOdpf76~17ZeDMQM7vwNB5zRaeCIHKmmAaEg~N2XKLJhsD1sfDw8blCcqxnlmKubSq4h1qywEwoV0oez0-NnU7cQQexnHNYak5Xz2-NdnsWBZHwxk5XugrVYFbJ~sVz4S3VqK0EKX7z5J8ITtqxroODza0TwjGwCsryuTQbp34UXinP1tWlRHVxdqH7Uw9E8UGTNAs0qfIo8uHXHid7OQSvgirZWTVV0UcFFxqulVRWlFEn7VgDaNoveB8td~vzxszbBZQN5v1Iw__",
+    description: "A self-drive car rental service offering flexibility across India.",
+    client: "mychoize",
     year: 2024,
     technologies: ["React", "Express", "PostgreSQL"],
     features: [
-      "Designer collections",
-      "Brand focus",
-      "Seasonal sales",
-      "Fashion blog"
+      "Unlimited kilometers rental option",
+      "24/7 roadside assistance support",
+      "Flexible pick-up/drop-off locations",
+      "Wide vehicle selection range"
     ],
     review: {
-      clientName: "Vineeth Nair",
-      clientRole: "CTO, Ajio",
-      message: "The website has helped us establish our unique brand identity in the market.",
+      clientName: "Ravi Sharma ",
+      clientRole: "CEO, mychoize",
+      message:"Zynlogic built a seamless, user-friendly car rental platform. Highly reliable!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     id: "project18",
-    title: "Amazon App",
-    category: "E-Commerce",
+    title: "Carstreetindia",
+    category: "Car Rental",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/bb9615e784a9411f/original-fa5f62adaa5e47dd11353d97d8d0b132.webp",
-    description: "A comprehensive e-commerce platform with extensive product selection and fast delivery.",
-    client: "Amazon",
+    imageUrl: "https://media-hosting.imagekit.io/95047f278ea74c8e/car%20rental%202.png?Expires=1841475303&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=V~cFAU~uhA02FEtAvRiA2eqYdcMdgax3IIRT5Ht-4UJIo-KDnKqy655HVZmaDKvZOMyFk0RpfhkFNvFhxlwN2c69BDvA8feR2HJeu8~FA6~tJiEi6ei~4BoZZBhpyA-luscg1dTvlNv2OuiWU5UPKnk7~Jwj-n84~eaetbkb7WDooIzoyIxGPdC8kLjQf9csEwc2HAsFJyfldEiGZUnY52AhQUekqcFmrbO5xzpRtraelR2n-uVRGybecpm4I-G9Nt16pKA8EvAq0lbF0gvjoFpxHRA6GQO3ejUkL8vtGM8cBstzFvq8P6wMAFM6DhGgX~7V~dDpkPZsERPd6NOwAg__",
+    description: "A premier dealership offering certified pre-owned luxury cars in Delhi.",
+    client: "Carstreetindia",
     year: 2024,
     technologies: ["React", "Java", "AWS"],
     features: [
@@ -496,7 +499,30 @@ export const projects: Project[] = [
     ],
     review: {
       clientName: "Andy Jassy",
-      clientRole: "CEO, Amazon",
+      clientRole: "CEO, Carstreetindia",
+      message: "The website has helped us scale our operations globally and provide better customer service.",
+      rating: 5
+    },
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  }, {
+    id: "project19",
+    title: "Spotbid",
+    category: "Auction",
+    type: "Website",
+    imageUrl: "https://media-hosting.imagekit.io/442b1db181bf4ee0/auction%20website%201.png?Expires=1841475303&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=lb3GdwWrXYorMA2sfnf9tCp1Jz5qIMY5GqrSGOK10aHg~M~nsQjibYjbx-7Ju-Kmhvu85FAT4H6p0NaApeiNYAK5oLRZ89vcyma4Eu90cdh4S-4YIEMb0WUNeTvqSxgjjbGZAt2AbxYAiAPM4rpMpRykJJkPZ3yz~Rc-PHTI1pHfaeP9WWxwRXhrvQ1kua2nUlO4C3VRFeTeK9KpDLpe-RimHBdlZSegAgz02TRVgCIVQkf8JVyNWK4Og~9jxMe1zZA-r4jiU4eaSsowltgvOpoo98Aoc0lrRMxHUDgYc08NgaOP8JJxtLRVMYG9bdVJ9pJkmsu03Mu0OGPBp8F6tw__",
+    description: "A comprehensive e-commerce platform with extensive product selection and fast delivery.",
+    client: "Spotbid",
+    year: 2024,
+    technologies: ["React", "Java", "AWS"],
+    features: [
+      "Amazon Prime integration",
+      "One-day delivery",
+      "Customer reviews",
+      "Deal of the day"
+    ],
+    review: {
+      clientName: "Andy Jassy",
+      clientRole: "CEO, Spotbid",
       message: "The website has helped us scale our operations globally and provide better customer service.",
       rating: 5
     },
@@ -504,12 +530,12 @@ export const projects: Project[] = [
   },
   {
     id: "project20",
-    title: "Flipkart App",
-    category: "E-Commerce",
+    title: "Meta E-Auction",
+    category: "auction",
     type: "Website",
-    imageUrl: "https://media-hosting.imagekit.io/a4c523011d8d4875/WhatsApp%20Image%202025-05-09%20at%2016.22.33_652a0caf.jpg",
+    imageUrl: "https://media-hosting.imagekit.io/fa5ce7da9da24d61/auction%20website%202.png?Expires=1841475303&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=NsFqb6a4dbAqaAuJ1A8vHGbQeLpWvoZoeBl2PYXFEUph6pQ0Vx5fAvzfNruTAJR5M6OFFziqjDmAFIe2EbMJOUON-LqtqrEhiIW5Fb4B24W0t6jJW6XCLyIu8JxUe8g~ZkRDcJWnLCPquFlmxGq2ZOyjOXsyDjiXPjTimB~l9MdovpBKK~Fbujoow2fNGwqYbtDPVJJBmiUgWCZpKYg-x7AVd821ivnIhQ6MuJaRP~NjNuReF7g5QtZ4ybdwfZ2n6o4rgjOgnh-6s5mcB-x-nj7D4sM2VomVd3cMGdODYfQIGM6i0WQ4Mtb~FcrOwKATAN6fBnJYCZMEhQ3GakiBvQ__",
     description: "A comprehensive e-commerce platform offering a wide range of products across all categories.",
-    client: "Flipkart",
+    client: "Star enterprises",
     year: 2024,
     technologies: ["React", "Node.js", "MySQL"],
     features: [
@@ -519,8 +545,8 @@ export const projects: Project[] = [
       "Quick delivery options"
     ],
     review: {
-      clientName: "Kalyan Krishnamurthy",
-      clientRole: "CEO, Flipkart",
+      clientName: "Ahmed Raza Khan",
+      clientRole: "CEO, Star enterprises",
       message: "This platform has transformed our online presence and significantly boosted our sales.",
       rating: 5
     },
