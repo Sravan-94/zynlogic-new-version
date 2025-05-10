@@ -492,15 +492,15 @@ export const projects: Project[] = [
     year: 2024,
     technologies: ["React", "Java", "AWS"],
     features: [
-      "Amazon Prime integration",
-      "One-day delivery",
-      "Customer reviews",
-      "Deal of the day"
+      "Rigorous multi-point quality checks",
+      "Fixed price no-negotiation policy",
+      "6-month warranty period",
+      "Pan-India delivery service"
     ],
     review: {
-      clientName: "Andy Jassy",
-      clientRole: "CEO, Carstreetindia",
-      message: "The website has helped us scale our operations globally and provide better customer service.",
+      clientName: "Ravinder Singh Batra",
+      clientRole: "Co-Founder, Car Street India",
+      message: "Zynlogic crafted a seamless platform for luxury car buying. Exceptional service!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -510,20 +510,20 @@ export const projects: Project[] = [
     category: "Auction",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/442b1db181bf4ee0/auction%20website%201.png?Expires=1841475303&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=lb3GdwWrXYorMA2sfnf9tCp1Jz5qIMY5GqrSGOK10aHg~M~nsQjibYjbx-7Ju-Kmhvu85FAT4H6p0NaApeiNYAK5oLRZ89vcyma4Eu90cdh4S-4YIEMb0WUNeTvqSxgjjbGZAt2AbxYAiAPM4rpMpRykJJkPZ3yz~Rc-PHTI1pHfaeP9WWxwRXhrvQ1kua2nUlO4C3VRFeTeK9KpDLpe-RimHBdlZSegAgz02TRVgCIVQkf8JVyNWK4Og~9jxMe1zZA-r4jiU4eaSsowltgvOpoo98Aoc0lrRMxHUDgYc08NgaOP8JJxtLRVMYG9bdVJ9pJkmsu03Mu0OGPBp8F6tw__",
-    description: "A comprehensive e-commerce platform with extensive product selection and fast delivery.",
-    client: "Spotbid",
+    description: "An e-auction platform revolutionizing procurement and disposal processes.",
+    client: "Spotbid Solutions LLP",
     year: 2024,
     technologies: ["React", "Java", "AWS"],
     features: [
-      "Amazon Prime integration",
-      "One-day delivery",
-      "Customer reviews",
-      "Deal of the day"
+      "Customizable auction setup options",
+      "Real-time bidding transparency dashboard",
+      "Secure data protection system",
+      "Post-auction analytics tool"
     ],
     review: {
-      clientName: "Andy Jassy",
-      clientRole: "CEO, Spotbid",
-      message: "The website has helped us scale our operations globally and provide better customer service.",
+      clientName: "Balaram R K",
+      clientRole: "CEO, CEO, Spotbid Solutions LLP",
+      message: "Zynlogic transformed our auction process with efficiency and transparency. Highly recommended!",
       rating: 5
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -534,15 +534,15 @@ export const projects: Project[] = [
     category: "auction",
     type: "Website",
     imageUrl: "https://media-hosting.imagekit.io/fa5ce7da9da24d61/auction%20website%202.png?Expires=1841475303&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=NsFqb6a4dbAqaAuJ1A8vHGbQeLpWvoZoeBl2PYXFEUph6pQ0Vx5fAvzfNruTAJR5M6OFFziqjDmAFIe2EbMJOUON-LqtqrEhiIW5Fb4B24W0t6jJW6XCLyIu8JxUe8g~ZkRDcJWnLCPquFlmxGq2ZOyjOXsyDjiXPjTimB~l9MdovpBKK~Fbujoow2fNGwqYbtDPVJJBmiUgWCZpKYg-x7AVd821ivnIhQ6MuJaRP~NjNuReF7g5QtZ4ybdwfZ2n6o4rgjOgnh-6s5mcB-x-nj7D4sM2VomVd3cMGdODYfQIGM6i0WQ4Mtb~FcrOwKATAN6fBnJYCZMEhQ3GakiBvQ__",
-    description: "A comprehensive e-commerce platform offering a wide range of products across all categories.",
+    description: "An advanced e-auction platform for seamless bidding and procurement.",
     client: "Star enterprises",
     year: 2024,
     technologies: ["React", "Node.js", "MySQL"],
     features: [
-      "Personalized recommendations",
-      "Flash sales",
-      "Plus membership benefits",
-      "Quick delivery options"
+      "Real-time bidding interface",
+      "Secure transaction processing",
+      "Custom auction configuration tool",
+      "Automated bid escalation system"
     ],
     review: {
       clientName: "Ahmed Raza Khan",
