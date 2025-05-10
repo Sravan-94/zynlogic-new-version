@@ -76,8 +76,8 @@ const Navbar = () => {
                     </div>
                     <div className="flex flex-col space-y-2">
                       <HoveredLink to="/services#ux">UX Strategy</HoveredLink>
-                      <HoveredLink to="/services#creative">Creative Tech</HoveredLink>
-                      <HoveredLink to="/services#ai">AI Integrations</HoveredLink>
+                      <HoveredLink to="/services#creative">Entraprise</HoveredLink>
+                      <HoveredLink to="/services#ai">AI Integrations & Automations</HoveredLink>
                     </div>
                     <div className="col-span-2 pt-2 mt-2 border-t">
                       <Link 
