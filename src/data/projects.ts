@@ -991,7 +991,7 @@ export const projects: Project[] = [
     title: "Bidkaro",
     category: "Auction",
     type: "Mobile App",
-    imageUrl: "https://media-hosting.imagekit.io/c79be7dc68d2419d/Untitled%20design%20(6).png?Expires=1841477332&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=oCkfpstO68XC2WQkGVY~lXI7IGE3PTQj5sTVx3~8ZU-pBAUzs9sHG2H5hN-Ir8dEy5bWwTF-mRjnBQ2od9uVWZ67cpFVLTKuW1zsk3PbNnt6N0DvoxSzwShpiFYWJEHkPpo-Eu1oIwN6HGJKk9AAW3Wm6P9g2nJ3NJy9gjrhAhlviZFCTq0dvHiKk2D0uhHx8MQQf0bm~y25-HZENX3VXkqYyDQb73tX6mIFbIjCdmtL6uX~oXWfabmZMYGjr2tLGXCjK39gXoe3OjcL~9B-fMjVTHV6wemCVlwLLxNZaq029egJXCAYT4rynLZtUwJ9BrvQpG2mB0uMmj-SDXTG5Q__`",
+    imageUrl: "https://media-hosting.imagekit.io/c79be7dc68d2419d/Untitled%20design%20(6).png?Expires=1841477332&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=oCkfpstO68XC2WQkGVY~lXI7IGE3PTQj5sTVx3~8ZU-pBAUzs9sHG2H5hN-Ir8dEy5bWwTF-mRjnBQ2od9uVWZ67cpFVLTKuW1zsk3PbNnt6N0DvoxSzwShpiFYWJEHkPpo-Eu1oIwN6HGJKk9AAW3Wm6P9g2nJ3NJy9gjrhAhlviZFCTq0dvHiKk2D0uhHx8MQQf0bm~y25-HZENX3VXkqYyDQb73tX6mIFbIjCdmtL6uX~oXWfabmZMYGjr2tLGXCjK39gXoe3OjcL~9B-fMjVTHV6wemCVlwLLxNZaq029egJXCAYT4rynLZtUwJ9BrvQpG2mB0uMmj-SDXTG5Q__",
     description: "Bidkaro is an auction platform connecting buyers and sellers for various assets.",
     client: "Bidkaro",
     year: 2024,

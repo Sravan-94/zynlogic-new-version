@@ -52,7 +52,7 @@ const projectImages = {
   project37: "https://media-hosting.imagekit.io/67fb377a0d5e4b59/WhatsApp%20Image%202025-05-05%20at%2020.27.09_2775ac77.jpg?Expires=1841395447&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=XAjxhZAGYIfpT7sW1AAFwZj4D4lGVpMVD8uutRTO5HkilFEWLhR8-RvoVOdX4H~v5Q4sjcK9GNZTpB-oUron3oslWo32i-CBaRauBt1mt6VGfIEXcu5N0jMmwSI7WUTrKbypAPFsAWIGmxyPkaJOTBhtD7u3fsAZqs31yysfQQRtD57KuFi8bJNAGFIYaQ6mwWuslexd4xbiFCZcIQI3f5-pESrN~SJroDXmuksmXGZ7WfnMCcs9n1MWr9XTBW2jQI0M1OigpR8x01d4ouYnm3RdhHYNCKoPJZO42b7Kv1IILwCZqos3-ADeE4KqCSO0bPdmdht5EwtLKVZpcbQW0A__",
   project38: "https://media-hosting.imagekit.io/ec0cb6c707a2424f/original-cd739778d99a850a4ded174d188bdbb5.webp?Expires=1841395471&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=jFj9YrBK38WZR3pHkl192sYriDoqeiisiLPV~G8Fwkn1HSrLsDQdGJn8BHxnq53yrL1yRMdaotTmDsJbUa7SiLiFEKdAnU0gjtIraj1RIuS7YL3z~0XsSyUbytADjetV0oao~P30-rhpajjB-tQg9AIcl6B6CGRMK4K3yIymnUIAfCtIwf-WkAvVMjm3iaUU0mggD9EcreVioFf-1829ZgEzKmXm5R5qokzpJbH4mUj9qKVmINaeWJIPVfsj-2PoW7qZG6Jlco7bnkVNCjO1T7sufDRqDHBi9F2HDJc21yHSpq4kXlMVINQND7TnDTjU4BCihx9faIkQ4YGp~WKoHA__",
   project39: "https://media-hosting.imagekit.io/11c927eed8384c8f/original-d0050409c3a61b4125176ec94fc1b5d6.webp?Expires=1841395880&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=RrkL~xZXbp127oKBe0rb9S6omO~81~Wp9nEqCzlel8iahPJmqscF6VLgvVgotaz46pa3MDv3~~CvKQiDnQ6Vafks6HwfBN5NvNR-o1wKMk~fjbwZEtjB0RSGPNQQRqxoJsjKb9oQF7b0ygRnh8j1Jm6bsy2G3wTgmMh222YmbUsi4rJA1Ap-vtActMX6bRwR4NFKhywwQmabe6KkWoGvA4RSkBpuNQKmhOgmCVtaDefo6o1rFvxeuJ3o4jSFXzF~jtEwGMHD2~y1b5muH3h-D9te1GtLC5DHG~DVLZGfm2cSlR7yY2Kl8Gw941z-A35ZsVpHUT4d2SkOaLJzacrgLw__",
-  project40: "https://media-hosting.imagekit.io/11c927eed8384c8f/original-d0050409c3a61b4125176ec94fc1b5d6.webp?Expires=1841395880&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=RrkL~xZXbp127oKBe0rb9S6omO~81~Wp9nEqCzlel8iahPJmqscF6VLgvVgotaz46pa3MDv3~~CvKQiDnQ6Vafks6HwfBN5NvNR-o1wKMk~fjbwZEtjB0RSGPNQQRqxoJsjKb9oQF7b0ygRnh8j1Jm6bsy2G3wTgmMh222YmbUsi4rJA1Ap-vtActMX6bRwR4NFKhywwQmabe6KkWoGvA4RSkBpuNQKmhOgmCVtaDefo6o1rFvxeuJ3o4jSFXzF~jtEwGMHD2~y1b5muH3h-D9te1GtLC5DHG~DVLZGfm2cSlR7yY2Kl8Gw941z-A35ZsVpHUT4d2SkOaLJzacrgLw__",
+  project40: "https://media-hosting.imagekit.io/88cccd538fdc47f8/original-4b020e1c4c919e021c55c1576817c944.webp?Expires=1841395828&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=mf7StSKtdm2bWmT9ZZuc9XcXJ4UcHgJ0dlgvtPRT8yJRDaLUPN9LnQ4Nb7AisH1INqzrZkRY9Ra-0qkuR3-WyrEzwo4~3C~JDB8d1PoOARkV~NvEZSou1Eo4FPSQLeyTYcpjkaGlSxtfeOawoR2IvD8rZZlCV0~MHtPq3u26VP22g7h4A3GBv4TI58eQpoJnQtk140gURdjFTaez6fAEYHeN72Qix2EJFy-3Al7UyjYMXPfDupWbgx9ZlDba~YQ6zGubl4x5HiUxHKr8zgmLBCdO8HOnjtzVbiYsf4mZ3FrfshKxwR5wT7c~MAYYH2bDjkSgOeV5qa7cPO7h8UgcOA__",
 };
 
 // Project name configuration - ALL 40 PROJECTS
@@ -79,6 +79,7 @@ const projectNames = {
   project19: "Tata CLiQ",
   project20: "Flipkart App",
   
+  
   // Project 21-40 names
   project21: "app 1",
   project22: "app 2",
@@ -104,15 +105,67 @@ const projectNames = {
 
 // Function to get the appropriate image for a project based on its ID
 const getProjectImage = (project, index) => {
-  // Always prioritize projectImages mapping as it contains the correct URLs
-  // This ensures we're using the images defined in OurWork.tsx, not projects.ts
-  return projectImages[project.id] || project.imageUrl;
+  // First check if we have a direct image mapping for this project ID
+  if (projectImages[project.id]) {
+    return projectImages[project.id];
+  }
+  
+  // If no direct mapping, try to use the project's own imageUrl from projects.ts data
+  if (project.imageUrl && project.imageUrl.trim() !== '') {
+    return project.imageUrl;
+  }
+  
+  // If still no image, use a placeholder based on the project number
+  const projectIdMatch = project.id.match(/^project(\d+)$/);
+  const projectNum = projectIdMatch ? parseInt(projectIdMatch[1], 10) : 0;
+  
+  // Use a fallback using project1 for websites (1-20) or project21 for mobile apps (21-40)
+  if (projectNum >= 1 && projectNum <= 20) {
+    return projectImages['project1']; // Fallback to first website image
+  } else if (projectNum >= 21 && projectNum <= 40) {
+    return projectImages['project21']; // Fallback to first mobile app image
+  }
+  
+  // Last resort - return the first image from our collection
+  return projectImages['project1'];
+};
+
+// Function to determine if a project is a website based on ID
+const isWebsite = (projectId) => {
+  const num = parseInt(projectId.replace('project', ''), 10);
+  return num >= 1 && num <= 20;
+};
+
+// Function to determine if a project is a mobile app based on ID
+const isMobileApp = (projectId) => {
+  const num = parseInt(projectId.replace('project', ''), 10);
+  return num >= 21 && num <= 40;
 };
 
 // Function to get the project name based on position in the filtered list
 const getProjectName = (project, index) => {
-  // Use the project ID directly since it's already in the format 'project1', 'project2', etc.
-  return projectNames[project.id] || project.title;
+  // First check for a name in the projectNames mapping
+  if (projectNames[project.id]) {
+    return projectNames[project.id];
+  }
+  
+  // If no mapped name, use the project title from projects.ts data
+  if (project.title && project.title.trim() !== '') {
+    return project.title;
+  }
+  
+  // If no title, generate a name based on the project ID
+  const projectIdMatch = project.id.match(/^project(\d+)$/);
+  const projectNum = projectIdMatch ? parseInt(projectIdMatch[1], 10) : 0;
+  
+  if (projectNum >= 1 && projectNum <= 20) {
+    return `Website Project ${projectNum}`;
+  } else if (projectNum >= 21 && projectNum <= 40) {
+    return `Mobile App ${projectNum - 20}`;
+  }
+  
+  // Last resort
+  return project.id;
 };
 
 const OurWork = () => {
@@ -127,52 +180,87 @@ const OurWork = () => {
   const [filteredProjects, setFilteredProjects] = useState([]);
 
   useEffect(() => {
-    let projectsToShow = [];
+    // Make sure we only process projects with valid IDs (project1 through project40)
+    const validProjects = projects.filter(project => {
+      const match = project.id.match(/^project(\d+)$/);
+      if (!match) return false;
+      
+      const num = parseInt(match[1], 10);
+      return num >= 1 && num <= 40; // Only include projects 1-40
+    });
+    
+    // Limit to max 40 projects
+    const limitedProjects = validProjects.slice(0, 40);
+    
+    let filtered = [];
     
     if (selectedCategory === "All Work") {
-      // Create a mapping of all projects by their ID for easy lookup
-      const projectsById = {};
-      projects.forEach(project => {
-        projectsById[project.id] = project;
-      });
+      // For All Work, we want to display projects alternately (website, mobile app, website, etc.)
       
-      // Create the exact alternating pattern requested: project1, project21, project2, project22, etc.
-      const alternatingProjects = [];
+      // Get websites (projects 1-20) and sort by ID
+      const websites = limitedProjects.filter(project => isWebsite(project.id))
+        .sort((a, b) => {
+          const aNum = parseInt(a.id.replace('project', ''), 10);
+          const bNum = parseInt(b.id.replace('project', ''), 10);
+          return aNum - bNum;
+        });
       
-      // Determine how many pairs we can create
-      // We'll look for projects 1-20 (website) and 21-40 (mobile app)
-      for (let i = 1; i <= 20; i++) {
-        // Add the website project (project1, project2, etc.)
-        const websiteId = `project${i}`;
-        if (projectsById[websiteId]) {
-          alternatingProjects.push(projectsById[websiteId]);
+      // Get mobile apps (projects 21-40) and sort by ID
+      const mobileApps = limitedProjects.filter(project => isMobileApp(project.id))
+        .sort((a, b) => {
+          const aNum = parseInt(a.id.replace('project', ''), 10);
+          const bNum = parseInt(b.id.replace('project', ''), 10);
+          return aNum - bNum;
+        });
+      
+      // Interleave websites and mobile apps
+      const maxLength = Math.max(websites.length, mobileApps.length);
+      
+      // Create alternating pattern
+      for (let i = 0; i < maxLength; i++) {
+        // Add website first if available
+        if (i < websites.length) {
+          filtered.push(websites[i]);
         }
         
-        // Add the corresponding mobile app project (project21, project22, etc.)
-        const mobileAppId = `project${i + 20}`;
-        if (projectsById[mobileAppId]) {
-          alternatingProjects.push(projectsById[mobileAppId]);
+        // Then add mobile app if available
+        if (i < mobileApps.length) {
+          filtered.push(mobileApps[i]);
         }
       }
+    } 
+    else if (selectedCategory === "Website") {
+      // Show only website projects (IDs 1-20)
+      filtered = limitedProjects.filter(project => isWebsite(project.id));
       
-      projectsToShow = alternatingProjects;
-      console.log(`Showing ${projectsToShow.length} projects with alternating pattern: project1, project21, project2, project22, etc.`);
-    } else {
-      // Filter by specific category
-      projectsToShow = projects.filter(project => project.type === selectedCategory);
-      
-      // Sort by project ID number
-      projectsToShow.sort((a, b) => {
+      // Sort by ID
+      filtered.sort((a, b) => {
         const aNum = parseInt(a.id.replace('project', ''), 10);
         const bNum = parseInt(b.id.replace('project', ''), 10);
         return aNum - bNum;
       });
+    } 
+    else if (selectedCategory === "Mobile App") {
+      // Show only mobile app projects (IDs 21-40)
+      filtered = limitedProjects.filter(project => isMobileApp(project.id));
       
-      console.log(`Showing ${projectsToShow.length} ${selectedCategory} projects`);
+      // Sort by ID
+      filtered.sort((a, b) => {
+        const aNum = parseInt(a.id.replace('project', ''), 10);
+        const bNum = parseInt(b.id.replace('project', ''), 10);
+        return aNum - bNum;
+      });
     }
     
-    setFilteredProjects(projectsToShow);
-  }, [selectedCategory]);
+    // Set filtered projects with the correct type
+    setFilteredProjects(filtered.map(project => ({
+      ...project,
+      // Set type based on ID range
+      type: isWebsite(project.id) ? "Website" : "Mobile App"
+    })));
+    
+    console.log(`Showing ${filtered.length} projects for category: ${selectedCategory}`);
+  }, [selectedCategory, projects]);
 
   
   return (
@@ -196,16 +284,24 @@ const OurWork = () => {
             >
               All Work
             </Button>
-            {categories.map(category => (
-              <Button 
-                key={category} 
-                variant={selectedCategory === category ? "default" : "outline"} 
-                className="rounded-full whitespace-nowrap"
-                onClick={() => setSelectedCategory(category)}
-              >
-                {category}
-              </Button>
-            ))}
+            
+            <Button 
+              key="Website"
+              variant={selectedCategory === "Website" ? "default" : "outline"}
+              className={`rounded-full whitespace-nowrap ${selectedCategory === "Website" ? "bg-purple-600 text-white" : "bg-purple-50 text-purple-800 border-purple-200 hover:bg-purple-100"}`}
+              onClick={() => setSelectedCategory("Website")}
+            >
+              Website
+            </Button>
+            
+            <Button 
+              key="Mobile App"
+              variant={selectedCategory === "Mobile App" ? "default" : "outline"}
+              className={`rounded-full whitespace-nowrap ${selectedCategory === "Mobile App" ? "bg-blue-600 text-white" : "bg-blue-50 text-blue-800 border-blue-200 hover:bg-blue-100"}`}
+              onClick={() => setSelectedCategory("Mobile App")}
+            >
+              Mobile App
+            </Button>
           </div>
           
          
@@ -214,7 +310,7 @@ const OurWork = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {filteredProjects.map((project, index) => (
               <Link 
-                key={project.id} 
+                key={project._uniqueKey || `${project.id}_${index}`} 
                 to={`/project/${project.id}`}
                 className="block h-full"
               >
@@ -224,14 +320,9 @@ const OurWork = () => {
                     <div className="aspect-[3/2] w-full overflow-hidden bg-gray-200">
                       <img 
                         src={getProjectImage(project, index)}
-                        alt={project.title}
+                        alt={project.title || `Project ${project.id}`}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                         loading="lazy"
-                        onError={(e) => {
-                          // Fallback for image loading errors
-                          const target = e.target as HTMLImageElement;
-                          target.src = 'https://images.unsplash.com/photo-1579621970795-87facc2f976d';
-                        }}
                       />
                     </div>
                   </div>
@@ -239,12 +330,22 @@ const OurWork = () => {
                   {/* Content */}
                   <div className="p-4">
                     <div className="flex flex-wrap gap-2 mb-2">
-                      <Badge variant="outline" className="bg-purple-50 text-purple-800 hover:bg-purple-100 border-purple-200">
-                        {project.type === "Mobile App" ? "Mobile App" : "Website"}
-                      </Badge>
-                       
+                      {project.type === "Mobile App" ? (
+                        <Badge variant="outline" className="bg-blue-50 text-blue-800 hover:bg-blue-100 border-blue-200">
+                          Mobile App
+                        </Badge>
+                      ) : (
+                        <Badge variant="outline" className="bg-purple-50 text-purple-800 hover:bg-purple-100 border-purple-200">
+                          Website
+                        </Badge>
+                      )}
+                      {project.category && (
+                        <Badge variant="outline" className="bg-gray-100 text-gray-800 hover:bg-gray-200 border-gray-300">
+                          {project.category}
+                        </Badge>
+                      )}
                     </div>
-                    <h3 className="font-medium text-zinc-900">{getProjectName(project, index)}</h3>
+                    <h3 className="font-medium text-zinc-900 line-clamp-2">{getProjectName(project, index)}</h3>
                   </div>
                 </div>
               </Link>
