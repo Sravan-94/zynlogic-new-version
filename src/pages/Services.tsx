@@ -1,9 +1,10 @@
 import React from "react";
 import Layout from "@/components/layout/Layout";
-import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Check } from "lucide-react";
+import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 
 // Featured projects/services with consistent images matching the home page design
 const featuredServices = [
@@ -148,9 +149,14 @@ const ServiceSection = ({ service, index }) => {
           ))}
         </ul>
         
-        <Button className="bg-purple-600 text-white hover:bg-purple-700 flex items-center gap-2 w-fit">
-          Let's Talk About {service.title.split(" ")[0]}
-          <ArrowRight size={16} />
+        <Button 
+          asChild 
+          className="bg-purple-600 text-white hover:bg-purple-700 flex items-center gap-2 w-fit"
+        >
+          <Link to="/contact">
+            Let's Talk About {service.title.split(" ")[0]}
+            <ArrowRight size={16} />
+          </Link>
         </Button>
       </div>
     </div>
