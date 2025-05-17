@@ -31,7 +31,7 @@ const ServiceCard = ({ title, imageSrc, className }: ServiceCardProps) => (
 const services = [
   {
     title: "Moblie Applications",
-    imageSrc: "/services/mobile-app-development.jpg",
+    imageSrc: "/WhatsApp Image 2025-05-17 at 13.57.33_50f8aa3c.jpg",
   },
   {
     title: "Web Design & Development",
