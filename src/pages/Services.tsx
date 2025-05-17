@@ -1,9 +1,10 @@
 import React from "react";
 import Layout from "@/components/layout/Layout";
-import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Check } from "lucide-react";
+import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 
 // Featured projects/services with consistent images matching the home page design
 const featuredServices = [
@@ -38,10 +39,12 @@ const services = [
     icon: "",
     imageSrc: "https://media-hosting.imagekit.io/a4e2b2dd3e964d94/WhatsApp%20Image%202025-05-05%20at%2015.33.38_cc192496.jpg?Expires=1841230524&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=g2rq1KyjUXD9foOYkvGlqzAf1hkCLjFhjUIo8rIJjWI2qb5xR8pyFDEZSLxpQFLxhp1j8pZ3N00ph73HrS9ok86I6Lp5n1uBBgfdvbtdsekHJnOg3Izq3kMZoqMFOcVqjcVSbGfN748QEodlJozBQUxZf6aD0VujpRhT6rmQd0UzcA2bHgBdgjnmygf8N4qWWmaYF~aar3HBie3UArrYdreJeg-zZ81bkLDRipUPl8mo0a-16ggFWG5uwRfU35qI4mOKWkwHoHOfg-mid2smimTNzTNdR8fkRP~B1nrKWO1xeB0tYuk292A3mYSiiMzMBpm3fGa-HIydefgewxNQZg__",
     features: [
-      "Custom websites crafted with clean, efficient code.",
-      "Responsive designs optimized for all devices.",
-      "SEO-friendly structure for better online visibility.",
-        "Fast, secure, and scalable website solutions.",
+      "Custom WordPress Development",
+      "Custom Shopify Development",
+      "React & Next.js Applications",
+      "E-commerce Solutions",
+      "Content Management Systems",
+      "Performance Optimization"
     ]
   },
   {
@@ -146,9 +149,14 @@ const ServiceSection = ({ service, index }) => {
           ))}
         </ul>
         
-        <Button className="bg-purple-600 text-white hover:bg-purple-700 flex items-center gap-2 w-fit">
-          Let's Talk About {service.title.split(" ")[0]}
-          <ArrowRight size={16} />
+        <Button 
+          asChild 
+          className="bg-purple-600 text-white hover:bg-purple-700 flex items-center gap-2 w-fit"
+        >
+          <Link to="/contact">
+            Let's Talk About {service.title.split(" ")[0]}
+            <ArrowRight size={16} />
+          </Link>
         </Button>
       </div>
     </div>
