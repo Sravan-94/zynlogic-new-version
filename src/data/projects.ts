@@ -95,7 +95,7 @@ export const projects: Project[] = [
       message: "Zynlogic understood our brand ethos perfectly and delivered a clean, high-performing site. We’re thrilled!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project2",
@@ -119,7 +119,7 @@ export const projects: Project[] = [
       message: "Zynlogic captured our brand’s personality flawlessly. The new site is fun, fast, and customer-friendly!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project3",
@@ -143,7 +143,7 @@ export const projects: Project[] = [
       message: "Zynlogic streamlined our platform’s UX and performance. A dependable and skilled tech partner.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project4",
@@ -167,7 +167,7 @@ export const projects: Project[] = [
       message: "Zynlogic brought clarity and structure to our complex platform. Outstanding execution and support!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project5",
@@ -191,7 +191,7 @@ export const projects: Project[] = [
       message: "Zynlogic transformed our food tech experience with intuitive design and flawless functionality.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project6",
@@ -215,7 +215,7 @@ export const projects: Project[] = [
       message: "Zynlogic delivered a high-performance platform that matches our premium food experience. Highly recommended!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project7",
@@ -239,7 +239,7 @@ export const projects: Project[] = [
       message: "Zynlogic built a travel platform that balances usability and scale. Excellent delivery and support!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project8",
@@ -263,7 +263,7 @@ export const projects: Project[] = [
       message:"Zynlogic delivered a seamless travel booking platform beyond expectations. Truly impressive work!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project9",
@@ -287,7 +287,7 @@ export const projects: Project[] = [
       message: "Medmonks revolutionized our approach to medical tourism. Their seamless service and expert support made everything easy.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project10",
@@ -311,7 +311,7 @@ export const projects: Project[] = [
       message: "Zynlogic delivered a robust healthcare solution with excellent support!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project11",
@@ -335,7 +335,7 @@ export const projects: Project[] = [
       message: "Zynlogic created a dynamic, user-centric platform for creative education. Truly exceptional!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project12",
@@ -359,7 +359,7 @@ export const projects: Project[] = [
       message: "Zynlogic developed a transformative platform for modern management education. Exceptional work!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project13",
@@ -383,7 +383,7 @@ export const projects: Project[] = [
       message: "Zynlogic created a smart, efficient recruitment platform. Outstanding results!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project14",
@@ -407,7 +407,7 @@ export const projects: Project[] = [
       message: "Zynlogic enhanced our recruitment platform with seamless AI integration. Highly impressive!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project15",
@@ -431,7 +431,7 @@ export const projects: Project[] = [
       message:"Zynlogic created an innovative platform that streamlined our construction process. Highly efficient!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project16",
@@ -455,7 +455,7 @@ export const projects: Project[] = [
       message: "Zynlogic delivered a seamless platform for property solutions. Highly professional!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project17",
@@ -479,7 +479,7 @@ export const projects: Project[] = [
       message:"Zynlogic built a seamless, user-friendly car rental platform. Highly reliable!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project18",
@@ -503,7 +503,7 @@ export const projects: Project[] = [
       message: "Zynlogic crafted a seamless platform for luxury car buying. Exceptional service!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   }, {
     id: "project19",
     title: "Spotbid",
@@ -526,7 +526,7 @@ export const projects: Project[] = [
       message: "Zynlogic transformed our auction process with efficiency and transparency. Highly recommended!",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project20",
@@ -550,7 +550,7 @@ export const projects: Project[] = [
       message: "This platform has transformed our online presence and significantly boosted our sales.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project21",
@@ -574,7 +574,7 @@ export const projects: Project[] = [
       message: "The mobile app has exceeded our expectations in both design and functionality.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project22",
@@ -598,7 +598,7 @@ export const projects: Project[] = [
       message: "This app has transformed our workflow and boosted team productivity significantly.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project23",
@@ -622,7 +622,7 @@ export const projects: Project[] = [
       message: "This mobile CRM has transformed how our sales team operates in the field.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project24",
@@ -646,7 +646,7 @@ export const projects: Project[] = [
       message: "This CRM app has revolutionized how we handle customer relationships and boosted conversion rates.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project25",
@@ -670,7 +670,7 @@ export const projects: Project[] = [
       message: "This app has transformed our food delivery service and significantly increased our customer base.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project26",
@@ -694,7 +694,7 @@ export const projects: Project[] = [
       message: "This app has helped us reach a niche market of food enthusiasts and elevated our service.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project27",
@@ -718,7 +718,7 @@ export const projects: Project[] = [
       message: "This app has revolutionized our grocery delivery service and significantly improved user retention.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project28",
@@ -742,7 +742,7 @@ export const projects: Project[] = [
       message: "This application has transformed the eyewear shopping experience and increased our conversion rates.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project29",
@@ -766,7 +766,7 @@ export const projects: Project[] = [
       message: "This application has revolutionized how customers shop for furniture and significantly reduced returns.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project30",
@@ -790,7 +790,7 @@ export const projects: Project[] = [
       message: "This application has streamlined our booking process and significantly improved user experience.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project31",
@@ -814,7 +814,7 @@ export const projects: Project[] = [
       message: "This application has significantly improved our mobile user engagement and conversion rates.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project32",
@@ -840,7 +840,7 @@ export const projects: Project[] = [
       message: "This application has transformed our ticketing process and significantly improved user experience.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project33",
@@ -864,7 +864,7 @@ export const projects: Project[] = [
       message: "This application has helped us connect with parents and provide tailored shopping experiences.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project34",
@@ -888,7 +888,7 @@ export const projects: Project[] = [
       message: "This application has democratized investing and made it accessible to millions of users.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project35",
@@ -912,7 +912,7 @@ export const projects: Project[] = [
       message: "This application has transformed the home services industry and improved service quality standards.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project36",
@@ -936,7 +936,7 @@ export const projects: Project[] = [
       message: "This application has revolutionized the stock trading experience in India with its simplicity and performance.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project37",
@@ -960,7 +960,7 @@ export const projects: Project[] = [
       message: "This application has transformed healthcare accessibility and simplified medicine purchases for millions.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project38",
@@ -984,7 +984,7 @@ export const projects: Project[] = [
       message: "This application has transformed the fitness industry with its holistic approach to wellness.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project39",
@@ -1008,7 +1008,7 @@ export const projects: Project[] = [
       message: "This application has simplified the travel booking process and increased our customer satisfaction rates.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
   {
     id: "project40",
@@ -1032,7 +1032,7 @@ export const projects: Project[] = [
       message: "This application has democratized education and helped millions of students achieve their goals.",
       rating: 5
     },
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed"
   },
  
 
