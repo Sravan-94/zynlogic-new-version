@@ -153,26 +153,44 @@ const Categories = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {categories.map((category) => (
-              <div 
-                key={category.id}
-                className="bg-white p-8 rounded-lg border border-gray-100 hover:shadow-lg transition-all duration-300"
-              >
-                <div className="mb-4">{category.icon}</div>
-                <h2 className="text-2xl font-semibold text-black mb-3">{category.name}</h2>
-                <p className="text-gray-600 mb-6">{category.description}</p>
-                <Button 
-                  asChild 
-                  variant="ghost"
-                  className="p-0 hover:bg-transparent text-accent hover:text-accent/80"
-                >
-                  <Link to="/our-work" className="flex items-center">
-                    Explore Work <ArrowRight size={16} className="ml-2" />
-                  </Link>
-                </Button>
-              </div>
-            ))}
-          </div>
+  {categories.map((category, index) => {
+    // Predefined Tailwind border colors for hover effect (simulating 10%, 20%, etc.)
+    const borderColors = [
+      'hover:border-purple-500',   // 10%
+      'hover:border-purple-500', // 20%
+      'hover:border-purple-500',    // 30%
+      'hover:border-purple-500',  // 40%
+      'hover:border-purple-500', // 50%
+      'hover:border-purple-500',   // 60%
+      'hover:border-purple-500',   // 70%
+      'hover:border-purple-500', // 80%
+      'hover:border-purple-500', // 90%
+      'hover:border-purple-500',   // 100%
+    ];
+    // Select border color based on index, cycling through the array
+    const hoverBorderClass = borderColors[index % borderColors.length];
+
+    return (
+      <div
+        key={category.id}
+        className={`bg-white p-8 rounded-lg border border-gray-100 hover:shadow-lg transition-all hover:scale-105 duration-300 ${hoverBorderClass}`}
+      >
+        <div className="mb-4">{category.icon}</div>
+        <h2 className="text-2xl font-semibold text-black mb-3">{category.name}</h2>
+        <p className="text-gray-600 mb-6">{category.description}</p>
+        <Button
+          asChild
+          variant="ghost"
+          className="p-0 hover:bg-transparent text-accent hover:text-accent/80"
+        >
+          <Link to="/our-work" className="flex items-center">
+            Explore Work <ArrowRight size={16} className="ml-2" />
+          </Link>
+        </Button>
+      </div>
+    );
+  })}
+</div>
         </div>
       </section>
     </Layout>

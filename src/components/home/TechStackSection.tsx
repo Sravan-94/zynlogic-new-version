@@ -74,42 +74,60 @@ const TechStackSection = () => {
           </div>
 
           <div className="mt-4">
-            {["frontend", "backend", "design"].map(category => (
-              <TabsContent key={category} value={category} className="mt-0">
-                <Card className="border border-gray-100 shadow-md bg-white/70 backdrop-blur-lg">
-                  <CardHeader className="pb-2">
-                    <CardTitle>
-                      {category.charAt(0).toUpperCase() + category.slice(1)} {category === "design" ? "Tools" : "Technologies"}
-                    </CardTitle>
-                    <CardDescription>
-                      {category === "frontend" && "Our frontend stack focuses on performance, aesthetics and user experience"}
-                      {category === "backend" && "Powerful and scalable backend solutions for your digital products"}
-                      {category === "design" && "Advanced design capabilities for stunning visual experiences"}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
-                      {techStacks[category].slice(0, 10).map(tech => (
-                        <div 
-                          key={tech.name} 
-                          className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all"
-                        >
-                          <div className="mb-3 text-primary">
-                            <img
-                              src={tech.image}
-                              alt={tech.name}
-                              className="h-14 w-14 object-contain"
-                            />
-                          </div>
-                          <span className="font-medium text-gray-800 mb-1">{tech.name}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              </TabsContent>
-            ))}
+  {["frontend", "backend", "design"].map(category => (
+    <TabsContent key={category} value={category} className="mt-0">
+      <Card className="border border-gray-100 shadow-md bg-white/70 backdrop-blur-lg">
+        <CardHeader className="pb-2">
+          <CardTitle>
+            {category.charAt(0).toUpperCase() + category.slice(1)} {category === "design" ? "Tools" : "Technologies"}
+          </CardTitle>
+          <CardDescription>
+            {category === "frontend" && "Our frontend stack focuses on performance, aesthetics and user experience"}
+            {category === "backend" && "Powerful and scalable backend solutions for your digital products"}
+            {category === "design" && "Advanced design capabilities for stunning visual experiences"}
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+            {techStacks[category].slice(0, 10).map((tech, index) => {
+              // Predefined Tailwind border colors for hover effect (simulating 10%, 20%, etc.)
+              const borderColors = [
+                'hover:border-purple-500',   // 10%
+                'hover:border-purple-500', // 20%
+                'hover:border-purple-500',    // 30%
+                'hover:border-purple-500',  // 40%
+                'hover:border-purple-500', // 50%
+                'hover:border-purple-500',   // 60%
+                'hover:border-purple-500',   // 70%
+                'hover:border-purple-500', // 80%
+                'hover:border-purple-500', // 90%
+                'hover:border-purple-500',   // 100%
+              ];
+              // Select border color based on index, cycling through the array
+              const hoverBorderClass = borderColors[index % borderColors.length];
+
+              return (
+                <div
+                  key={tech.name}
+                  className={`flex flex-col items-center p-4 bg-white rounded-lg shadow-sm border border-gray-100 hover:scale-105 hover:shadow-md transition-all ${hoverBorderClass}`}
+                >
+                  <div className="mb-3 text-primary">
+                    <img
+                      src={tech.image}
+                      alt={tech.name}
+                      className="h-14 w-14 object-contain"
+                    />
+                  </div>
+                  <span className="font-medium text-gray-800 mb-1">{tech.name}</span>
+                </div>
+              );
+            })}
           </div>
+        </CardContent>
+      </Card>
+    </TabsContent>
+  ))}
+</div>
         </Tabs>
       </div>
     </section>
