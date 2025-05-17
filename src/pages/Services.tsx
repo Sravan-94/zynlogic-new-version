@@ -37,13 +37,13 @@ const services = [
     title: "Web Design & Development",
     description: "We create immersive, responsive websites that engage users and drive conversions. Using the latest technologies and design principles, we deliver solutions that are both visually stunning and functionally seamless.",
     icon: "",
-    imageSrc: "/services/web-design-development.jpg",
+    imageSrc: "/WhatsApp Image 2025-05-17 at 14.00.08_86b40642.jpg",
     features: [
-      "Custom WordPress Development",
-      "Custom Shopify Development",
+      "Full-Stack SaaS Solutions",
+      "Microservices Architecture",
       "React & Next.js Applications",
       "E-commerce Solutions",
-      "Content Management Systems",
+      "API Design & Integration",
       "Performance Optimization"
     ]
   },
@@ -52,7 +52,7 @@ const services = [
     title: "Mobile App Development",
     description: "From concept to launch, we develop native and cross-platform mobile applications that deliver exceptional user experiences across all devices. Our focus is on creating intuitive interfaces with robust functionality.",
     icon: "",
-    imageSrc: "/services/mobile-app-development.jpg",
+    imageSrc: "/WhatsApp Image 2025-05-17 at 13.57.33_50f8aa3c.jpg",
     features: [
       "iOS & Android Development",
       "React Native Applications",
@@ -63,7 +63,7 @@ const services = [
   },
   {
     id: 3,
-    title: "Brand Identity & UI Systems",
+    title: "Brand Identity",
     description: "We craft distinctive visual identities that express your brand's unique personality and values. Our comprehensive approach ensures consistency across all touchpoints, creating recognizable and impactful brand experiences.",
     icon: "",
     imageSrc: "/services/brand-identity.jpg",
@@ -77,10 +77,10 @@ const services = [
   },
   {
     id: 4,
-    title: "UX Strategy",
+    title: "UI / UX Strategy",
     description: "Through in-depth research and data-driven insights, we create strategic UX frameworks that guide the development of intuitive, engaging user experiences that meet both user needs and business objectives.",
     icon: "",
-    imageSrc: "/services/ux-strategy.jpg",
+    imageSrc: "/WhatsApp Image 2025-05-17 at 13.57.34_e45e333e.jpg",
     features: [
       "User Research & Persona Development",
       "Information Architecture",

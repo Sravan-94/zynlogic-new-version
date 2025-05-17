@@ -72,10 +72,10 @@ const Navbar = () => {
                     <div className="flex flex-col space-y-2">
                       <HoveredLink to="/services#web">Web Design & Development</HoveredLink>
                       <HoveredLink to="/services#mobile">Mobile App Development</HoveredLink>
-                      <HoveredLink to="/services#brand">Brand Identity & UI Systems</HoveredLink>
+                      <HoveredLink to="/services#brand">Brand Identity</HoveredLink>
                     </div>
                     <div className="flex flex-col space-y-2">
-                      <HoveredLink to="/services#ux">UX Strategy</HoveredLink>
+                      <HoveredLink to="/services#ux">UI / UX Strategy</HoveredLink>
                       <HoveredLink to="/services#creative">Entraprise</HoveredLink>
                       <HoveredLink to="/services#ai">AI Integrations & Automations</HoveredLink>
                     </div>
@@ -177,14 +177,14 @@ const Navbar = () => {
                   className="text-sm text-gray-600 hover:text-accent"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Brand Identity & UI Systems
+                  Brand Identity
                 </Link>
                 <Link
                   to="/services#ux"
                   className="text-sm text-gray-600 hover:text-accent"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  UX Strategy
+                  UI / UX Strategy
                 </Link>
                 <Link
                   to="/services#creative"
