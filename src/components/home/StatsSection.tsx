@@ -12,7 +12,7 @@ export default function StatsSection() {
                 <div className="grid gap-12 divide-y *:text-center md:grid-cols-3 md:gap-2 md:divide-x md:divide-y-0">
                     <div className="space-y-2">
                         <div className="text-6xl font-bold">10+</div>
-                        <p className="text-lg font-medium text-gray-600">Counties</p>
+                        <p className="text-lg font-medium text-gray-600">Countries</p>
                     </div>
                     <div className="space-y-2">
                         <div className="text-6xl font-bold">800+</div>
