@@ -6,7 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageTransition from "@/components/ui/page-transition";
 import Testimonials from "./pages/Testimonials";
-
+import VideoCarousel from './components/home/LiveTestMonials';
 // Lazy load pages for better performance
 const Index = lazy(() => import("./pages/Index"));
 const Services = lazy(() => import("./pages/Services"));
@@ -50,6 +50,7 @@ const App = () => (
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/testimonials" element={<Testimonials />} />
+              <Route path="/live-testimonials" element={<VideoCarousel />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </PageTransition>

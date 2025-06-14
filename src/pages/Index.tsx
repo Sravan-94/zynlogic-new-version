@@ -9,19 +9,21 @@ import FAQSection from "@/components/home/FAQSection";
 import CTASection from "@/components/home/CTASection";
 import HomeTestimonialsSection from "@/components/home/TestimonialsSection";
 import ServicesSection from "@/components/home/ServicesSection";
-
+import VideoCarousel from "@/components/home/LiveTestMonials";
 const Index = () => {
   return (
     <Layout>
       <HeroSection />
       <LogoCloud />
       <ServicesSection />
+      <VideoCarousel />
       <TechStackSection />
       <CategoriesPreview />
       <StatsSection />
       <HomeTestimonialsSection />
       <FAQSection />
       <CTASection />
+      
     </Layout>
   );
 };

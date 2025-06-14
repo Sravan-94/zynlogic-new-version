@@ -94,8 +94,8 @@ const Contact = () => {
                 
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-2">Call Us</h3>
-                  <a href="tel:+15551234567" className="text-accent hover:underline">
-                    +91 9966100311
+                  <a href="tel:+91 7675953062" className="text-accent hover:underline">
+                    +91 7675953062
                   </a>
                 </div>
                 
@@ -112,15 +112,13 @@ const Contact = () => {
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-4">Follow Us</h3>
                 <div className="flex space-x-6">
-                  <a href="https://x.com/zynlogic" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent">
-                    Twitter
+                  <a href="https://g.co/kgs/ePucjrE" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent">
+                   Google Maps
                   </a>
                   <a href="https://www.linkedin.com/company/zynlogic/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent">
                     LinkedIn
                   </a>
-                  <a href="https://www.instagram.com/zynlogic?igsh=MXEydHhkZXk1dGRobw==" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent">
-                    Instagram
-                  </a>
+                 
                 </div>
               </div>
             </div>

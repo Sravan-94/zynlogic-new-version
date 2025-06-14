@@ -206,7 +206,7 @@ function Hero() {
           {/* 👇🏻 Buttons */}
           <div className="flex flex-row gap-3 mt-1">
             <Button asChild size="lg" className="gap-2" variant="outline">
-              <a href="tel:9966100311">
+              <a href="tel:7675953062">
                 Jump on a call <PhoneCall className="w-4 h-4" />
               </a>
             </Button>
