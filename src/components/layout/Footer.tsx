@@ -102,20 +102,20 @@ const links = [
         group: 'Legal',
         items: [
             {
-                title: 'Licence',
-                href: '/',
+                title: 'License',
+                href: '/license',
             },
             {
                 title: 'Privacy',
-                href: '/',
+                href: '/privacy-policy',
             },
             {
                 title: 'Cookies',
-                href: '/',
+                href: '/cookies-policy',
             },
             {
                 title: 'Security',
-                href: '/',
+                href: '/security-policy',
             },
         ],
     },

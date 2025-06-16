@@ -7,6 +7,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageTransition from "@/components/ui/page-transition";
 import Testimonials from "./pages/Testimonials";
 import VideoCarousel from './components/home/LiveTestMonials';
+
+import PrivacyPolicy from './components/policies/PrivacyPolicy';
+import CookiesPolicy from './components/policies/CookiesPolicy';
+import SecurityPolicy from './components/policies/SecurityPolicy';
+import LicensePage from './components/policies/Lincence';
 // Lazy load pages for better performance
 const Index = lazy(() => import("./pages/Index"));
 const Services = lazy(() => import("./pages/Services"));
@@ -51,6 +56,11 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/testimonials" element={<Testimonials />} />
               <Route path="/live-testimonials" element={<VideoCarousel />} />
+              <Route path="/security-policy" element={<SecurityPolicy />} />
+              <Route path="/cookies-policy" element={<CookiesPolicy />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/license" element={<LicensePage />} />
+              {/* Catch-all route for 404 Not Found */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </PageTransition>
